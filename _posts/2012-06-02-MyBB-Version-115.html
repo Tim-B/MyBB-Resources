@@ -1,0 +1,78 @@
+---
+layout: post
+title: MyBB Version:1.1.5
+permalink: 115.html
+---
+<p>And in the continuation of something which couldn't have come at a worse time, we're releasing MyBB 1.1.5 - a security update to the MyBB 1.x series. It fixes a few potentially high risk vulnerabilities affecting MyBB 1.0 PR 2 to MyBB 1.1.4.
+</p><p>As an ever growing list of vulnerabilities appears to be found in MyBB, we've performed a software based code audit on the package which detects potential SQL injections, cross site scripting and general security issues. It made us aware of several issues in 1.1.4 so we're immediately releasing a patch. From now on, each release of MyBB will be audited using this application before it is downloadable.
+</p><p>The release also fixes a few other vulnerabilities discovered by third parties.
+</p><p>We recommend all users upgrade their copy of MyBB to the latest available release.
+</p>
+<pre>   * Potential cross site scripting with [url] tag - also affects MyBB 1.0 RC2 and greater (imei Web Security)
+   * Potential SQL injection in "Archive mode" on servers with register_globals enabled (imei Web Security)
+   * Potential user group manipulation (makpaolo)
+   * Other potential SQL injection attacks (Internal code audit, confirmed by DCoder)
+</pre>
+<p><br />
+</p><p>The release on the MyBB site has also been updated to 1.1.5.
+</p><p>Update instructions are in the next post, including a list of changed files (and a ZIP archive of them) as well as manual patching instructions for those of you who have customized their code.
+</p><p>There is the potential once again for scripts to be written to exploit these vulnerabilities. Please ensure you update your board as soon as you can and that you inform anyone you know running MyBB to do the same.
+</p><p>If your board is compromised, please send myself or one of the other team members as much information you can (including raw access logs) and we'll try to do our best to resolve the situation. If you also need assistance in upgrading, please do not hesitate to contact me about it and I'll get you up to date.
+</p><p>It does truly sadden me to see this happen to our product - people's installations being compromised by "script kiddy" and hacking groups where destroying other peoples property is considered fun. Hopefully things will calm down - and I am sorry, personally, for once again having to release another patch for MyBB.
+</p>
+<div style="border: 1px solid #ddd; background-color: #f5f5f5; padding: 5px; margin: 5px;">
+<div style="text-align: center; font-size: 18px; margin-bottom: 5px;"><b><a href="http://mybb.github.com/MyBB-Resources/Versions.html" title="Versions">MyBB Versions</a></b></div>
+<table cellpadding="3" cellspacing="3" style="font-size: 95%; line-spacing:1; border: 1px solid #ddd; width: 100%; margin-bottom: 5px; background: #fff;">
+<tr>
+<td style="vertical-align: middle; font-size: 11px;"><i><b>2.0.x</b></i>
+</td>
+<td style="vertical-align: middle; width: 90%;"><div style="float: right; font-size: 11px;"><i><b>In Planning/Early Development</b></i></div><div style="font-size: 11px;"><i><a href="2.0.0" title="2.0.0">2.0.0</a></i></div>
+</td></tr></table>
+<table cellpadding="3" cellspacing="3" style="font-size: 95%; line-spacing:1; border: 1px solid #ddd; width: 100%; margin-bottom: 5px; background: #fff;">
+<tr>
+<td style="vertical-align: middle;"><i><b>1.8.x</b></i>
+</td>
+<td style="vertical-align: middle; width: 90%;"><div style="float: right;"><i><b>In Development</b></i></div><div><i><a href="1.8.0" title="1.8.0">1.8.0</a></i></div>
+</td></tr></table>
+<table cellpadding="3" cellspacing="3" style="font-size: 95%; line-spacing:1; border: 1px solid #ddd; width: 100%; margin-bottom: 5px; background: #fff;">
+<tr>
+<td style="vertical-align: middle; font-size: 14px;"><b>1.6.x</b>
+</td>
+<td style="vertical-align: middle; width: 90%;"><div><span style="background: #FFF6BF; border: 1px solid #FFD324; padding: 3px;"><a href="1.6.8" title="1.6.8">1.6.8</a></span> - <a href="1.6.7" title="1.6.7">1.6.7</a> - <a href="1.6.6" title="1.6.6">1.6.6</a> - <a href="1.6.5" title="1.6.5">1.6.5</a> - <a href="1.6.4" title="1.6.4">1.6.4</a> - <a href="1.6.3" title="1.6.3">1.6.3</a> - <a href="1.6.2" title="1.6.2">1.6.2</a> - <a href="1.6.1" title="1.6.1">1.6.1</a> - <a href="1.6.0" title="1.6.0">1.6.0</a></div>
+</td></tr></table>
+<table cellpadding="3" cellspacing="3" style="font-size: 95%; line-spacing:1; border: 1px solid #ddd; width: 100%; margin-bottom: 5px; background: #fff;">
+<tr>
+<td style="vertical-align: middle; font-size: 14px;"><b>1.4.x</b>
+</td>
+<td style="vertical-align: middle; width: 90%;"><a href="1.4.16" title="1.4.16">1.4.16</a> - <a href="1.4.15" title="1.4.15">1.4.15</a> - <a href="1.4.14" title="1.4.14">1.4.14</a> - <a href="1.4.13" title="1.4.13">1.4.13</a> - <a href="1.4.12" title="1.4.12">1.4.12</a> - <a href="1.4.11" title="1.4.11">1.4.11</a> - <a href="1.4.10" title="1.4.10">1.4.10</a> - <a href="1.4.9" title="1.4.9">1.4.9</a> - <a href="1.4.8" title="1.4.8">1.4.8</a> - <a href="1.4.7" title="1.4.7">1.4.7</a> - <a href="1.4.6" title="1.4.6">1.4.6</a> - <a href="1.4.5" title="1.4.5">1.4.5</a> - <a href="1.4.4" title="1.4.4">1.4.4</a> - <a href="1.4.3" title="1.4.3">1.4.3</a> - <a href="1.4.2" title="1.4.2">1.4.2</a> - <a href="1.4.1" title="1.4.1">1.4.1</a> - <a href="1.4.0" title="1.4.0">1.4.0</a>
+</td></tr></table>
+<table cellpadding="3" cellspacing="3" style="font-size: 95%; line-spacing:1; border: 1px solid #ddd; width: 100%; margin-bottom: 5px; background: #fff;">
+<tr>
+<td style="vertical-align: middle; font-size: 14px;"><b>1.2.x</b>
+</td>
+<td style="vertical-align: middle; width: 90%;"><a href="1.2.14" title="1.2.14">1.2.14</a> - <a href="1.2.13" title="1.2.13">1.2.13</a> - <a href="1.2.12" title="1.2.12">1.2.12</a> - <a href="1.2.11" title="1.2.11">1.2.11</a> - <a href="1.2.10" title="1.2.10">1.2.10</a> - <a href="1.2.9" title="1.2.9">1.2.9</a> - <a href="1.2.8" title="1.2.8">1.2.8</a> - <a href="1.2.7" title="1.2.7">1.2.7</a> - <a href="1.2.6" title="1.2.6">1.2.6</a> - <a href="1.2.5" title="1.2.5">1.2.5</a> - <a href="1.2.4" title="1.2.4">1.2.4</a> - <a href="1.2.3" title="1.2.3">1.2.3</a> - <a href="1.2.2" title="1.2.2">1.2.2</a> - <a href="1.2.1" title="1.2.1">1.2.1</a> - <a href="1.2.0" title="1.2.0">1.2.0</a>
+</td></tr></table>
+<table cellpadding="3" cellspacing="3" style="font-size: 95%; line-spacing:1; border: 1px solid #ddd; width: 100%; margin-bottom: 5px; background: #fff;">
+<tr>
+<td style="vertical-align: middle; font-size: 14px;"><b>1.1.x / 1.0x</b>
+</td>
+<td style="vertical-align: middle; width: 90%;"><a href="1.1.8" title="1.1.8">1.1.8</a> - <a href="1.1.7" title="1.1.7">1.1.7</a> - <a href="1.1.6" title="1.1.6">1.1.6</a> - <strong class="selflink">1.1.5</strong> - <a href="1.1.4" title="1.1.4">1.1.4</a> - <a href="1.1.3" title="1.1.3">1.1.3</a> - <a href="1.1.2" title="1.1.2">1.1.2</a> - <a href="1.1.1" title="1.1.1">1.1.1</a> - <a href="1.1.0" title="1.1.0">1.1.0</a> - <a href="1.04" title="1.04">1.04</a> - <a href="1.03" title="1.03">1.03</a> - <a href="1.02" title="1.02">1.02</a> - <a href="1.01" title="1.01">1.01</a> - <a href="1.00" title="1.00">1.00</a>
+</td></tr></table>
+<table cellpadding="3" cellspacing="3" style="font-size: 95%; line-spacing:1; border: 1px solid #ddd; width: 100%; margin-bottom: 5px; background: #fff;">
+<tr>
+<td style="vertical-align: middle; font-size: 14px;"><b>Pre-1.0</b>
+</td>
+<td style="vertical-align: middle; width: 90%;"><a href="http://mybb.github.com/MyBB-Resources/PR2.html" title="PR2">PR2</a> - <i><a href="http://mybb.github.com/MyBB-Resources/PR1.html" title="PR1">PR1</a></i> - <a href="http://mybb.github.com/MyBB-Resources/RC4.html" title="RC4">RC4</a> - <a href="http://mybb.github.com/MyBB-Resources/RC3.html" title="RC3">RC3</a> - <a href="http://mybb.github.com/MyBB-Resources/RC2.html" title="RC2">RC2</a> - <a href="http://mybb.github.com/MyBB-Resources/RC1.html" title="RC1">RC1</a> - <a href="http://mybb.github.com/MyBB-Resources/Beta_4.html" title="Beta 4">Beta 4</a> - <a href="http://mybb.github.com/MyBB-Resources/DevBB.html" title="DevBB">DevBB</a>
+</td></tr></table>
+<table cellpadding="3" cellspacing="3" style="font-size: 95%; line-spacing:1; border: 1px solid #ddd; width: 100%; margin-bottom: 5px; background: #fff;">
+<tr>
+<td style="vertical-align: middle; font-size: 14px;"><b>Legend</b>
+</td>
+<td style="vertical-align: middle; width: 90%;"><span style="margin-right: 20px; font-size: 11px;"><i>In Planning</i></span> <span style="margin-right: 20px;"><i>Development / Beta / Private</i></span> <span style="background: #FFF6BF; border: 1px solid #FFD324; padding: 3px;">Latest Public Release</span>
+</td></tr></table>
+</div>
+<p><br />
+</p>
+
+
+

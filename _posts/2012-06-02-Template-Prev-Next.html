@@ -1,0 +1,63 @@
+---
+layout: post
+title: Template:Prev Next
+permalink: Template-Prev_Next.html
+---
+<p><br style="clear:both" />
+</p>
+<div style="border: 1px solid #ddd; background-color: #f5f5f5; padding: 5px; margin: 5px;">
+<table cellpadding="3" cellspacing="3" style="font-size: 95%; line-spacing:1; border: 1px solid #ddd; width: 100%; background: #fff;">
+<tr>
+<td style="text-align: left;"> <b>[[{{{prevpage}}}|&#171; Previous]]</b>
+</td>
+<td style="text-align: right;"><b>[[{{{nextpage}}}|Next &#187;]]</b>
+</td></tr></table>
+</div>
+<p><br />
+</p>
+
+<dl><dt>prevpage</dt><dd> The page name of the previous page
+</dd><dt>prevname</dt><dd> The description or title of the previous page (optional; defaults to "Previous")
+</dd><dt>nextpage</dt><dd> The page name of the next page
+</dd><dt>nextname</dt><dd> The description or title of the next page (optional; defaults to "Next")
+</dd></dl>
+
+<p>This template can be used anywhere where next/previous page links are needed in a uniform manner.
+</p>
+<table border="1">
+<tr>
+<td style="width: 50%;">This is how to call the template (minimum): <br />{{Prev Next|prevpage=PreviousPage|nextpage=NextPage}}
+</td>
+<td style="width: 50%;">Shows up as: <br style="clear:both" />
+<div style="border: 1px solid #ddd; background-color: #f5f5f5; padding: 5px; margin: 5px;">
+<table cellpadding="3" cellspacing="3" style="font-size: 95%; line-spacing:1; border: 1px solid #ddd; width: 100%; background: #fff;">
+<tr>
+<td style="text-align: left;"> <b><a href="http://localhost/mediawiki/index.php?title=PreviousPage&amp;action=edit&amp;redlink=1" class="new" title="PreviousPage (page does not exist)">&#171; Previous</a></b>
+</td>
+<td style="text-align: right;"><b><a href="http://localhost/mediawiki/index.php?title=NextPage&amp;action=edit&amp;redlink=1" class="new" title="NextPage (page does not exist)">Next &#187;</a></b>
+</td></tr></table>
+</div>
+<p><br />
+</p>
+</td></tr>
+<tr>
+<td>Now calling the template with the 'name' parameters:<br />
+<p>{{Prev Next|prevpage=PreviousPage|prevname=My Previous Page|nextpage=NextPage|nextname=My Next Page}}
+</p>
+</td>
+<td>Shows up as: <br style="clear:both" />
+<div style="border: 1px solid #ddd; background-color: #f5f5f5; padding: 5px; margin: 5px;">
+<table cellpadding="3" cellspacing="3" style="font-size: 95%; line-spacing:1; border: 1px solid #ddd; width: 100%; background: #fff;">
+<tr>
+<td style="text-align: left;"> <b><a href="http://localhost/mediawiki/index.php?title=PreviousPage&amp;action=edit&amp;redlink=1" class="new" title="PreviousPage (page does not exist)">&#171; My Previous Page</a></b>
+</td>
+<td style="text-align: right;"><b><a href="http://localhost/mediawiki/index.php?title=NextPage&amp;action=edit&amp;redlink=1" class="new" title="NextPage (page does not exist)">My Next Page &#187;</a></b>
+</td></tr></table>
+</div>
+<p><br />
+</p>
+</td></tr></table>
+
+
+
+

@@ -1,0 +1,86 @@
+---
+layout: post
+title: Plugin Settings
+permalink: Plugin_Settings.html
+---
+<p>Here is how to add settings to your plugins.
+</p><p><br />
+</p>
+
+<p>Below is an example of how to add settings.
+</p>
+<pre>
+function myplugin_install()
+{
+	global $db;
+  $setting_group = array(
+		'gid'			=&gt; 'NULL',
+		'name'			=&gt; 'myplugin',
+		'title'			=&gt; 'MyPlugin Settings',
+		'description'	=&gt; 'Settings for MyPlugin.',
+		'disporder'		=&gt; &quot;1&quot;,
+		'isdefault'		=&gt; 'no',
+	);
+	$db-&gt;insert_query('settinggroups', $setting_group);
+	$gid = $db-&gt;insert_id();
+
+	$myplugin_setting = array(
+		'name'			=&gt; 'myplugin_setting1',
+		'title'			=&gt; 'A random setting for MyPlugin',
+		'description'	=&gt; 'What this setting will do',
+		'optionscode'	=&gt; 'yesno', //this will be a yes/no select box
+		'value'			=&gt; '1', //default value is yes, use 0 for no
+		'disporder'		=&gt; 1,
+		'gid'			=&gt; intval($gid),
+	);
+
+	$db-&gt;insert_query('settings', $myplugin_setting);
+
+
+
+	$myplugin_setting = array(
+		'name'			=&gt; 'myplugin_setting2',
+		'title'			=&gt; 'Another random setting for MyPlugin',
+		'description'	=&gt; 'This is a textbox.',
+		'optionscode'	=&gt; 'text', //this will be a textbox, for a big textbox use textarea
+		'value'			=&gt; 'defauly value, yay!',
+		'disporder'		=&gt; 2, //increment this
+		'gid'			=&gt; intval($gid),
+	);
+
+	$db-&gt;insert_query('settings', $myplugin_setting);
+
+
+	rebuild_settings();
+}
+</pre>
+
+<p>Here is how to delete settings.
+</p>
+<pre>
+function myplugin_uninstall()
+{
+	global $db;
+	$db-&gt;query(&quot;DELETE FROM &quot;.TABLE_PREFIX.&quot;settings WHERE name IN ('myplugin_setting1','myplugin_setting2')&quot;);
+	$db-&gt;query(&quot;DELETE FROM &quot;.TABLE_PREFIX.&quot;settinggroups WHERE name='myplugin'&quot;);
+	rebuild_settings(); 
+}
+</pre>
+<p><br />
+</p>
+
+<p>Here is an example of how you can use the above settings.
+</p>
+<pre>
+function myplugin_functionname()
+{
+	global $mybb;
+	if($mybb-&gt;settings['myplugin_setting1'] == '1') {
+		$randomvar = &quot;&lt;table&gt;&lt;tr&gt;&lt;td&gt;{$mybb-&gt;settings['myplugin_setting2']}&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&quot;;
+	}
+}
+</pre>
+
+
+
+
