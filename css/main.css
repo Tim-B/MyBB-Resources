@@ -1,5 +1,3 @@
-/* Media Imports -----------------------------------------------------*/
-@import url("../images/browserdefaults_compact.css");
 
 .mastHead {
 	margin: 0;
@@ -70,32 +68,32 @@ acronym, abbr, span.caps {
 ** this is css3, the validator doesn't like it when validating as css2
 */
 #page div.item #bodyContent a[href ^="http://"], #bodyContent a[href ^="gopher://"] {
-    background: url(../images/external.png) center right no-repeat;
+    background: url(../images/template/external.png) center right no-repeat;
     padding-right: 13px;
 	}
 
 #page div.item #bodyContent a[href ^="https://"], .link-https {
-    background: url("../images/lock_icon.gif") center right no-repeat;
+    background: url("../images/template/lock_icon.gif") center right no-repeat;
     padding-right: 16px;
 	}
 
 #page div.item #bodyContent a[href ^="mailto:"], .link-mailto {
-    background: url("../images/mail_icon.gif") center right no-repeat;
+    background: url("../images/template/mail_icon.gif") center right no-repeat;
     padding-right: 18px;
 	}
 
 #page div.item #bodyContent a[href ^="news://"] {
-    background: url("../images/news_icon.png") center right no-repeat;
+    background: url("../images/template/news_icon.png") center right no-repeat;
     padding-right: 18px;
 	}
 
 #page div.item #bodyContent a[href ^="ftp://"], .link-ftp {
-    background: url("../images/file_icon.gif") center right no-repeat;
+    background: url("../images/template/file_icon.gif") center right no-repeat;
     padding-right: 18px;
 	}
 
 #page div.item #bodyContent a[href ^="irc://"], .link-irc {
-    background: url("../images/discussionitem_icon.gif")  center right no-repeat;
+    background: url("../images/template/discussionitem_icon.gif")  center right no-repeat;
     padding-right: 18px;
 }
 
@@ -425,29 +423,29 @@ tt {
 }
 
 #p-cactions a {
-	background: url(../images/icons/other.gif) no-repeat 3px;
+	background: url(../images/template/icons/other.gif) no-repeat 3px;
 }
 
 #ca-nstab-main a {
-	background: url(../images/icons/article.gif) no-repeat 3px;
+	background: url(../images/template/icons/article.gif) no-repeat 3px;
 }
 
 #ca-nstab-user a {
-	background: url(../images/icons/user.gif) no-repeat 3px;
+	background: url(../images/template/icons/user.gif) no-repeat 3px;
 }
 
 #ca-talk a {
-	background: url(../images/icons/discussion.gif) no-repeat 3px;
+	background: url(../images/template/icons/discussion.gif) no-repeat 3px;
 }
 
 #ca-edit a {
-	background: url(../images/icons/edit.gif) no-repeat 3px;
+	background: url(../images/template/icons/edit.gif) no-repeat 3px;
 }
 
 #ca-viewsource a {
-	background: url(../images/icons/source.gif) no-repeat 3px;
+	background: url(../images/template/icons/source.gif) no-repeat 3px;
 }
 
 #ca-history a {
-	background: url(../images/icons/history.gif) no-repeat 3px;
+	background: url(../images/template/icons/history.gif) no-repeat 3px;
 }
