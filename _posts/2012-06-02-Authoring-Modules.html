@@ -22,7 +22,7 @@ permalink: Authoring_Modules.html
 </p><p>Note: The Actual file that the user interacts with should be named modulename.php (e.g. foo.php)
 </p>
 
-<h3><span class="editsection">[<a href="http://localhost/mediawiki/index.php?title=Authoring_Modules&amp;action=edit&amp;section=3" title="Edit section: Requirements">edit</a>]</span> <span class="mw-headline" id="Requirements">Requirements</span></h3>
+
 <p>These things you MUST do within your module code:
 </p>
 <ul><li>The names of the installation, uninstallation, and info functions MUST be the name of your file (minus the extention) + _install, _uninstall, or _info respectively. (e.g. foo_activate if your module filename is foo.php).
@@ -87,7 +87,7 @@ function modulename_uninstall()
 	cpredirect('eMods.php', $lang-&gt;mod_uninstalled);
 }
 </pre>
-<h3><span class="editsection">[<a href="http://localhost/mediawiki/index.php?title=Authoring_Modules&amp;action=edit&amp;section=4" title="Edit section: Good Ideas">edit</a>]</span> <span class="mw-headline" id="Good_Ideas">Good Ideas</span></h3>
+
 <ul><li>Functions in your modules can be called anything you choose, but it is a good idea to prefix them with the name of your file (minus the extension) in order to avoid clashes with other modules. (ie. if your filename is _foo.php, name your plugin functions: foo_run or foo_bar, foo_foo, etc)
 </li></ul>
 

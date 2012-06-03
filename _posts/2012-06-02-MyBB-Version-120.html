@@ -53,59 +53,59 @@ permalink: 120.html
 
 <p>This is a quick listing of what can be expected in 1.2.0.  This is not an exhaustive, nor complete list. Some further features and more descript explanations of some can be found <a rel="nofollow" class="external text" href="http://community.mybboard.net/showthread.php?tid=11781&amp;pid=77217#pid77217">here</a>.
 </p>
-<h3><span class="editsection">[<a href="http://localhost/mediawiki/index.php?title=1.2.0&amp;action=edit&amp;section=5" title="Edit section: Lots of rewritten and cleaner code">edit</a>]</span> <span class="mw-headline" id="Lots_of_rewritten_and_cleaner_code">Lots of rewritten and cleaner code</span></h3>
+
 <p>This is a big release for us - we've scoured the code and cleaned it up a lot. We've renamed functions, rewritten features and completely rewritten some parts of the board (including the post parser, moderation features and javascript).
 </p><p>The code now for the most part also includes support for PHPDoc comments allowing code documentation to automatically be generated.
 </p>
-<h3><span class="editsection">[<a href="http://localhost/mediawiki/index.php?title=1.2.0&amp;action=edit&amp;section=6" title="Edit section: Super administrators">edit</a>]</span> <span class="mw-headline" id="Super_administrators">Super administrators</span></h3>
+
 <p>By default, the initial administrator on all copies of MyBB can no longer be deleted, edited or banned by other Administrators in the Admin CP. You can also add other users to the list of super administrators and the same will apply to them.
 </p>
-<h3><span class="editsection">[<a href="http://localhost/mediawiki/index.php?title=1.2.0&amp;action=edit&amp;section=7" title="Edit section: AJAX">edit</a>]</span> <span class="mw-headline" id="AJAX">AJAX</span></h3>
+
 <p>It's been requested many, many times and we kept saying "Hold your horses! It's coming!"
 </p><p>MyBB now makes use of the javascript XMLHttp extensions. Included AJAX based functionality includes auto completion and suggestion of usernames whilst composing private messaging, inline thread subject editing and inline post message editing.
 </p>
-<h3><span class="editsection">[<a href="http://localhost/mediawiki/index.php?title=1.2.0&amp;action=edit&amp;section=8" title="Edit section: Custom moderation tools">edit</a>]</span> <span class="mw-headline" id="Custom_moderation_tools">Custom moderation tools</span></h3>
+
 <p>Custom moderation tools can be set up which are essentially moderation macros. You can create new "tools" which perform a series of moderation tasks to threads and posts at one time. Moderation tools can be used in both the standard moderation tools and the inline moderation system.
 </p>
-<h3><span class="editsection">[<a href="http://localhost/mediawiki/index.php?title=1.2.0&amp;action=edit&amp;section=9" title="Edit section: Database backup">edit</a>]</span> <span class="mw-headline" id="Database_backup">Database backup</span></h3>
+
 <p>The board administrators can directly make backup copies of their database via the Admin CP interface. You can create backups of certain tables, download the backup now or save it on the server, or download the backup as a compressed GZIP file (if your server supports it) or plain-text SQL file.
 </p>
-<h3><span class="editsection">[<a href="http://localhost/mediawiki/index.php?title=1.2.0&amp;action=edit&amp;section=10" title="Edit section: Improved RSS and syndication support">edit</a>]</span> <span class="mw-headline" id="Improved_RSS_and_syndication_support">Improved RSS and syndication support</span></h3>
+
 <p>We realise that content syndication is a very important technology and we've greatly improved support for it in MyBB. Feeds can now be served as Atom feeds, all data is properly sanitized and validated before being used in feeds and we've also designed a class which can generate an RSS feed from any data you pass to it as well as a class that can parse RSS feeds and return an array of information from them.
 </p>
-<h3><span class="editsection">[<a href="http://localhost/mediawiki/index.php?title=1.2.0&amp;action=edit&amp;section=11" title="Edit section: New reputation system">edit</a>]</span> <span class="mw-headline" id="New_reputation_system">New reputation system</span></h3>
+
 <p>The old reputation system in MyBB had some serious flaws (it was very easily abused, votes could not be edited or deleted without diving directly in to MySQL). The folks over at the Messenger Plus! Community Forums addressed this by cleverly designing a reputation system similar to the feedback system of eBay. A similar modification was also written for MyBB called the "Alternative Reputation System" by Smethead (Who I'm very sad to hear is leaving the modifications community). Our new reputation system is based around the ideas and implementations of those two wonderful additions made to MyBB.
 </p><p>You can now only give a reputation to a user once but you can in the future edit or update your reputation of that user. Reputations are also publicly displayed (limits abuse) and can be deleted by administrators.
 </p>
-<h3><span class="editsection">[<a href="http://localhost/mediawiki/index.php?title=1.2.0&amp;action=edit&amp;section=12" title="Edit section: Multi-quote">edit</a>]</span> <span class="mw-headline" id="Multi-quote">Multi-quote</span></h3>
+
 <p>A popular feature on other competitors applications is the ability to select multiple posts to be quoted and then on the "New Reply" page, have them loaded automatically in to the message area. We've implemented this in to MyBB - we find it extremely useful and hopefully you do too.
 </p><p>You can also cross quote replies from other threads and then have them loaded in to the message area using AJAX by clicking on a link which states there are external quoted posts.
 </p>
-<h3><span class="editsection">[<a href="http://localhost/mediawiki/index.php?title=1.2.0&amp;action=edit&amp;section=13" title="Edit section: Full-text searching (and search improvements)">edit</a>]</span> <span class="mw-headline" id="Full-text_searching_.28and_search_improvements.29">Full-text searching (and search improvements)</span></h3>
+
 <p>If your database server supports full-text searching in boolean mode then you can switch over to using this amazing functionality which allows users to create complex search queries (along the lines of '"mybb rocks"' or 'example or tester' - and even more amazing). The database server handles the searching and quickly returns sets of results.
 </p><p>Search functionality has also improved overall. Results are now cached after the initial search which means browsing results is now much more efficient.
 </p>
-<h3><span class="editsection">[<a href="http://localhost/mediawiki/index.php?title=1.2.0&amp;action=edit&amp;section=14" title="Edit section: Hooks in Admin CP">edit</a>]</span> <span class="mw-headline" id="Hooks_in_Admin_CP">Hooks in Admin CP</span></h3>
+
 <p>By popular demand, plugin hooks have now been implemented in the MyBB Admin CP allowing plugins to extend their functionality right throughout the entire board.
 </p>
-<h3><span class="editsection">[<a href="http://localhost/mediawiki/index.php?title=1.2.0&amp;action=edit&amp;section=15" title="Edit section: Data handlers">edit</a>]</span> <span class="mw-headline" id="Data_handlers">Data handlers</span></h3>
+
 <p>Data handlers were a concept which I talked about back in January. They provide a centralised method for performing data validation, insertion and updating for common things like users, events, private messages, posts and threads.
 </p><p>The data handlers do exactly this - provide centralised methods for validating and managing data. This means developers can easily extend functionality such as posting and it also makes it easier for third party modifications to add/insert data to these tables whilst ensuring it is all correctly validated.
 </p>
-<h3><span class="editsection">[<a href="http://localhost/mediawiki/index.php?title=1.2.0&amp;action=edit&amp;section=16" title="Edit section: Rewritten post parser (and custom MyCode!)">edit</a>]</span> <span class="mw-headline" id="Rewritten_post_parser_.28and_custom_MyCode.21.29">Rewritten post parser (and custom MyCode!)</span></h3>
+
 <p>The post parser has been rewritten from the ground up and greatly improved in many ways!
 </p><p>[code] and [php] tags no longer parse MyCode or smilies within them, HTML is completely cleaned to ensure it doesn't contain client side scripting (when HTML is enabled in a forum), and best of all - custom MyCode tags can be managed in the Admin CP!
 </p>
-<h3><span class="editsection">[<a href="http://localhost/mediawiki/index.php?title=1.2.0&amp;action=edit&amp;section=17" title="Edit section: Improved CAPTCHA images">edit</a>]</span> <span class="mw-headline" id="Improved_CAPTCHA_images">Improved CAPTCHA images</span></h3>
+
 <p>The CAPTCHA images used when registering have also been improved. They now support slanted and randomly positioned text, random TTF font selection and random characters and symbols in the background.
 </p><p>The same system has also been implemented when guests attempt to make a new post or reply to ensure they're not automated systems (bots)
 </p>
-<h3><span class="editsection">[<a href="http://localhost/mediawiki/index.php?title=1.2.0&amp;action=edit&amp;section=18" title="Edit section: Improved update &amp; latest announcements checking">edit</a>]</span> <span class="mw-headline" id="Improved_update_.26_latest_announcements_checking">Improved update &amp; latest announcements checking</span></h3>
+
 <p>One of the things we've been worried about is people not keeping their copies of MyBB up to date and that means they may be susceptible to vulnerabilities discovered in MyBB.
 </p><p>MyBB now warns you once every two weeks in the Admin CP if you haven't recently checked for new versions of the software. If a new version is found, it'll then place a persistent message on the welcome page of the Admin CP notifying you of this.
 </p><p>The latest news feature is also syndicated from the RSS feed on the MyBB site.
 </p>
-<h3><span class="editsection">[<a href="http://localhost/mediawiki/index.php?title=1.2.0&amp;action=edit&amp;section=19" title="Edit section: Also new and changed (but not all!)">edit</a>]</span> <span class="mw-headline" id="Also_new_and_changed_.28but_not_all.21.29">Also new and changed (but not all!)</span></h3>
+
 <ul><li> Ability to globally disable private messaging, the member list, the calendar, the reputation system and thread ratings
 </li><li> Redesigned install script
 </li><li> Ability to search for users in the Admin CP based on their custom profile field values

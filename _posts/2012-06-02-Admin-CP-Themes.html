@@ -74,7 +74,7 @@ permalink: Admin_CP_Themes.html
 
 <p>For each stylesheet, you can see whether or not the theme is inherited (if it is, you will see a message next to the stylesheet name saying what theme it is inherited from), what files the stylesheet is attached to, and you can Edit the stylesheet or edit the stylesheet's properties.
 </p>
-<h3><span class="editsection">[<a href="http://localhost/mediawiki/index.php?title=Admin_CP_Themes&amp;action=edit&amp;section=5" title="Edit section: Add Stylesheet">edit</a>]</span> <span class="mw-headline" id="Add_Stylesheet"> Add Stylesheet </span></h3>
+
 <div class="thumb tright"><div class="thumbinner" style="width:182px;"><a href="File:ACP_Themes_Add_Stylesheet.png" class="image"><img alt="" src="../images/thumb/f/f3/ACP_Themes_Add_Stylesheet.png/180px-ACP_Themes_Add_Stylesheet.png" width="180" height="115" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="File:ACP_Themes_Add_Stylesheet.png" class="internal" title="Enlarge"><img src="/mediawiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Templates &amp; Style: Add Stylesheet</div></div></div>
 <p>You can add a stylesheet from the Edit Theme page by selecting the "Add Stylesheet" button near the top of the page.
 </p>
@@ -84,7 +84,7 @@ permalink: Admin_CP_Themes.html
 </dd></dl>
 <p>Click "Save Stylesheet" when you are ready to add the stylesheet to the theme.
 </p>
-<h3><span class="editsection">[<a href="http://localhost/mediawiki/index.php?title=Admin_CP_Themes&amp;action=edit&amp;section=6" title="Edit section: Editing a Stylesheet">edit</a>]</span> <span class="mw-headline" id="Editing_a_Stylesheet"> Editing a Stylesheet </span></h3>
+
 <p>When you edit a stylesheet, the Simple Mode is loaded first. From here, you can either continue to edit in Simple Mode, or switch to Advanced Mode, where you will be able to edit the stylesheet's raw CSS.
 </p>
 <h4><span class="editsection">[<a href="http://localhost/mediawiki/index.php?title=Admin_CP_Themes&amp;action=edit&amp;section=7" title="Edit section: Simple Mode">edit</a>]</span> <span class="mw-headline" id="Simple_Mode"> Simple Mode </span></h4>
@@ -221,7 +221,7 @@ permalink: Admin_CP_Themes.html
 </dd><dt>.post_content&#160;</dt><dd> Styling for post content
 </dd></dl>
 <div class="thumb tright"><div class="thumbinner" style="width:182px;"><a href="File:ACP_Themes_Edit_Stylesheet_Properties.png" class="image"><img alt="" src="../images/thumb/d/d3/ACP_Themes_Edit_Stylesheet_Properties.png/180px-ACP_Themes_Edit_Stylesheet_Properties.png" width="180" height="152" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="File:ACP_Themes_Edit_Stylesheet_Properties.png" class="internal" title="Enlarge"><img src="/mediawiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Templates &amp; Style: Edit Stylesheet Properties</div></div></div>
-<h3><span class="editsection">[<a href="http://localhost/mediawiki/index.php?title=Admin_CP_Themes&amp;action=edit&amp;section=10" title="Edit section: Editing Stylesheet Properties">edit</a>]</span> <span class="mw-headline" id="Editing_Stylesheet_Properties"> Editing Stylesheet Properties </span></h3>
+
 <dl><dt>File Name&#160;</dt><dd> The file name for this stylesheet. This typically ends with <b>.css</b> 
 </dd><dt>Attached to&#160;</dt><dd> Stylesheets can either be attached Globally (to all files) or to specific files. Select "Specific files" and then click on "Add another" if you wish to specify specific files for this stylesheet. For each file you specify, you can either have the stylesheet attached to the file globally or to specific actions. To attach the stylesheet to specific actions within the page, select "Specific actions" and then enter the actions, separated by a comma.
 </dd></dl>
@@ -258,7 +258,7 @@ permalink: Admin_CP_Themes.html
 
 <p>Any of these attributes can be left blank.
 </p>
-<h3><span class="editsection">[<a href="http://localhost/mediawiki/index.php?title=Admin_CP_Themes&amp;action=edit&amp;section=16" title="Edit section: Background">edit</a>]</span> <span class="mw-headline" id="Background"> Background </span></h3>
+
 <p>Here you can specify the background for the selected class. This is a very important part of editing the theme, for example, if you'd like to add the image for the background of a certain class, you will use:
 </p>
 <pre>#026CB1 url(images/thead_bg.gif)</pre>
@@ -276,26 +276,26 @@ permalink: Admin_CP_Themes.html
 <pre>#026CB1 url(images/thead_bg.gif) top left repeat-x</pre>
 <p>This code is the background of the <i>.thead</i> class. This will make the background color <i>#026CB1</i>, the background image <i>images/thead_bg.gif</i>, position the image at the top left, and will make the image repeat horizontally.
 </p>
-<h3><span class="editsection">[<a href="http://localhost/mediawiki/index.php?title=Admin_CP_Themes&amp;action=edit&amp;section=17" title="Edit section: Color">edit</a>]</span> <span class="mw-headline" id="Color"> Color </span></h3>
+
 <p>The color of the font used in this class. An example of this, for <i>.thead</i>, would be <i>#FFF</i> (white).
 </p>
-<h3><span class="editsection">[<a href="http://localhost/mediawiki/index.php?title=Admin_CP_Themes&amp;action=edit&amp;section=18" title="Edit section: Width">edit</a>]</span> <span class="mw-headline" id="Width"> Width </span></h3>
+
 <p>The width of the element, which can be in pixels, percentages, or <i>ems</i>. Pixels are exact, percentages are ranged, and <i>ems</i> are based on the browser's font size specification. For example, the width of <i>#container</i> is <i>95%</i> by default.
 </p>
-<h3><span class="editsection">[<a href="http://localhost/mediawiki/index.php?title=Admin_CP_Themes&amp;action=edit&amp;section=19" title="Edit section: Font Family">edit</a>]</span> <span class="mw-headline" id="Font_Family"> Font Family </span></h3>
+
 <p>The font used in this class. Listing more than one class allows for "fallback" fonts. This means that when the first font is not available on a user's computer, it will use the second font listed. MyBB's default font family specification is <i>Verdana, Arial, Sans-Serif</i>.
 </p>
-<h3><span class="editsection">[<a href="http://localhost/mediawiki/index.php?title=Admin_CP_Themes&amp;action=edit&amp;section=20" title="Edit section: Font Size">edit</a>]</span> <span class="mw-headline" id="Font_Size"> Font Size </span></h3>
+
 <p>The size of fonts in this class. 
 </p>
-<h3><span class="editsection">[<a href="http://localhost/mediawiki/index.php?title=Admin_CP_Themes&amp;action=edit&amp;section=21" title="Edit section: Font Style">edit</a>]</span> <span class="mw-headline" id="Font_Style"> Font Style </span></h3>
+
 <p>The style of the font. This includes:
 </p>
 <dl><dt>normal&#160;</dt><dd> Normal, default style
 </dd><dt>italic&#160;</dt><dd> <i>In italics</i>
 </dd><dt>oblique&#160;</dt><dd> <span style="font-style: oblique;">Oblique</span>
 </dd></dl>
-<h3><span class="editsection">[<a href="http://localhost/mediawiki/index.php?title=Admin_CP_Themes&amp;action=edit&amp;section=22" title="Edit section: Font Weight">edit</a>]</span> <span class="mw-headline" id="Font_Weight"> Font Weight </span></h3>
+
 <p>The thickness of the font, such as bold. This includes:
 </p>
 <dl><dt>normal&#160;</dt><dd> Normal, default style
@@ -304,7 +304,7 @@ permalink: Admin_CP_Themes.html
 </dd><dt>lighter&#160;</dt><dd> <span style="font-weight: lighter;">Lighter characters</span>
 </dd><dt>Value&#160;</dt><dd> 100-900, 400 being normal and 700 bold. This allows you to specify a value for the weight.
 </dd></dl>
-<h3><span class="editsection">[<a href="http://localhost/mediawiki/index.php?title=Admin_CP_Themes&amp;action=edit&amp;section=23" title="Edit section: Text Decoration">edit</a>]</span> <span class="mw-headline" id="Text_Decoration"> Text Decoration </span></h3>
+
 <p>This allows you to underline, strikethrough, etc. this class. This includes:
 </p>
 <dl><dt>none&#160;</dt><dd> Default, normal text

@@ -20,12 +20,12 @@ permalink: Fetch_Field.html
 <p>1) fetch_field -- Fetch one specific field from a row being queried
 </p><p><br />
 </p>
-<h3><span class="editsection">[<a href="http://localhost/mediawiki/index.php?title=Fetch_Field&amp;action=edit&amp;section=2" title="Edit section: Description">edit</a>]</span> <span class="mw-headline" id="Description"> Description </span></h3>
+
 <p>string <b>fetch_field</b> ( resource query, string field [, int row] )
 </p><p>Retrieves the contents of one cell from a MySQL result set.
 </p><p>When working on large result sets, you should consider using one of the functions that fetch an entire row (i.e. $db-&gt;fetch_array()). As these functions return the contents of multiple cells in one function call, they're MUCH quicker than $db-&gt;fetch_field(). Also, note that specifying a numeric offset for the field argument is much quicker than specifying a fieldname or tablename.fieldname argument.
 </p>
-<h3><span class="editsection">[<a href="http://localhost/mediawiki/index.php?title=Fetch_Field&amp;action=edit&amp;section=3" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters"> Parameters </span></h3>
+
 <p>query
 </p>
 <pre>The query resource id that is being evaluated. This result comes from a call 
@@ -46,10 +46,10 @@ field name (tablename.fieldname). If the column name has been aliased
 ('select foo as bar from...'), use the alias instead of the column name. If 
 undefined, the first field is retrieved.
 </pre>
-<h3><span class="editsection">[<a href="http://localhost/mediawiki/index.php?title=Fetch_Field&amp;action=edit&amp;section=4" title="Edit section: Return Values">edit</a>]</span> <span class="mw-headline" id="Return_Values"> Return Values </span></h3>
+
 <p>The contents of one cell from a MySQL result set on success, or FALSE on failure.
 </p>
-<h3><span class="editsection">[<a href="http://localhost/mediawiki/index.php?title=Fetch_Field&amp;action=edit&amp;section=5" title="Edit section: Examples">edit</a>]</span> <span class="mw-headline" id="Examples"> Examples </span></h3>
+
 <p>Example 1. $db-&gt;fetch_field() example
 </p>
 <pre>
@@ -62,7 +62,7 @@ $title = $db-&gt;fetch_field($query, &quot;title&quot;);
 echo $title;
 
 </pre>
-<h3><span class="editsection">[<a href="http://localhost/mediawiki/index.php?title=Fetch_Field&amp;action=edit&amp;section=6" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes"> Notes </span></h3>
+
 <pre>Note: Calls to $db-&gt;fetch_field() should not be mixed with calls to other 
 functions that deal with the result set.
 </pre>

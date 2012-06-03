@@ -27,7 +27,7 @@ permalink: Usergroups.html
 
 <p>There are different types of user groups. These depend on settings in the <a href="http://localhost/mediawiki/index.php?title=Admin_CP_User_Groups&amp;action=edit&amp;redlink=1" class="new" title="Admin CP User Groups (page does not exist)">Admin CP</a>.
 </p>
-<h3><span class="editsection">[<a href="http://localhost/mediawiki/index.php?title=User_Groups&amp;action=edit&amp;section=2" title="Edit section: Default User Groups">edit</a>]</span> <span class="mw-headline" id="Default_User_Groups"> Default User Groups </span></h3>
+
 <p>Default user groups are those that come with MyBB by default.
 </p>
 <dl><dt>Super Administrators</dt><dd> This is the usergroup for the very first user set up when MyBB was installed.  Users in this group cannot be deleted, changed or banned.  These users are also members of the "Administrators" group.  Users cannot be added to this group through the Admin CP; they must be added by changing settings in the <a href="Inc/config.php#Super_Administrators" title="Inc/config.php">inc/config.php</a> file. <b>Note:</b> This is note a <i>real</i> usergroup. It is an extension of the Administrators Usergroup.
@@ -39,20 +39,20 @@ permalink: Usergroups.html
 </dd><dt>Super Moderators</dt><dd> Users in this usergroup can moderate <i>any</i> forum.
 </dd><dt>Guests</dt><dd> This usergroup is used to give permissions to guests and search engine spiders.  Usually no users will appear in this usergroup.
 </dd></dl>
-<h3><span class="editsection">[<a href="http://localhost/mediawiki/index.php?title=User_Groups&amp;action=edit&amp;section=3" title="Edit section: Custom User Groups">edit</a>]</span> <span class="mw-headline" id="Custom_User_Groups"> Custom User Groups </span></h3>
+
 <p>Custom user groups are any other user group that the board administrator has created.
 </p>
-<h3><span class="editsection">[<a href="http://localhost/mediawiki/index.php?title=User_Groups&amp;action=edit&amp;section=4" title="Edit section: Publically Joinable Custom Groups">edit</a>]</span> <span class="mw-headline" id="Publically_Joinable_Custom_Groups"> Publically Joinable Custom Groups </span></h3>
+
 <p>These are custom user groups that any user can join themselves (depending on the user group settings, the users' join requests may have to be moderated by a group leader or administrator first) through the <a href="http://mybb.github.com/MyBB-Resources/User_CP.html#Group_Memberships" title="User CP">User CP</a>.
 </p>
 
-<h3><span class="editsection">[<a href="http://localhost/mediawiki/index.php?title=User_Groups&amp;action=edit&amp;section=6" title="Edit section: Primary User Group">edit</a>]</span> <span class="mw-headline" id="Primary_User_Group"> Primary User Group </span></h3>
+
 <p>Each user must have a primary user group.  This is the main user group that will give the base permissions for the user.
 </p>
-<h3><span class="editsection">[<a href="http://localhost/mediawiki/index.php?title=User_Groups&amp;action=edit&amp;section=7" title="Edit section: Secondary User Group">edit</a>]</span> <span class="mw-headline" id="Secondary_User_Group"> Secondary User Group </span></h3>
+
 <p>Each user may have multiple secondary user groups.  The permission settings in these will affect the overall permission-set for the user (see below).
 </p>
-<h3><span class="editsection">[<a href="http://localhost/mediawiki/index.php?title=User_Groups&amp;action=edit&amp;section=8" title="Edit section: Display User Group">edit</a>]</span> <span class="mw-headline" id="Display_User_Group"> Display User Group </span></h3>
+
 <p>This usergroup is purely for setting the user group that will be shown for the user.  It does not affect permissions in any way.  For example, if a user had the Registered user group as his primary user group and the Administrators group as the display user group, he will appear as an administrator on his posts, and his username will be in the Administrator color, but he will not have any administrator permissions as he is not part of the Administrators user group.
 </p>
 

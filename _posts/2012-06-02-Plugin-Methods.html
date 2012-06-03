@@ -34,10 +34,10 @@ permalink: Plugin_Methods.html
 <p>Some of these objects may be available or not, depending on what hook your plugin code is run by. For example, <code>$forum</code> is available only in <code>build_forumbits_forum</code> hooks, if it wsa passed as a parameter.
 </p><p>To explore the properties of an object, use the PHP function <a rel="nofollow" class="external text" href="http://php.net/manual/en/function.print-r.php">print_r</a>.
 </p>
-<h3><span class="editsection">[<a href="http://localhost/mediawiki/index.php?title=Plugin_Methods&amp;action=edit&amp;section=3" title="Edit section: $db">edit</a>]</span> <span class="mw-headline" id=".24db"> $db </span></h3>
+
 <p>MyBB uses the $db variable to perform various database functions. These range from writing to deleting queries. For a full list of available methods, see the <a href="http://mybb.github.com/MyBB-Resources/Database_Methods.html" title="Database Methods">Database Methods</a> page.
 </p>
-<h3><span class="editsection">[<a href="http://localhost/mediawiki/index.php?title=Plugin_Methods&amp;action=edit&amp;section=4" title="Edit section: $lang">edit</a>]</span> <span class="mw-headline" id=".24lang"> $lang </span></h3>
+
 <p>$lang calls on language settings. If you're creating a plugin, or creating custom code that you plan on redistributing, you should always use language variables. This allows your coding to be translated into the many languages MyBB users speak. Language files are found in ./inc/languages/{language_pack}/. To create your own language file, simply make a standard PHP file (with <i>&lt;?php</i> tags) and use variables like this:
 </p>
 <pre>$l['isloggedin'] = &quot;This user is logged in.&quot;;
@@ -68,7 +68,7 @@ function foo_dosomethingcool()
 <p>$mybb-&gt;user['username'] will replace the {1}, and $lastvisit (the time of the user's last visit) will replace the {2}. That means the string will read: <i>Welcome back, <b>User</b>. You last visited: Yesterday, 12:32pm</i> (for example).
 </p><p>If you're stuck with language settings, you can get help at the <a rel="nofollow" class="external text" href="http://community.mybboard.net/forum-72.html">MyBB Community Forum</a>.
 </p>
-<h3><span class="editsection">[<a href="http://localhost/mediawiki/index.php?title=Plugin_Methods&amp;action=edit&amp;section=5" title="Edit section: $mybb">edit</a>]</span> <span class="mw-headline" id=".24mybb"> $mybb </span></h3>
+
 <p>The $mybb object can be used (amoung other things) to access cookies, user and usergroup details and settings.
 </p>
 <dl><dd><b>$mybb-&gt;cookies['cookiename']</b>
@@ -87,23 +87,23 @@ function foo_dosomethingcool()
 <dl><dd>Replace 'fieldname' with the name (not title) of a setting (example: <i>bburl</i> will return the board URL).
 </dd></dl>
 </dd></dl>
-<h3><span class="editsection">[<a href="http://localhost/mediawiki/index.php?title=Plugin_Methods&amp;action=edit&amp;section=6" title="Edit section: $templates">edit</a>]</span> <span class="mw-headline" id=".24templates"> $templates </span></h3>
+
 <p>Returns the templates manager. The standard idiom for evaluating a template is:
 </p>
 <pre>
 eval(&quot;\$string_our_plugin_exports = \&quot;&quot;.$templates-&gt;get(&quot;our_plugin_template&quot;).&quot;\&quot;;&quot;);
 </pre>
-<h3><span class="editsection">[<a href="http://localhost/mediawiki/index.php?title=Plugin_Methods&amp;action=edit&amp;section=7" title="Edit section: $thread">edit</a>]</span> <span class="mw-headline" id=".24thread"> $thread </span></h3>
+
 <p>Returns the current thread object.
 </p>
-<h3><span class="editsection">[<a href="http://localhost/mediawiki/index.php?title=Plugin_Methods&amp;action=edit&amp;section=8" title="Edit section: $tids">edit</a>]</span> <span class="mw-headline" id=".24tids"> $tids </span></h3>
+
 <p>Comma-separated list of thread IDs, constructed by <code>forumdisplay.php</code>.
 </p><p><b>TBD</b> - which thread IDs are these? those visible in the current page of the same forum as the current thread?
 </p><p><br />
 </p>
 
-<h3><span class="editsection">[<a href="http://localhost/mediawiki/index.php?title=Plugin_Methods&amp;action=edit&amp;section=10" title="Edit section: cache themes()">edit</a>]</span> <span class="mw-headline" id="cache_themes.28.29"> cache_themes() </span></h3>
-<h3><span class="editsection">[<a href="http://localhost/mediawiki/index.php?title=Plugin_Methods&amp;action=edit&amp;section=11" title="Edit section: find replace templatesets($templatename, $string, $replacement string)">edit</a>]</span> <span class="mw-headline" id="find_replace_templatesets.28.24templatename.2C_.24string.2C_.24replacement_string.29"> find_replace_templatesets($templatename, $string, $replacement_string) </span></h3>
+
+
 <p>Replaces text inside templates. Useful to insert your own variables.
 </p><p>Example (from the <a rel="nofollow" class="external text" href="http://mods.mybb.com/view/i-m-subscribed">I'm Subscribed plugin</a>):
 </p>
