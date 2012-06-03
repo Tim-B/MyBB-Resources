@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-	<title>MyBB Documentation - {{ page.title }}</title>
+	<title>{{ page.title }}</title>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 	<meta name="author" content="MyBB Group" />
 	<meta name="copyright" content="Copyright MyBB Group." />
@@ -54,17 +54,18 @@
 					<div class="item">
 					<div class="sidebar_top"><div class="right"></div></div>
 						<h3>Categories</h3>
-						<ul>
-						
-							{% for category in site.sorted_categories %}
-							here is a category name - {{ category | first }}
-							here is the number of posts in this category - {{ category | last | size }}
-							{% for post in category.last %}
-							posts in this category - {{ post.url }} {{ post.date | date_to_string }}
-							{% endfor %}
-							{% endfor %}							{% for category in site.sorted_categories %}
-								<li><a href="{{ post.url }}">{{ category | first }}</a></li>
-							{% endfor %}
+						<ul class="docs_categories">
+						 {% for category in site.categories %} 
+						  <li><a name="{{ category | first }}">{{ category | first }}</a> 
+							<ul class="docs_subcat"> 
+							{% for posts in category %} 
+							  {% for post in posts %} 
+								<li><a href="{{ post.url }}">{{ post.title }}</a></li> 
+							  {% endfor %} 
+							{% endfor %} 
+							</ul> 
+						  </li> 
+						{% endfor %} 
 						</ul>
 					<div class="sidebar_bottom"><div class="right"></div></div>
 					</div>
