@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<title>MyBB Documentation - MyBB Version:1.6.0</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta name="author" content="MyBB Group" />
+	<meta name="copyright" content="Copyright MyBB Group." />
+	<meta name="description" content="The official documentation for MyBB, a free PHP and MySQL based discussion system." />
+	<link rel="stylesheet" type="text/css" href="http://mybb.com/assets/screen.css?xmas" />
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="http://mybb.com/assets/screen_ie.css?zz" />
+	<![endif]-->
+
+	<script type="text/javascript" src="http://mybb.com/jscripts/prototype.lite.js"></script>
+	<script type="text/javascript" src="http://mybb.com/jscripts/general.js"></script>
+	<script type="text/javascript" src="http://mybb.com/jscripts/moo.ajax.js"></script>
+	<script type="text/javascript" src="http://mybb.com/jscripts/lightbox.js"></script>
+	<!--[if lt IE 7]>
+	<script defer type="text/javascript" src="http://mybb.com/assets/pngfix.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div id="shadow">
+		<div id="container">
+			<!--search:no_index-->
+			<h1><span class="invisible">MyBB</span></h1>
+			<div id="header">
+			<a class="link" href="/"></a>
+				<div id="search">
+					<form action="/search" method="get"><fieldset><label for="search_box"><span id="search_left">&nbsp;</span></label><input type="text" name="query" id="search_box" title="Enter your search keywords" /><input type="submit" value="Search" name="submit-search" id="search_button" /></fieldset></form>
+				</div>
+				<div id="menu">
+				<ul>
+					<li class="default"><a href="/">Home</a></li>
+					<li class="default"><a href="/about">About</a></li>
+					<li class="default"><a href="/features">Features</a></li>
+					<li class="default"><a href="/downloads">Downloads</a></li>
+					<li class="default"><a href="http://community.mybb.com/">Community Forum</a></li>
+					<li class="default"><a href="/get-involved">Get Involved</a></li>
+					<li class="default"><a href="http://ideas.mybb.com/">Ideas</a></li>
+					<li class="default"><a href="http://mods.mybb.com/">Mods</a></li>
+					<li class="active"><a href="http://wiki.mybb.com/">Wiki</a></li>
+					<li class="default"><a href="http://blog.mybb.com/">Blog</a></li>
+
+				</ul>
+				</div>
+			</div>
+			
+			
+			<!--/search:no_index-->
+			<div id="content">
+				<div id="sidebar">
+					<div class="item">
+					<div class="sidebar_top"><div class="right"></div></div>
+						<h3>Categories</h3>
+						<ul>
+						
+														
+						</ul>
+					<div class="sidebar_bottom"><div class="right"></div></div>
+					</div>
+				</div>
+				
+				<div id="page">
+					<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Release_Date"><span class="tocnumber">1</span> <span class="toctext">Release Date</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Announcement_Summary"><span class="tocnumber">2</span> <span class="toctext">Announcement Summary</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Overview"><span class="tocnumber">3</span> <span class="toctext">Overview</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#New_PHP_Requirement"><span class="tocnumber">3.1</span> <span class="toctext">New PHP Requirement</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Feature_Preview"><span class="tocnumber">3.2</span> <span class="toctext">Feature Preview</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Completed_Features_and_Changes"><span class="tocnumber">3.3</span> <span class="toctext">Completed Features and Changes</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+
+<p>MyBB 1.6 was released on 3 August 2010.
+</p>
+
+<p>I'm very proud to announce that MyBB 1.6 has been released and is now available directly on the MyBB website.
+</p><p>MyBB 1.6 is a brand new release which vastly improves the functionality of your forum. There are over 40+ new features that have been built in to MyBB which include Delayed Moderation, an Improved Reputation System and many more.
+</p><p>More information on the MyBB Blog: <a rel="nofollow" class="external free" href="http://blog.mybb.com/2010/08/03/mybb-1-6-released/">http://blog.mybb.com/2010/08/03/mybb-1-6-released/</a>
+</p>
+
+<p>MyBB 1.6.0 is the latest major release for the MyBB series, meaning it will includes several new features and other tweaks to improve the MyBB software.
+</p><p>A feature tour of MyBB 1.6 is available on the <a rel="nofollow" class="external text" href="http://www.mybb.com/features">MyBB website</a>.
+</p>
+
+<p>Starting with MyBB 1.6 and onwards, the minimum requirement for PHP is <b>PHP 5.1.0</b> or newer.  We are glad to make this leap forward from PHP 4 and being able to take advantage of the new features of PHP 5 that we were not able to use with PHP 4 compatibility.  Remember to check with your host, before upgrading to MyBB 1.6!
+</p>
+
+<p>A series of posts on the MyBB Development have highlighted several new features in MyBB 1.6:
+</p>
+<ul><li> <a rel="nofollow" class="external text" href="http://blog.mybboard.net/2010/01/01/mybb-16-sneak-preview-part-1/">MyBB 1.6 Sneak Preview (Part 1)</a>
+</li><li> <a rel="nofollow" class="external text" href="http://blog.mybboard.net/2010/01/25/mybb-1-6-sneak-preview-part-2/">MyBB 1.6 Sneak Preview (Part 2)</a>
+</li></ul>
+
+<ul><li> Avatar time/date stamped (<a rel="nofollow" class="external text" href="http://dev.mybboard.net/issues/279">development tracker</a>)
+</li><li> Quick Language Phrases (<a rel="nofollow" class="external text" href="http://dev.mybboard.net/issues/40">development tracker</a>)
+</li><li> Thread prefixes (<a rel="nofollow" class="external text" href="http://dev.mybboard.net/issues/36">development tracker</a>)
+</li><li> User notes for mods/admins (<a rel="nofollow" class="external text" href="http://dev.mybboard.net/issues/35">development tracker</a>)
+</li><li> Breadcrumb pagination drop-down (<a rel="nofollow" class="external text" href="http://dev.mybboard.net/issues/213">development tracker</a>)
+</li><li> Reverse IP Address Lookup (<a rel="nofollow" class="external text" href="http://ideas.mybboard.net/idea/ip-locator-on-ip-search-page">more information</a>) (<a rel="nofollow" class="external text" href="http://dev.mybboard.net/issues/25">development tracker</a>)
+</li><li> Search for unapproved posts (<a rel="nofollow" class="external text" href="http://dev.mybboard.net/issues/37">development tracker</a>)
+</li><li> Edit link for Announcements (<a rel="nofollow" class="external text" href="http://dev.mybboard.net/issues/27">development tracker</a>)
+</li><li> Improvements to error codes (<a rel="nofollow" class="external text" href="http://dev.mybboard.net/issues/146">development tracker</a>)
+</li><li> External theme image server (<a rel="nofollow" class="external text" href="http://dev.mybboard.net/issues/455">development tracker</a>)
+</li><li> Group as moderator (<a rel="nofollow" class="external text" href="http://ideas.mybboard.net/idea/group-as-forum-moderator">more information</a>) (<a rel="nofollow" class="external text" href="http://dev.mybboard.net/issues/24">development tracker</a>)
+</li><li> Link to add/remove buddy in profile (<a rel="nofollow" class="external text" href="http://dev.mybboard.net/issues/32">development tracker</a>)
+</li><li> Automated recount process (<a rel="nofollow" class="external text" href="http://dev.mybboard.net/issues/159">development tracker</a>)
+</li><li> Maximum login attempts for ACP (<a rel="nofollow" class="external text" href="http://dev.mybboard.net/issues/28">development tracker</a>)
+</li><li> Nested quote limits (<a rel="nofollow" class="external text" href="http://community.mybboard.net/thread-50280-post-352366.html#pid352366">more information</a>) (<a rel="nofollow" class="external text" href="http://dev.mybboard.net/issues/42">development tracker</a>)
+</li><li> Ability to reload/rebuild all caches (<a rel="nofollow" class="external text" href="http://dev.mybboard.net/issues/129">development tracker</a>)
+</li><li> Remove banned user posts (<a rel="nofollow" class="external text" href="http://dev.mybboard.net/issues/281">development tracker</a>)
+</li><li> Search users based on custom profile fields in ACP (<a rel="nofollow" class="external text" href="http://dev.mybboard.net/issues/339">development tracker</a>)
+</li><li> Alphabetic sorting of stylesheet selectors in simple theme editor (<a rel="nofollow" class="external text" href="http://dev.mybboard.net/issues/152">development tracker</a>)
+</li><li> Multiple memcached server support (<a rel="nofollow" class="external text" href="http://dev.mybboard.net/issues/282">development tracker</a>)
+</li><li> Change poll vote (<a rel="nofollow" class="external text" href="http://dev.mybboard.net/issues/45">development tracker</a>)
+</li><li> Update/replace attachments (<a rel="nofollow" class="external text" href="http://dev.mybboard.net/issues/277">development tracker</a>)
+</li><li> Upgrade script improvements (<a rel="nofollow" class="external text" href="http://dev.mybboard.net/issues/147">development tracker</a>)
+</li><li> Video embedding (<a rel="nofollow" class="external text" href="http://dev.mybboard.net/issues/280">development tracker</a>)
+</li><li> ACP Edit User link in profile (<a rel="nofollow" class="external text" href="http://dev.mybboard.net/issues/283">development tracker</a>)
+</li><li> Hide error messages (<a rel="nofollow" class="external text" href="http://dev.mybboard.net/issues/148">development tracker</a>)
+</li><li> Select all threads from all pages (<a rel="nofollow" class="external text" href="http://dev.mybboard.net/issues/41">development tracker</a>)
+</li><li> Group join requests alert (<a rel="nofollow" class="external text" href="http://dev.mybboard.net/issues/278">development tracker</a>)
+</li><li> Forum permissions improvements (<a rel="nofollow" class="external text" href="http://community.mybboard.net/thread-53648-post-379882.html#pid379882">more information</a>) (<a rel="nofollow" class="external text" href="http://dev.mybboard.net/issues/210">development tracker</a>)
+</li><li> Remember me on login (<a rel="nofollow" class="external text" href="http://ideas.mybboard.net/idea/remember-me-2">more information</a>) (<a rel="nofollow" class="external text" href="http://dev.mybboard.net/issues/30">development tracker</a>)
+</li><li> PM search (<a rel="nofollow" class="external text" href="http://community.mybboard.net/thread-39845-post-383290.html#pid383290">more information</a>) (<a rel="nofollow" class="external text" href="http://dev.mybboard.net/issues/39">development tracker</a>)
+</li><li> Automatic user pruning (<a rel="nofollow" class="external text" href="http://ideas.mybboard.net/idea/deleting-users-awaiting-activation">more information</a>) (<a rel="nofollow" class="external text" href="http://dev.mybboard.net/issues/43">development tracker</a>)
+</li><li> Verifying files with checksums (<a rel="nofollow" class="external text" href="http://community.mybboard.net/thread-41972-post-286514.html#pid286514">more information</a>)  (<a rel="nofollow" class="external text" href="http://dev.mybboard.net/issues/23">development tracker</a>)
+</li><li> View own threads only (<a rel="nofollow" class="external text" href="http://dev.mybboard.net/issues/44">development tracker</a>)
+</li><li> Extended reputation system (<a rel="nofollow" class="external text" href="http://dev.mybboard.net/issues/214">development tracker</a>)
+</li><li> Only receive PMs from buddies (<a rel="nofollow" class="external text" href="http://dev.mybboard.net/issues/29">development tracker</a>)
+</li><li> Restructured User CP home (<a rel="nofollow" class="external text" href="http://dev.mybboard.net/issues/26">development tracker</a>)
+</li><li> Updated search engine list (<a rel="nofollow" class="external text" href="http://dev.mybboard.net/issues/259">development tracker</a>)
+</li><li> Users online in thread (<a rel="nofollow" class="external text" href="http://ideas.mybboard.net/idea/whos-viewing-the-thread">more information</a>) (<a rel="nofollow" class="external text" href="http://dev.mybboard.net/issues/216">development tracker</a>)
+</li><li> Member list letter sorting (<a rel="nofollow" class="external text" href="http://dev.mybboard.net/issues/212">development tracker</a>)
+</li><li> Updated global notice styling (<a rel="nofollow" class="external text" href="http://dev.mybboard.net/issues/351">development tracker</a>)
+</li><li> Per user settings via ACP / Mod CP (<a rel="nofollow" class="external text" href="http://dev.mybboard.net/issues/211">development tracker</a>)
+</li><li> Mass actions for Users in ACP (<a rel="nofollow" class="external text" href="http://dev.mybboard.net/issues/31">development tracker</a>)
+</li><li> Delayed moderation actions (<a rel="nofollow" class="external text" href="http://dev.mybboard.net/issues/215">development tracker</a>)
+</li><li> Referral system enhancements (<a rel="nofollow" class="external text" href="http://dev.mybboard.net/issues/33">development tracker</a>)
+</li><li> ACP statistics graphs (<a rel="nofollow" class="external text" href="http://dev.mybboard.net/issues/459">development tracker</a>)
+</li><li> ACP integrated themes &amp; plugins list (<a rel="nofollow" class="external text" href="http://dev.mybboard.net/issues/362">development tracker</a>)
+</li></ul>
+<div style="border: 1px solid #ddd; background-color: #f5f5f5; padding: 5px; margin: 5px;">
+<div style="text-align: center; font-size: 18px; margin-bottom: 5px;"><b><a href="http://mybb.github.com/MyBB-Resources/Versions.html" title="Versions">MyBB Versions</a></b></div>
+<table cellpadding="3" cellspacing="3" style="font-size: 95%; line-spacing:1; border: 1px solid #ddd; width: 100%; margin-bottom: 5px; background: #fff;">
+<tr>
+<td style="vertical-align: middle; font-size: 11px;"><i><b>2.0.x</b></i>
+</td>
+<td style="vertical-align: middle; width: 90%;"><div style="float: right; font-size: 11px;"><i><b>In Planning/Early Development</b></i></div><div style="font-size: 11px;"><i><a href="2.0.0" title="2.0.0">2.0.0</a></i></div>
+</td></tr></table>
+<table cellpadding="3" cellspacing="3" style="font-size: 95%; line-spacing:1; border: 1px solid #ddd; width: 100%; margin-bottom: 5px; background: #fff;">
+<tr>
+<td style="vertical-align: middle;"><i><b>1.8.x</b></i>
+</td>
+<td style="vertical-align: middle; width: 90%;"><div style="float: right;"><i><b>In Development</b></i></div><div><i><a href="1.8.0" title="1.8.0">1.8.0</a></i></div>
+</td></tr></table>
+<table cellpadding="3" cellspacing="3" style="font-size: 95%; line-spacing:1; border: 1px solid #ddd; width: 100%; margin-bottom: 5px; background: #fff;">
+<tr>
+<td style="vertical-align: middle; font-size: 14px;"><b>1.6.x</b>
+</td>
+<td style="vertical-align: middle; width: 90%;"><div><span style="background: #FFF6BF; border: 1px solid #FFD324; padding: 3px;"><a href="1.6.8" title="1.6.8">1.6.8</a></span> - <a href="1.6.7" title="1.6.7">1.6.7</a> - <a href="1.6.6" title="1.6.6">1.6.6</a> - <a href="1.6.5" title="1.6.5">1.6.5</a> - <a href="1.6.4" title="1.6.4">1.6.4</a> - <a href="1.6.3" title="1.6.3">1.6.3</a> - <a href="1.6.2" title="1.6.2">1.6.2</a> - <a href="1.6.1" title="1.6.1">1.6.1</a> - <strong class="selflink">1.6.0</strong></div>
+</td></tr></table>
+<table cellpadding="3" cellspacing="3" style="font-size: 95%; line-spacing:1; border: 1px solid #ddd; width: 100%; margin-bottom: 5px; background: #fff;">
+<tr>
+<td style="vertical-align: middle; font-size: 14px;"><b>1.4.x</b>
+</td>
+<td style="vertical-align: middle; width: 90%;"><a href="1.4.16" title="1.4.16">1.4.16</a> - <a href="1.4.15" title="1.4.15">1.4.15</a> - <a href="1.4.14" title="1.4.14">1.4.14</a> - <a href="1.4.13" title="1.4.13">1.4.13</a> - <a href="1.4.12" title="1.4.12">1.4.12</a> - <a href="1.4.11" title="1.4.11">1.4.11</a> - <a href="1.4.10" title="1.4.10">1.4.10</a> - <a href="1.4.9" title="1.4.9">1.4.9</a> - <a href="1.4.8" title="1.4.8">1.4.8</a> - <a href="1.4.7" title="1.4.7">1.4.7</a> - <a href="1.4.6" title="1.4.6">1.4.6</a> - <a href="1.4.5" title="1.4.5">1.4.5</a> - <a href="1.4.4" title="1.4.4">1.4.4</a> - <a href="1.4.3" title="1.4.3">1.4.3</a> - <a href="1.4.2" title="1.4.2">1.4.2</a> - <a href="1.4.1" title="1.4.1">1.4.1</a> - <a href="1.4.0" title="1.4.0">1.4.0</a>
+</td></tr></table>
+<table cellpadding="3" cellspacing="3" style="font-size: 95%; line-spacing:1; border: 1px solid #ddd; width: 100%; margin-bottom: 5px; background: #fff;">
+<tr>
+<td style="vertical-align: middle; font-size: 14px;"><b>1.2.x</b>
+</td>
+<td style="vertical-align: middle; width: 90%;"><a href="1.2.14" title="1.2.14">1.2.14</a> - <a href="1.2.13" title="1.2.13">1.2.13</a> - <a href="1.2.12" title="1.2.12">1.2.12</a> - <a href="1.2.11" title="1.2.11">1.2.11</a> - <a href="1.2.10" title="1.2.10">1.2.10</a> - <a href="1.2.9" title="1.2.9">1.2.9</a> - <a href="1.2.8" title="1.2.8">1.2.8</a> - <a href="1.2.7" title="1.2.7">1.2.7</a> - <a href="1.2.6" title="1.2.6">1.2.6</a> - <a href="1.2.5" title="1.2.5">1.2.5</a> - <a href="1.2.4" title="1.2.4">1.2.4</a> - <a href="1.2.3" title="1.2.3">1.2.3</a> - <a href="1.2.2" title="1.2.2">1.2.2</a> - <a href="1.2.1" title="1.2.1">1.2.1</a> - <a href="1.2.0" title="1.2.0">1.2.0</a>
+</td></tr></table>
+<table cellpadding="3" cellspacing="3" style="font-size: 95%; line-spacing:1; border: 1px solid #ddd; width: 100%; margin-bottom: 5px; background: #fff;">
+<tr>
+<td style="vertical-align: middle; font-size: 14px;"><b>1.1.x / 1.0x</b>
+</td>
+<td style="vertical-align: middle; width: 90%;"><a href="1.1.8" title="1.1.8">1.1.8</a> - <a href="1.1.7" title="1.1.7">1.1.7</a> - <a href="1.1.6" title="1.1.6">1.1.6</a> - <a href="1.1.5" title="1.1.5">1.1.5</a> - <a href="1.1.4" title="1.1.4">1.1.4</a> - <a href="1.1.3" title="1.1.3">1.1.3</a> - <a href="1.1.2" title="1.1.2">1.1.2</a> - <a href="1.1.1" title="1.1.1">1.1.1</a> - <a href="1.1.0" title="1.1.0">1.1.0</a> - <a href="1.04" title="1.04">1.04</a> - <a href="1.03" title="1.03">1.03</a> - <a href="1.02" title="1.02">1.02</a> - <a href="1.01" title="1.01">1.01</a> - <a href="1.00" title="1.00">1.00</a>
+</td></tr></table>
+<table cellpadding="3" cellspacing="3" style="font-size: 95%; line-spacing:1; border: 1px solid #ddd; width: 100%; margin-bottom: 5px; background: #fff;">
+<tr>
+<td style="vertical-align: middle; font-size: 14px;"><b>Pre-1.0</b>
+</td>
+<td style="vertical-align: middle; width: 90%;"><a href="http://mybb.github.com/MyBB-Resources/PR2.html" title="PR2">PR2</a> - <i><a href="http://mybb.github.com/MyBB-Resources/PR1.html" title="PR1">PR1</a></i> - <a href="http://mybb.github.com/MyBB-Resources/RC4.html" title="RC4">RC4</a> - <a href="http://mybb.github.com/MyBB-Resources/RC3.html" title="RC3">RC3</a> - <a href="http://mybb.github.com/MyBB-Resources/RC2.html" title="RC2">RC2</a> - <a href="http://mybb.github.com/MyBB-Resources/RC1.html" title="RC1">RC1</a> - <a href="http://mybb.github.com/MyBB-Resources/Beta_4.html" title="Beta 4">Beta 4</a> - <a href="http://mybb.github.com/MyBB-Resources/DevBB.html" title="DevBB">DevBB</a>
+</td></tr></table>
+<table cellpadding="3" cellspacing="3" style="font-size: 95%; line-spacing:1; border: 1px solid #ddd; width: 100%; margin-bottom: 5px; background: #fff;">
+<tr>
+<td style="vertical-align: middle; font-size: 14px;"><b>Legend</b>
+</td>
+<td style="vertical-align: middle; width: 90%;"><span style="margin-right: 20px; font-size: 11px;"><i>In Planning</i></span> <span style="margin-right: 20px;"><i>Development / Beta / Private</i></span> <span style="background: #FFF6BF; border: 1px solid #FFD324; padding: 3px;">Latest Public Release</span>
+</td></tr></table>
+</div>
+<p><br />
+</p>
+
+
+
+
+					
+					Last updated on: 2012-06-02 00:00:00 -0700.
+				</div>
+			</div>
+		</div>
+		
+		<div id="footer">
+				<script type="text/javascript" src="http://mybb.com/footer_credit.js"></script>
+				<p>Copyright &copy; 2010 MyBB Group. All rights reserved.</p>
+				<p><a href="/contact">Contact</a> MyBB Group &mdash; <em>for support with MyBB, visit <a href="/support">support</a></em></p><br />
+			</div>
+		</div>  
+	</div>
+	
+	<div id="shadow_footer"></div>
+
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-11443733-2']);
+	  _gaq.push(['_setDomainName', 'none']);
+	  _gaq.push(['_setAllowLinker', true]);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+</body>
+</html>
+

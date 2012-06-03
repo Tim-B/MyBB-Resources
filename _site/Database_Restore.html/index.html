@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<title>MyBB Documentation - Database Restore</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta name="author" content="MyBB Group" />
+	<meta name="copyright" content="Copyright MyBB Group." />
+	<meta name="description" content="The official documentation for MyBB, a free PHP and MySQL based discussion system." />
+	<link rel="stylesheet" type="text/css" href="http://mybb.com/assets/screen.css?xmas" />
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="http://mybb.com/assets/screen_ie.css?zz" />
+	<![endif]-->
+
+	<script type="text/javascript" src="http://mybb.com/jscripts/prototype.lite.js"></script>
+	<script type="text/javascript" src="http://mybb.com/jscripts/general.js"></script>
+	<script type="text/javascript" src="http://mybb.com/jscripts/moo.ajax.js"></script>
+	<script type="text/javascript" src="http://mybb.com/jscripts/lightbox.js"></script>
+	<!--[if lt IE 7]>
+	<script defer type="text/javascript" src="http://mybb.com/assets/pngfix.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div id="shadow">
+		<div id="container">
+			<!--search:no_index-->
+			<h1><span class="invisible">MyBB</span></h1>
+			<div id="header">
+			<a class="link" href="/"></a>
+				<div id="search">
+					<form action="/search" method="get"><fieldset><label for="search_box"><span id="search_left">&nbsp;</span></label><input type="text" name="query" id="search_box" title="Enter your search keywords" /><input type="submit" value="Search" name="submit-search" id="search_button" /></fieldset></form>
+				</div>
+				<div id="menu">
+				<ul>
+					<li class="default"><a href="/">Home</a></li>
+					<li class="default"><a href="/about">About</a></li>
+					<li class="default"><a href="/features">Features</a></li>
+					<li class="default"><a href="/downloads">Downloads</a></li>
+					<li class="default"><a href="http://community.mybb.com/">Community Forum</a></li>
+					<li class="default"><a href="/get-involved">Get Involved</a></li>
+					<li class="default"><a href="http://ideas.mybb.com/">Ideas</a></li>
+					<li class="default"><a href="http://mods.mybb.com/">Mods</a></li>
+					<li class="active"><a href="http://wiki.mybb.com/">Wiki</a></li>
+					<li class="default"><a href="http://blog.mybb.com/">Blog</a></li>
+
+				</ul>
+				</div>
+			</div>
+			
+			
+			<!--/search:no_index-->
+			<div id="content">
+				<div id="sidebar">
+					<div class="item">
+					<div class="sidebar_top"><div class="right"></div></div>
+						<h3>Categories</h3>
+						<ul>
+						
+														
+						</ul>
+					<div class="sidebar_bottom"><div class="right"></div></div>
+					</div>
+				</div>
+				
+				<div id="page">
+					<ol><li> To restore a database, you click the SQL tab (on newer versions of phpMyAdmin there is an "Import" tab).
+</li><li> On the "SQL"-page , unclick the show query here again.
+</li><li> Browse to your backup of the database.
+</li><li> Click "Go".
+</li></ol>
+
+<ol><li> Log into your SSH/Telnet account.
+</li><li> Have your .SQL dump/backup ready, extracted from the .gz backup that you made via the Admin CP or from phpMyAdmin.
+</li><li> You may have to drop all tables from the MyBB database first, because the Admin CP backup SQL doesn't include <code>DROP TABLE</code> statements. You can do that with the following command line. Type your MyBB database password when prompted.<code>user=YOUR_MYBB_DB_USER; db=YOUR_MYBB_DBNAME; mysql -u $user -p -BNe "show tables" $db | tr '\n' ',' | sed -e 's/,$//' | awk '{print "SET FOREIGN_KEY_CHECKS = 0;DROP TABLE IF EXISTS " $1 ";SET FOREIGN_KEY_CHECKS = 1;"}' | mysql -u $user -p $db</code>.
+</li><li> Run <code>mysql -u YOUR_MYBB_DB_USER -p YOUR_MYBB_DBNAME &lt; /PATH/TO/DUMP.SQL</code>
+</li></ol>
+
+<p>If you don't have SSH/Telnet access, you can download a restoring tool called <a rel="nofollow" class="external text" href="http://www.ozerov.de/bigdump.php">BigDump</a>. This works well for databases that are large and timeout phpMyAdmin.
+</p>
+<div style="border: 1px solid #ddd; background-color: #f5f5f5; padding: 5px; margin: 5px;">
+<div style="text-align: center; font-size: 18px; margin-bottom: 5px;"><b><a href="http://mybb.github.com/MyBB-Resources/Tutorials.html" title="Tutorials" class="mw-redirect">Tutorials</a></b></div>
+<table cellpadding="3" cellspacing="3" style="font-size: 95%; line-spacing:1; border: 1px solid #ddd; width: 100%; margin-bottom: 5px; background: #fff;">
+<tr>
+<td><a href="http://mybb.github.com/MyBB-Resources/Database_Backup.html" title="Database Backup">Database Backup</a> - <strong class="selflink">Database Restore</strong> - <a href="http://mybb.github.com/MyBB-Resources/HowTo_Chmod.html" title="HowTo Chmod">How to CHMOD</a> - <a rel="nofollow" class="external text" href="http://community.mybboard.net/forum-38.html">User-submitted tutorials on the Community Forums</a>
+</td></tr></table>
+</div>
+
+
+
+
+
+					
+					Last updated on: 2012-06-02 00:00:00 -0700.
+				</div>
+			</div>
+		</div>
+		
+		<div id="footer">
+				<script type="text/javascript" src="http://mybb.com/footer_credit.js"></script>
+				<p>Copyright &copy; 2010 MyBB Group. All rights reserved.</p>
+				<p><a href="/contact">Contact</a> MyBB Group &mdash; <em>for support with MyBB, visit <a href="/support">support</a></em></p><br />
+			</div>
+		</div>  
+	</div>
+	
+	<div id="shadow_footer"></div>
+
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-11443733-2']);
+	  _gaq.push(['_setDomainName', 'none']);
+	  _gaq.push(['_setAllowLinker', true]);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+</body>
+</html>
+

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<title>MyBB Documentation - Upload Files</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta name="author" content="MyBB Group" />
+	<meta name="copyright" content="Copyright MyBB Group." />
+	<meta name="description" content="The official documentation for MyBB, a free PHP and MySQL based discussion system." />
+	<link rel="stylesheet" type="text/css" href="http://mybb.com/assets/screen.css?xmas" />
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="http://mybb.com/assets/screen_ie.css?zz" />
+	<![endif]-->
+
+	<script type="text/javascript" src="http://mybb.com/jscripts/prototype.lite.js"></script>
+	<script type="text/javascript" src="http://mybb.com/jscripts/general.js"></script>
+	<script type="text/javascript" src="http://mybb.com/jscripts/moo.ajax.js"></script>
+	<script type="text/javascript" src="http://mybb.com/jscripts/lightbox.js"></script>
+	<!--[if lt IE 7]>
+	<script defer type="text/javascript" src="http://mybb.com/assets/pngfix.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div id="shadow">
+		<div id="container">
+			<!--search:no_index-->
+			<h1><span class="invisible">MyBB</span></h1>
+			<div id="header">
+			<a class="link" href="/"></a>
+				<div id="search">
+					<form action="/search" method="get"><fieldset><label for="search_box"><span id="search_left">&nbsp;</span></label><input type="text" name="query" id="search_box" title="Enter your search keywords" /><input type="submit" value="Search" name="submit-search" id="search_button" /></fieldset></form>
+				</div>
+				<div id="menu">
+				<ul>
+					<li class="default"><a href="/">Home</a></li>
+					<li class="default"><a href="/about">About</a></li>
+					<li class="default"><a href="/features">Features</a></li>
+					<li class="default"><a href="/downloads">Downloads</a></li>
+					<li class="default"><a href="http://community.mybb.com/">Community Forum</a></li>
+					<li class="default"><a href="/get-involved">Get Involved</a></li>
+					<li class="default"><a href="http://ideas.mybb.com/">Ideas</a></li>
+					<li class="default"><a href="http://mods.mybb.com/">Mods</a></li>
+					<li class="active"><a href="http://wiki.mybb.com/">Wiki</a></li>
+					<li class="default"><a href="http://blog.mybb.com/">Blog</a></li>
+
+				</ul>
+				</div>
+			</div>
+			
+			
+			<!--/search:no_index-->
+			<div id="content">
+				<div id="sidebar">
+					<div class="item">
+					<div class="sidebar_top"><div class="right"></div></div>
+						<h3>Categories</h3>
+						<ul>
+						
+														
+						</ul>
+					<div class="sidebar_bottom"><div class="right"></div></div>
+					</div>
+				</div>
+				
+				<div id="page">
+					<div style="float:right; border: 1px solid #ddd; background-color: #f5f5f5; padding: 5px; margin: 5px; margin-left: 15px;">
+<div style="text-align: center; font-size: 110%; margin-bottom: 5px;"><b><a href="http://mybb.github.com/MyBB-Resources/Installing.html" title="Installing">Installation Guide</a></b></div>
+<div style="border: 1px solid #ddd; background: #fff; padding: 5px; font-size: 90%;">
+<b>Preparation</b><ol style="margin: 0;">
+<li><strong class="selflink">Uploading Files</strong></li>
+<li><a href="http://mybb.github.com/MyBB-Resources/CHMOD_Files.html" title="CHMOD Files">CHMOD Files</a></li></ol>
+<b>Installer</b><ol start="3" style="margin: 0;">
+<li><a href="http://mybb.github.com/MyBB-Resources/Installer.html#Welcome" title="Installer">Welcome</a></li>
+<li><a href="http://mybb.github.com/MyBB-Resources/Installer.html#License_Agreement" title="Installer">License Agreement</a></li>
+<li><a href="http://mybb.github.com/MyBB-Resources/Installer.html#Requirements_Check" title="Installer">Requirements Check</a></li>
+<li><a href="http://mybb.github.com/MyBB-Resources/Installer.html#Database_Configuration" title="Installer">Database Configuration</a></li>
+<li><a href="http://mybb.github.com/MyBB-Resources/Installer.html#Table_Creation" title="Installer">Table Creation</a></li>
+<li><a href="http://mybb.github.com/MyBB-Resources/Installer.html#Data_Insertion" title="Installer">Data Insertion</a></li>
+<li><a href="http://mybb.github.com/MyBB-Resources/Installer.html#Theme_Installation" title="Installer">Theme Installation</a></li>
+<li><a href="http://mybb.github.com/MyBB-Resources/Installer.html#Board_Configuration" title="Installer">Board Configuration</a></li>
+<li><a href="http://mybb.github.com/MyBB-Resources/Installer.html#Administrator_User" title="Installer">Administrator User</a></li>
+<li><a href="http://mybb.github.com/MyBB-Resources/Installer.html#Finish_Setup" title="Installer">Finish Setup</a></li></ol>
+</div>
+</div>
+
+<p>In the folder where you extracted the MyBB package, there will be two folders: <b>Documentation</b> and <b>Upload</b>.  Navigate into the <b>Upload</b> folder and upload all files and folders within it to your web server (the <b>Documentation</b> folder contains a few interesting documents you may wish to read, but it is <i>not</i> necessary to upload this folder).  Usually the files are uploaded into a subdirectory called 'forums', 'forum', 'community' or 'mybb'.  However, it is up to you where you want to upload it; just remember where you have uploaded the files.
+</p><p>Things to keep in mind:
+</p>
+<ul><li> Make sure that the directory structure is kept.  (ie. the files in the 'admin' directory should be uploaded to a directory called 'admin', the files in the 'archive' directory should be uploaded to a directory called 'archive', etc)
+</li><li> Make sure that you upload the .php, .html, .css and any other text file in ASCII mode, and that you upload the .gif, .jpg, .png, and any other binary file in Binary mode (see your FTP software documentation)
+</li></ul>
+
+<ul><li><a href="http://mybb.github.com/MyBB-Resources/Using_FTP.html" title="Using FTP">Using FTP</a>
+</li></ul>
+<p><br style="clear:both" />
+</p>
+<div style="border: 1px solid #ddd; background-color: #f5f5f5; padding: 5px; margin: 5px;">
+<table cellpadding="3" cellspacing="3" style="font-size: 95%; line-spacing:1; border: 1px solid #ddd; width: 100%; background: #fff;">
+<tr>
+<td style="text-align: left;"> <b><a href="http://mybb.github.com/MyBB-Resources/Installing.html" title="Installing">&#171; Installation Guide</a></b>
+</td>
+<td style="text-align: right;"><b><a href="http://mybb.github.com/MyBB-Resources/CHMOD_Files.html" title="CHMOD Files">CHMOD Files &#187;</a></b>
+</td></tr></table>
+</div>
+<p><br />
+</p>
+
+
+
+
+					
+					Last updated on: 2012-06-02 00:00:00 -0700.
+				</div>
+			</div>
+		</div>
+		
+		<div id="footer">
+				<script type="text/javascript" src="http://mybb.com/footer_credit.js"></script>
+				<p>Copyright &copy; 2010 MyBB Group. All rights reserved.</p>
+				<p><a href="/contact">Contact</a> MyBB Group &mdash; <em>for support with MyBB, visit <a href="/support">support</a></em></p><br />
+			</div>
+		</div>  
+	</div>
+	
+	<div id="shadow_footer"></div>
+
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-11443733-2']);
+	  _gaq.push(['_setDomainName', 'none']);
+	  _gaq.push(['_setAllowLinker', true]);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+</body>
+</html>
+

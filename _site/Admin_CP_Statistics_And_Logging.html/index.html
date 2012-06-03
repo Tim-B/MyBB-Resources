@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<title>MyBB Documentation - Admin CP Statistics And Logging</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta name="author" content="MyBB Group" />
+	<meta name="copyright" content="Copyright MyBB Group." />
+	<meta name="description" content="The official documentation for MyBB, a free PHP and MySQL based discussion system." />
+	<link rel="stylesheet" type="text/css" href="http://mybb.com/assets/screen.css?xmas" />
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="http://mybb.com/assets/screen_ie.css?zz" />
+	<![endif]-->
+
+	<script type="text/javascript" src="http://mybb.com/jscripts/prototype.lite.js"></script>
+	<script type="text/javascript" src="http://mybb.com/jscripts/general.js"></script>
+	<script type="text/javascript" src="http://mybb.com/jscripts/moo.ajax.js"></script>
+	<script type="text/javascript" src="http://mybb.com/jscripts/lightbox.js"></script>
+	<!--[if lt IE 7]>
+	<script defer type="text/javascript" src="http://mybb.com/assets/pngfix.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div id="shadow">
+		<div id="container">
+			<!--search:no_index-->
+			<h1><span class="invisible">MyBB</span></h1>
+			<div id="header">
+			<a class="link" href="/"></a>
+				<div id="search">
+					<form action="/search" method="get"><fieldset><label for="search_box"><span id="search_left">&nbsp;</span></label><input type="text" name="query" id="search_box" title="Enter your search keywords" /><input type="submit" value="Search" name="submit-search" id="search_button" /></fieldset></form>
+				</div>
+				<div id="menu">
+				<ul>
+					<li class="default"><a href="/">Home</a></li>
+					<li class="default"><a href="/about">About</a></li>
+					<li class="default"><a href="/features">Features</a></li>
+					<li class="default"><a href="/downloads">Downloads</a></li>
+					<li class="default"><a href="http://community.mybb.com/">Community Forum</a></li>
+					<li class="default"><a href="/get-involved">Get Involved</a></li>
+					<li class="default"><a href="http://ideas.mybb.com/">Ideas</a></li>
+					<li class="default"><a href="http://mods.mybb.com/">Mods</a></li>
+					<li class="active"><a href="http://wiki.mybb.com/">Wiki</a></li>
+					<li class="default"><a href="http://blog.mybb.com/">Blog</a></li>
+
+				</ul>
+				</div>
+			</div>
+			
+			
+			<!--/search:no_index-->
+			<div id="content">
+				<div id="sidebar">
+					<div class="item">
+					<div class="sidebar_top"><div class="right"></div></div>
+						<h3>Categories</h3>
+						<ul>
+						
+														
+						</ul>
+					<div class="sidebar_bottom"><div class="right"></div></div>
+					</div>
+				</div>
+				
+				<div id="page">
+					<p>The Tools &amp; Maintenance tab contains all of the various tools relating to the maintenance of your forum.
+</p>
+
+<p>General information regarding the more technical aspects of your board.
+<b><a href="http://mybb.github.com/MyBB-Resources/Admin_CP_System_Health.html" title="Admin CP System Health">Read the full document &#187;</a></b>
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:182px;"><a href="File:ACP_Tools_Cache.png" class="image"><img alt="" src="../images/thumb/4/45/ACP_Tools_Cache.png/180px-ACP_Tools_Cache.png" width="180" height="170" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="File:ACP_Tools_Cache.png" class="internal" title="Enlarge"><img src="/mediawiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Tools &amp; Maintenance: Cache Manager</div></div></div>
+
+<p>The Cache Manager provides a listing of all of the caches on your board, the size of each cache, and allows you to rebuild caches that have information that could become corrupted.
+</p><p>Clicking on the name of the cache will take you to a page that displays the contents of that cache.
+</p>
+
+<p>Tasks are PHP scripts run at set intervals which typically maintain your database and board, as well as perform tasks for some features, such as mass mail and group promotions.
+<b><a href="http://mybb.github.com/MyBB-Resources/Admin_CP_Task_Manager.html" title="Admin CP Task Manager">Read the full document &#187;</a></b>
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:182px;"><a href="File:ACP_Tools_Recount.png" class="image"><img alt="" src="../images/thumb/8/87/ACP_Tools_Recount.png/180px-ACP_Tools_Recount.png" width="180" height="106" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="File:ACP_Tools_Recount.png" class="internal" title="Enlarge"><img src="/mediawiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Tools &amp; Maintenance: Recount and Rebuild</div></div></div>
+
+<p>The Recount and Rebuild portion of the Admin CP allows you to recount the various statistics, counters, and attachment thumbnails. This corrects any synchronization errors that may have occurred. This includes <i>Recount Statistics</i>, <i>Rebuild Forum Counters</i>, <i>Rebuild Thread Counters</i>, <i>Recount User Post Counts</i>, and <i>Rebuild Attachment Thumbnails</i>.
+</p><p>Each (excluding <i>Recount Statistics</i>) allows you to specify the number of data entries to process in each page. If there are fewer than the number entered to process, only one page will be used.
+</p><p>To run, enter the number of data entries you wish to process per page, and select <i>Go</i> in the row for the item you wish to recount or rebuild. If more than one page is necessary, you will need to select "Proceed" after each page is run.
+</p>
+
+<p>The PHP Info page displays the results of the phpinfo() function. This provides you with all of the information regarding your PHP installation.
+</p>
+
+<p>You can easily backup your forum database to your computer or to the server.
+<b><a href="http://mybb.github.com/MyBB-Resources/Admin_CP_Backups.html" title="Admin CP Backups">Read the full document &#187;</a></b>
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:182px;"><a href="File:ACP_Tools_OptimizeDB.png" class="image"><img alt="" src="../images/thumb/c/c0/ACP_Tools_OptimizeDB.png/180px-ACP_Tools_OptimizeDB.png" width="180" height="126" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="File:ACP_Tools_OptimizeDB.png" class="internal" title="Enlarge"><img src="/mediawiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Tools &amp; Maintenance: Optimize Database</div></div></div>
+
+<p>The Optimize Database page allows you to <a rel="nofollow" class="external text" href="http://community.mybb.com/thread-96305-page-1.html">reclaim deleted space</a> in the selected database tables. You can choose to <i>Select All</i> tables, <i>Deselect All</i> tables,  <i>Select Forum Tables</i> (only select those with the table prefix specified for your MyBB installation - <i>mybb_</i> by default), or select each table individually by holding down Control.
+</p>
+
+<p>The File Verification page allows you to check all files in your forum installation against checksums of the correct files, checking for possible corruption. However, this tool cannot differentiate between customizations and corruption; it simply returns files that are different from the default files.
+</p>
+
+<p>Logging of actions in the Admin CP.
+<b><a href="http://mybb.github.com/MyBB-Resources/Admin_CP_Admin_Logs.html" title="Admin CP Admin Logs">Read the full document &#187;</a></b>
+</p>
+
+<p>Logging of moderator actions on your forum.
+<b><a href="http://mybb.github.com/MyBB-Resources/Admin_CP_Mod_Logs.html" title="Admin CP Mod Logs">Read the full document &#187;</a></b>
+</p>
+
+<p>Logging of emails sent from one user to another and using the "Send Thread to Friend" feature.
+<b><a href="http://mybb.github.com/MyBB-Resources/Admin_CP_User_Email_Logs.html" title="Admin CP User Email Logs">Read the full document &#187;</a></b>
+</p>
+
+<p>Logging of system mail errors when an email is sent by the board.
+<b><a href="http://mybb.github.com/MyBB-Resources/Admin_CP_System_Mail_Logs.html" title="Admin CP System Mail Logs">Read the full document &#187;</a></b>
+</p>
+
+<p>Logs of all warnings issued to users via MyBB's warning system.
+<b><a href="http://mybb.github.com/MyBB-Resources/Admin_CP_User_Warning_Logs.html" title="Admin CP User Warning Logs">Read the full document &#187;</a></b>
+</p>
+
+<p>The statistics section displays daily counts of members, threads, and posts, in both graphical and tabular format.
+<b><a href="http://mybb.github.com/MyBB-Resources/Admin_CP_Statistics.html" title="Admin CP Statistics">Read the full document &#187;</a></b>
+</p>
+<div style="border: 1px solid #ddd; background-color: #f5f5f5; padding: 5px; margin: 5px;">
+<div style="text-align: center; font-size: 18px; margin-bottom: 5px;"><b><a href="http://mybb.github.com/MyBB-Resources/Admin_CP.html" title="Admin CP">Admin CP</a></b></div>
+<table cellpadding="3" cellspacing="3" style="font-size: 95%; line-spacing:1; border: 1px solid #ddd; width: 100%; margin-bottom: 5px; background: #fff;">
+<tr>
+<td style="vertical-align: middle; font-size: 14px;"><b><a href="http://mybb.github.com/MyBB-Resources/Admin_CP_Home.html" title="Admin CP Home">Home</a></b>
+</td>
+<td style="vertical-align: middle; width: 80%;"><a href="http://mybb.github.com/MyBB-Resources/Admin_CP_Home.html#Dashboard" title="Admin CP Home">Dashboard</a> - <a href="http://mybb.github.com/MyBB-Resources/Admin_CP_Home.html#Preferences" title="Admin CP Home">Preferences</a> - <a href="http://mybb.github.com/MyBB-Resources/Admin_CP_Home.html#Version_Check" title="Admin CP Home">Version Check</a> - <a href="http://mybb.github.com/MyBB-Resources/Admin_CP_Home.html#MyBB_Credits" title="Admin CP Home">MyBB Credits</a>
+</td></tr></table>
+<table cellpadding="3" cellspacing="3" style="font-size: 95%; line-spacing:1; border: 1px solid #ddd; width: 100%; margin-bottom: 5px; background: #fff;">
+<tr>
+<td style="vertical-align: middle; font-size: 14px;"><b><a href="http://mybb.github.com/MyBB-Resources/Admin_CP_Config.html" title="Admin CP Config">Configuration</a></b>
+</td>
+<td style="vertical-align: middle; width: 80%;"><a href="http://mybb.github.com/MyBB-Resources/Admin_CP_Config_Settings.html" title="Admin CP Config Settings">Settings</a> - <a href="http://mybb.github.com/MyBB-Resources/Admin_CP_Config_Banning.html" title="Admin CP Config Banning">Banning</a> - <a href="http://mybb.github.com/MyBB-Resources/Admin_CP_Config_Profile_Fields.html" title="Admin CP Config Profile Fields">Custom Profile Fields</a> - <a href="http://mybb.github.com/MyBB-Resources/Admin_CP_Config_Smilies.html" title="Admin CP Config Smilies">Smilies</a> - <a href="http://mybb.github.com/MyBB-Resources/Admin_CP_Config_Word_Filters.html" title="Admin CP Config Word Filters">Word Filters</a> - <a href="http://mybb.github.com/MyBB-Resources/Admin_CP_Config_MyCode.html" title="Admin CP Config MyCode">MyCode</a> - <a href="http://mybb.github.com/MyBB-Resources/Admin_CP_Config_Languages.html" title="Admin CP Config Languages">Languages</a> - <a href="http://mybb.github.com/MyBB-Resources/Admin_CP_Config_Post_Icons.html" title="Admin CP Config Post Icons">Post Icons</a> - <a href="http://mybb.github.com/MyBB-Resources/Admin_CP_Config_Help_Docs.html" title="Admin CP Config Help Docs">Help Documents</a> - <a href="http://mybb.github.com/MyBB-Resources/Admin_CP_Config_Plugins.html" title="Admin CP Config Plugins">Plugins</a> - <a href="http://mybb.github.com/MyBB-Resources/Admin_CP_Config_Attachments.html" title="Admin CP Config Attachments">Attachment Types</a> - <a href="http://mybb.github.com/MyBB-Resources/Admin_CP_Config_Mod_Tools.html" title="Admin CP Config Mod Tools">Moderator Tools</a> - <a href="http://mybb.github.com/MyBB-Resources/Admin_CP_Config_Spiders.html" title="Admin CP Config Spiders">Spiders/Bots</a> - <a href="http://mybb.github.com/MyBB-Resources/Admin_CP_Config_Calendars.html" title="Admin CP Config Calendars">Calendars</a> - <a href="http://mybb.github.com/MyBB-Resources/Admin_CP_Config_Warning_System.html" title="Admin CP Config Warning System">Warning System</a> - <a href="http://mybb.github.com/MyBB-Resources/Admin_CP_Config_Thread_Prefixes.html" title="Admin CP Config Thread Prefixes">Thread Prefixes</a>
+</td></tr></table>
+<table cellpadding="3" cellspacing="3" style="font-size: 95%; line-spacing:1; border: 1px solid #ddd; width: 100%; margin-bottom: 5px; background: #fff;">
+<tr>
+<td style="vertical-align: middle; font-size: 14px;"><b><a href="http://mybb.github.com/MyBB-Resources/Admin_CP_Forums_Posts.html" title="Admin CP Forums Posts">Forums &amp; Posts</a></b>
+</td>
+<td style="vertical-align: middle; width: 80%;"><a href="http://mybb.github.com/MyBB-Resources/Admin_CP_Forum_Management.html" title="Admin CP Forum Management">Forum Management</a> - <a href="http://mybb.github.com/MyBB-Resources/Admin_CP_Forum_Announcements.html" title="Admin CP Forum Announcements">Forum Announcements</a> - <a href="http://mybb.github.com/MyBB-Resources/Admin_CP_Moderation_Queue.html" title="Admin CP Moderation Queue">Moderation Queue</a> - <a href="http://mybb.github.com/MyBB-Resources/Admin_CP_Forum_Attachments.html" title="Admin CP Forum Attachments">Attachments</a>
+</td></tr></table>
+<table cellpadding="3" cellspacing="3" style="font-size: 95%; line-spacing:1; border: 1px solid #ddd; width: 100%; margin-bottom: 5px; background: #fff;">
+<tr>
+<td style="vertical-align: middle; font-size: 14px;"><b><a href="http://mybb.github.com/MyBB-Resources/Admin_CP_Users_Groups.html" title="Admin CP Users Groups">Users &amp; Groups</a></b>
+</td>
+<td style="vertical-align: middle; width: 80%;"><a href="http://mybb.github.com/MyBB-Resources/Admin_CP_Users.html" title="Admin CP Users">Users</a> - <a href="http://mybb.github.com/MyBB-Resources/Admin_CP_Groups.html" title="Admin CP Groups">Groups</a> - <a href="http://mybb.github.com/MyBB-Resources/Admin_CP_User_Titles.html" title="Admin CP User Titles">User Titles</a> - <a href="http://mybb.github.com/MyBB-Resources/Admin_CP_User_Banning.html" title="Admin CP User Banning">Banning</a> - <a href="http://mybb.github.com/MyBB-Resources/Admin_CP_Admin_Perms.html" title="Admin CP Admin Perms">Admin Permissions</a> - <a href="http://mybb.github.com/MyBB-Resources/Admin_CP_Mass_Mail.html" title="Admin CP Mass Mail">Mass Mail</a> - <a href="http://mybb.github.com/MyBB-Resources/Admin_CP_Group_Promotions.html" title="Admin CP Group Promotions">Group Promotions</a>
+</td></tr></table>
+<table cellpadding="3" cellspacing="3" style="font-size: 95%; line-spacing:1; border: 1px solid #ddd; width: 100%; margin-bottom: 5px; background: #fff;">
+<tr>
+<td style="vertical-align: middle; font-size: 14px;"><b><a href="http://mybb.github.com/MyBB-Resources/Admin_CP_Templates_Style.html" title="Admin CP Templates Style">Templates &amp; Style</a></b>
+</td>
+<td style="vertical-align: middle; width: 80%;"><a href="http://mybb.github.com/MyBB-Resources/Admin_CP_Themes.html" title="Admin CP Themes">Themes</a> - <a href="http://mybb.github.com/MyBB-Resources/Admin_CP_Templates.html" title="Admin CP Templates">Templates</a>
+</td></tr></table>
+<table cellpadding="3" cellspacing="3" style="font-size: 95%; line-spacing:1; border: 1px solid #ddd; width: 100%; background: #fff;">
+<tr>
+<td style="vertical-align: middle; font-size: 14px;"><b><strong class="selflink">Tools &amp; Maintenance</strong></b>
+</td>
+<td style="vertical-align: middle; width: 80%;"><a href="http://mybb.github.com/MyBB-Resources/Admin_CP_System_Health.html" title="Admin CP System Health">System Health</a> - <a href="http://mybb.github.com/MyBB-Resources/Admin_CP_Tools.html#Cache_Manager" title="Admin CP Tools">Cache Manager</a> - <a href="http://mybb.github.com/MyBB-Resources/Admin_CP_Task_Manager.html" title="Admin CP Task Manager">Task Manager</a> - <a href="http://mybb.github.com/MyBB-Resources/Admin_CP_Tools.html#Recount_and_Rebuild" title="Admin CP Tools">Recount and Rebuild</a> - <a href="http://mybb.github.com/MyBB-Resources/Admin_CP_Tools.html#PHP_Info" title="Admin CP Tools">PHP Info</a> - <a href="http://mybb.github.com/MyBB-Resources/Admin_CP_Backups.html" title="Admin CP Backups">Database Backups</a> - <a href="http://mybb.github.com/MyBB-Resources/Admin_CP_Tools.html#Optimize_Database" title="Admin CP Tools">Optimize Database</a> - <a href="http://mybb.github.com/MyBB-Resources/Admin_CP_Tools.html#File_Verification" title="Admin CP Tools">File Verification</a> - <a href="http://mybb.github.com/MyBB-Resources/Admin_CP_Admin_Logs.html" title="Admin CP Admin Logs">Administrator Log</a> - <a href="http://mybb.github.com/MyBB-Resources/Admin_CP_Mod_Logs.html" title="Admin CP Mod Logs">Moderator Log</a> - <a href="http://mybb.github.com/MyBB-Resources/Admin_CP_User_Email_Logs.html" title="Admin CP User Email Logs">User Email Log</a> - <a href="http://mybb.github.com/MyBB-Resources/Admin_CP_System_Mail_Logs.html" title="Admin CP System Mail Logs">System Mail Log</a> - <a href="http://mybb.github.com/MyBB-Resources/Admin_CP_User_Warning_Logs.html" title="Admin CP User Warning Logs">User Warning Log</a> - <a href="http://mybb.github.com/MyBB-Resources/Admin_CP_Statistics.html" title="Admin CP Statistics">Statistics</a>
+</td></tr></table>
+</div>
+
+
+
+
+
+					
+					Last updated on: 2012-06-02 00:00:00 -0700.
+				</div>
+			</div>
+		</div>
+		
+		<div id="footer">
+				<script type="text/javascript" src="http://mybb.com/footer_credit.js"></script>
+				<p>Copyright &copy; 2010 MyBB Group. All rights reserved.</p>
+				<p><a href="/contact">Contact</a> MyBB Group &mdash; <em>for support with MyBB, visit <a href="/support">support</a></em></p><br />
+			</div>
+		</div>  
+	</div>
+	
+	<div id="shadow_footer"></div>
+
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-11443733-2']);
+	  _gaq.push(['_setDomainName', 'none']);
+	  _gaq.push(['_setAllowLinker', true]);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+</body>
+</html>
+

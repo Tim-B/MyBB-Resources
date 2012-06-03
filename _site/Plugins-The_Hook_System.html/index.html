@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<title>MyBB Documentation - Plugins:The Hook System</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta name="author" content="MyBB Group" />
+	<meta name="copyright" content="Copyright MyBB Group." />
+	<meta name="description" content="The official documentation for MyBB, a free PHP and MySQL based discussion system." />
+	<link rel="stylesheet" type="text/css" href="http://mybb.com/assets/screen.css?xmas" />
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="http://mybb.com/assets/screen_ie.css?zz" />
+	<![endif]-->
+
+	<script type="text/javascript" src="http://mybb.com/jscripts/prototype.lite.js"></script>
+	<script type="text/javascript" src="http://mybb.com/jscripts/general.js"></script>
+	<script type="text/javascript" src="http://mybb.com/jscripts/moo.ajax.js"></script>
+	<script type="text/javascript" src="http://mybb.com/jscripts/lightbox.js"></script>
+	<!--[if lt IE 7]>
+	<script defer type="text/javascript" src="http://mybb.com/assets/pngfix.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div id="shadow">
+		<div id="container">
+			<!--search:no_index-->
+			<h1><span class="invisible">MyBB</span></h1>
+			<div id="header">
+			<a class="link" href="/"></a>
+				<div id="search">
+					<form action="/search" method="get"><fieldset><label for="search_box"><span id="search_left">&nbsp;</span></label><input type="text" name="query" id="search_box" title="Enter your search keywords" /><input type="submit" value="Search" name="submit-search" id="search_button" /></fieldset></form>
+				</div>
+				<div id="menu">
+				<ul>
+					<li class="default"><a href="/">Home</a></li>
+					<li class="default"><a href="/about">About</a></li>
+					<li class="default"><a href="/features">Features</a></li>
+					<li class="default"><a href="/downloads">Downloads</a></li>
+					<li class="default"><a href="http://community.mybb.com/">Community Forum</a></li>
+					<li class="default"><a href="/get-involved">Get Involved</a></li>
+					<li class="default"><a href="http://ideas.mybb.com/">Ideas</a></li>
+					<li class="default"><a href="http://mods.mybb.com/">Mods</a></li>
+					<li class="active"><a href="http://wiki.mybb.com/">Wiki</a></li>
+					<li class="default"><a href="http://blog.mybb.com/">Blog</a></li>
+
+				</ul>
+				</div>
+			</div>
+			
+			
+			<!--/search:no_index-->
+			<div id="content">
+				<div id="sidebar">
+					<div class="item">
+					<div class="sidebar_top"><div class="right"></div></div>
+						<h3>Categories</h3>
+						<ul>
+						
+														
+						</ul>
+					<div class="sidebar_bottom"><div class="right"></div></div>
+					</div>
+				</div>
+				
+				<div id="page">
+					<p>MyBB has places in its code where your plugin can "hook" into. There are two types of hooks used in MyBB: hooks without arguments, and hooks with arguments.
+</p><p>First, <b>hooks without arguments</b> are the most simplest kind. They appear as:
+</p>
+<pre>
+	$plugins-&gt;run_hooks(&quot;global_end&quot;);
+</pre>
+<p>This hook name is "global_end" (found in global.php). To use this hook in your plugin, add this code at the top of your plugin, before the <b>_info</b> function and after the security check.
+</p>
+<pre>
+	$plugins-&gt;add_hook(&quot;global_end&quot;, &quot;foo_functionname&quot;);
+</pre>
+<p>The general structure is the hook name, and then the function name you want to run when it comes to that point in the code.
+</p><p>For example, when <b>global_end</b> is run during the loading of a page, the <b>foo_functionname function</b> is also run at the same time. This means you can insert your own code to do pretty much whatever you like - hook functions can be made up of any PHP code.
+</p><p><i>Advanced Usage</i>
+Most users can skip this part. The add_hook method can also accept two optional parameters: priority and file.
+</p>
+<pre>
+	$plugins-&gt;add_hook(&quot;global_end&quot;, &quot;foo_functionname&quot;, 5, &quot;anotherfile.php&quot;);
+</pre>
+<p>The priority takes into effect if there are two or more functions that are associated with a hook. A lesser value in the priority parameter will mean the function will be executed before the other function(s) with a higher value priority (for example, a priority "0" will execute before "10"). The default priority is 10. Usually you will not need to use this parameter unless you have two plugins that conflict with each other on one hook.
+</p><p>The filename in the file parameter will be "included-once" when the hook is run, before the function is executed.
+</p><p><b>Hooks with arguments</b> are seen like this:
+</p>
+<pre>
+	$contents = $plugins-&gt;run_hooks(&quot;pre_output_page&quot;, $contents);
+</pre>
+<p>In this example, the $contents variable is an argument for the pre_output_page hook, and so the function declaration for this hook must include this argument like this:
+</p>
+<pre>
+	function foo_functionname ($contents)
+</pre>
+<p>The return value of the hooks is placed back into $contents. This means at the end of your plugin function you must return $contents back, or else $contents will be empty. Otherwise, these hooks work the same as the hooks without arguments.
+</p><p>However, one must use caution and proper security practices when using hooks that contain arguments. This is due to the ability for other plugins to alter the arguments prior to your plugin being run. Plugin authors should never rely on the argument contents being safe before using them, type casting and escaping variables before using them should be a standard practice.
+</p>
+
+
+
+
+					
+					Last updated on: 2012-06-02 00:00:00 -0700.
+				</div>
+			</div>
+		</div>
+		
+		<div id="footer">
+				<script type="text/javascript" src="http://mybb.com/footer_credit.js"></script>
+				<p>Copyright &copy; 2010 MyBB Group. All rights reserved.</p>
+				<p><a href="/contact">Contact</a> MyBB Group &mdash; <em>for support with MyBB, visit <a href="/support">support</a></em></p><br />
+			</div>
+		</div>  
+	</div>
+	
+	<div id="shadow_footer"></div>
+
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-11443733-2']);
+	  _gaq.push(['_setDomainName', 'none']);
+	  _gaq.push(['_setAllowLinker', true]);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+</body>
+</html>
+

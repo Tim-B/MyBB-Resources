@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<title>MyBB Documentation - Help:FAQ/1.0</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta name="author" content="MyBB Group" />
+	<meta name="copyright" content="Copyright MyBB Group." />
+	<meta name="description" content="The official documentation for MyBB, a free PHP and MySQL based discussion system." />
+	<link rel="stylesheet" type="text/css" href="http://mybb.com/assets/screen.css?xmas" />
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="http://mybb.com/assets/screen_ie.css?zz" />
+	<![endif]-->
+
+	<script type="text/javascript" src="http://mybb.com/jscripts/prototype.lite.js"></script>
+	<script type="text/javascript" src="http://mybb.com/jscripts/general.js"></script>
+	<script type="text/javascript" src="http://mybb.com/jscripts/moo.ajax.js"></script>
+	<script type="text/javascript" src="http://mybb.com/jscripts/lightbox.js"></script>
+	<!--[if lt IE 7]>
+	<script defer type="text/javascript" src="http://mybb.com/assets/pngfix.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div id="shadow">
+		<div id="container">
+			<!--search:no_index-->
+			<h1><span class="invisible">MyBB</span></h1>
+			<div id="header">
+			<a class="link" href="/"></a>
+				<div id="search">
+					<form action="/search" method="get"><fieldset><label for="search_box"><span id="search_left">&nbsp;</span></label><input type="text" name="query" id="search_box" title="Enter your search keywords" /><input type="submit" value="Search" name="submit-search" id="search_button" /></fieldset></form>
+				</div>
+				<div id="menu">
+				<ul>
+					<li class="default"><a href="/">Home</a></li>
+					<li class="default"><a href="/about">About</a></li>
+					<li class="default"><a href="/features">Features</a></li>
+					<li class="default"><a href="/downloads">Downloads</a></li>
+					<li class="default"><a href="http://community.mybb.com/">Community Forum</a></li>
+					<li class="default"><a href="/get-involved">Get Involved</a></li>
+					<li class="default"><a href="http://ideas.mybb.com/">Ideas</a></li>
+					<li class="default"><a href="http://mods.mybb.com/">Mods</a></li>
+					<li class="active"><a href="http://wiki.mybb.com/">Wiki</a></li>
+					<li class="default"><a href="http://blog.mybb.com/">Blog</a></li>
+
+				</ul>
+				</div>
+			</div>
+			
+			
+			<!--/search:no_index-->
+			<div id="content">
+				<div id="sidebar">
+					<div class="item">
+					<div class="sidebar_top"><div class="right"></div></div>
+						<h3>Categories</h3>
+						<ul>
+						
+														
+						</ul>
+					<div class="sidebar_bottom"><div class="right"></div></div>
+					</div>
+				</div>
+				
+				<div id="page">
+					<p>Additionally there are <a href="http://mybb.github.com/MyBB-Resources/Tutorials.html" title="Tutorials" class="mw-redirect">Tutorials</a> that may have the solution you are looking for.
+</p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#MySQL_Error_1136_when_importing_theme"><span class="tocnumber">1</span> <span class="toctext">MySQL Error 1136 when importing theme</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Removing_Administrator_Debug_Info"><span class="tocnumber">2</span> <span class="toctext">Removing Administrator Debug Info</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Edit_Post_Time_Restriction_Setting"><span class="tocnumber">3</span> <span class="toctext">Edit Post Time Restriction Setting</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Moving_and_deleting_forums"><span class="tocnumber">4</span> <span class="toctext">Moving and deleting forums</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Login.2FLogout.2FCookie_Problems"><span class="tocnumber">5</span> <span class="toctext">Login/Logout/Cookie Problems</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Removing_Reputation_System"><span class="tocnumber">6</span> <span class="toctext">Removing Reputation System</span></a></li>
+</ul>
+</td></tr></table>
+
+<p>A MySQL error 1136 occurs when importing a theme.
+<a rel="nofollow" class="external free" href="http://community.mybboard.net/showthread.php?tid=5239">http://community.mybboard.net/showthread.php?tid=5239</a>
+</p>
+
+<p>At the bottom of the forum, administrators see debug information such as SQL queries, GZip, and generation time. The link below describes how to remove it.
+<a rel="nofollow" class="external free" href="http://community.mybboard.net/showthread.php?tid=5540">http://community.mybboard.net/showthread.php?tid=5540</a>
+</p>
+
+<p>The setting for restricting post editing to a certain time was not included in versions before 1.2.0 by default.
+<a rel="nofollow" class="external free" href="http://community.mybboard.net/showthread.php?tid=5630">http://community.mybboard.net/showthread.php?tid=5630</a>
+</p>
+
+<p>If you move a subforum to a new parent forum and delete its original parent forum, the subforum may be deleted as well.
+<a rel="nofollow" class="external free" href="http://community.mybboard.net/showthread.php?tid=6392&amp;pid=39180#pid39180">http://community.mybboard.net/showthread.php?tid=6392&amp;pid=39180#pid39180</a>
+</p>
+
+<p>If you are having login/logout or otherwise suspect cookie problems, see <a href="http://mybb.github.com/MyBB-Resources/Cookie_Settings.html" title="Cookie Settings" class="mw-redirect">Cookie Settings</a>.
+Additionally, try to <a href="http://mybb.github.com/MyBB-Resources/How_to_clear_your_cookies.html" title="How to clear your cookies" class="mw-redirect">clear your cookies</a>.
+</p>
+
+<p><i>Back to <a href="http://mybb.github.com/MyBB-Resources/FAQ.html" title="FAQ" class="mw-redirect">FAQ</a></i>
+</p>
+
+
+
+
+					
+					Last updated on: 2012-06-02 00:00:00 -0700.
+				</div>
+			</div>
+		</div>
+		
+		<div id="footer">
+				<script type="text/javascript" src="http://mybb.com/footer_credit.js"></script>
+				<p>Copyright &copy; 2010 MyBB Group. All rights reserved.</p>
+				<p><a href="/contact">Contact</a> MyBB Group &mdash; <em>for support with MyBB, visit <a href="/support">support</a></em></p><br />
+			</div>
+		</div>  
+	</div>
+	
+	<div id="shadow_footer"></div>
+
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-11443733-2']);
+	  _gaq.push(['_setDomainName', 'none']);
+	  _gaq.push(['_setAllowLinker', true]);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+</body>
+</html>
+

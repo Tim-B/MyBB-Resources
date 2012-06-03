@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<title>MyBB Documentation - Performance</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta name="author" content="MyBB Group" />
+	<meta name="copyright" content="Copyright MyBB Group." />
+	<meta name="description" content="The official documentation for MyBB, a free PHP and MySQL based discussion system." />
+	<link rel="stylesheet" type="text/css" href="http://mybb.com/assets/screen.css?xmas" />
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="http://mybb.com/assets/screen_ie.css?zz" />
+	<![endif]-->
+
+	<script type="text/javascript" src="http://mybb.com/jscripts/prototype.lite.js"></script>
+	<script type="text/javascript" src="http://mybb.com/jscripts/general.js"></script>
+	<script type="text/javascript" src="http://mybb.com/jscripts/moo.ajax.js"></script>
+	<script type="text/javascript" src="http://mybb.com/jscripts/lightbox.js"></script>
+	<!--[if lt IE 7]>
+	<script defer type="text/javascript" src="http://mybb.com/assets/pngfix.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div id="shadow">
+		<div id="container">
+			<!--search:no_index-->
+			<h1><span class="invisible">MyBB</span></h1>
+			<div id="header">
+			<a class="link" href="/"></a>
+				<div id="search">
+					<form action="/search" method="get"><fieldset><label for="search_box"><span id="search_left">&nbsp;</span></label><input type="text" name="query" id="search_box" title="Enter your search keywords" /><input type="submit" value="Search" name="submit-search" id="search_button" /></fieldset></form>
+				</div>
+				<div id="menu">
+				<ul>
+					<li class="default"><a href="/">Home</a></li>
+					<li class="default"><a href="/about">About</a></li>
+					<li class="default"><a href="/features">Features</a></li>
+					<li class="default"><a href="/downloads">Downloads</a></li>
+					<li class="default"><a href="http://community.mybb.com/">Community Forum</a></li>
+					<li class="default"><a href="/get-involved">Get Involved</a></li>
+					<li class="default"><a href="http://ideas.mybb.com/">Ideas</a></li>
+					<li class="default"><a href="http://mods.mybb.com/">Mods</a></li>
+					<li class="active"><a href="http://wiki.mybb.com/">Wiki</a></li>
+					<li class="default"><a href="http://blog.mybb.com/">Blog</a></li>
+
+				</ul>
+				</div>
+			</div>
+			
+			
+			<!--/search:no_index-->
+			<div id="content">
+				<div id="sidebar">
+					<div class="item">
+					<div class="sidebar_top"><div class="right"></div></div>
+						<h3>Categories</h3>
+						<ul>
+						
+														
+						</ul>
+					<div class="sidebar_bottom"><div class="right"></div></div>
+					</div>
+				</div>
+				
+				<div id="page">
+					<p>MyBB is being improved with every released version, and performing very good just out of the box. This page is for documentation purpose only, for most of the boards.
+</p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Built-in_support_for_eAccelerator.2C_memcached_and_X-Cache_caching"><span class="tocnumber">1</span> <span class="toctext">Built-in support for eAccelerator, memcached and X-Cache caching</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Delayed_thread_views_counter_updates"><span class="tocnumber">2</span> <span class="toctext">Delayed thread views counter updates</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Delayed_mass_mails_through_the_mailqueue_table"><span class="tocnumber">3</span> <span class="toctext">Delayed mass mails  through the mailqueue table</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Master.2Fslave_database_servers_replication_support"><span class="tocnumber">4</span> <span class="toctext">Master/slave database servers replication support</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Server_Optimization_Options"><span class="tocnumber">5</span> <span class="toctext">Server Optimization Options</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Community_threads_about_performance_.26_optimization"><span class="tocnumber">6</span> <span class="toctext">Community threads about performance &amp; optimization</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Big_board_owners_group"><span class="tocnumber">7</span> <span class="toctext">Big board owners group</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Development_issues"><span class="tocnumber">8</span> <span class="toctext">Development issues</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#References"><span class="tocnumber">9</span> <span class="toctext">References</span></a></li>
+</ul>
+</td></tr></table>
+
+<p>In a standard installation of MyBB, we already cache the most frequently accessed items (a list of forums, user groups, birthdays etc) to either the database or the file system. While this is a great speed and optimization improvement, having this information stored in memory on the server is quicker once again.
+</p><p>MyBB also has the ability to store cached information using built-in shared memory caching from PHP modules such as X-Cache and eAccelerator and also has the ability to interface with memcached servers for cache storage.
+</p><p><br />
+</p>
+
+<p>MyBB keeps track of whenever a user views a thread to provide the number of views it's received. For larger forums, constantly updating this in the threads table meant tables were locked by the database server and posting time &amp; modification would be affected.
+</p><p>It's now possible to have the number of views a thread receives updated in batches by the automated task scheduling system. The number of views a thread receives can now optionally be updated every X minutes instead of instantly.
+</p><p><br />
+</p>
+
+<p>The <a rel="nofollow" class="external text" href="http://www.mybb.com/features/mass-mail">Mass Mail</a> functionality allows you to send messages to multiple users of your forum. Note that you can also send these messages as personal messages at the forum itself.
+</p><p>The Mass Mail Queue will show you the current messages that are queued for delivery. Note that the email delivery will run according to your settings under Tools for your MyBB installation. If you would like to force the delivery this can also be done via Tools -&gt; Task Manager -&gt; Clicking the Clock button for Mass Mail.
+</p><p>The <a href="Database_Tables/mybb_mailqueue" title="Database Tables/mybb mailqueue">mybb_mailqueue</a> table handle the mass mails queue.
+</p><p><br />
+</p>
+
+<p>MyBB also contains built-in support for master/slave replication support. Larger forums requiring more than one database server will be able to set up automatic replication between their servers and have all write queries fed off to a separate master server. All slave servers being updated from the master.
+</p><p><b>Please note that this should be used only by large board owners, small to medium boards shouldn't worry about that.</b>
+</p><p>As an example, if I had two MySQL servers, the code in inc/config.php for databases would look something along the lines of this:
+</p>
+<pre>
+$config['database']['type'] = 'mysqli';
+
+$config['database']['read']['database'] = 'mybb';
+$config['database']['read']['table_prefix'] = 'mybb_';
+$config['database']['read']['hostname'] = 'localhost_read_address';
+$config['database']['read']['username'] = 'root';
+$config['database']['read']['password'] = '******';
+
+$config['database']['write']['database'] = 'mybb';
+$config['database']['write']['table_prefix'] = 'mybb_';
+$config['database']['write']['hostname'] = 'localhost_write_address';
+$config['database']['write']['username'] = 'root';
+$config['database']['write']['password'] = '******';
+</pre>
+<p>You could even have multiple read and write databases like:
+</p>
+<pre>
+$config['database']['type'] = 'mysqli';
+
+$config['database']['read'][]['database'] = 'mybb';
+$config['database']['read'][]['table_prefix'] = 'mybb_';
+$config['database']['read'][]['hostname'] = 'localhost_read_address';
+$config['database']['read'][]['username'] = 'root';
+$config['database']['read'][]['password'] = '******';
+
+$config['database']['read'][]['database'] = 'mybb';
+$config['database']['read'][]['table_prefix'] = 'mybb_';
+$config['database']['read'][]['hostname'] = 'localhost_read_address2';
+$config['database']['read'][]['username'] = 'root';
+$config['database']['read'][]['password'] = '******';
+
+
+$config['database']['write'][]['database'] = 'mybb';
+$config['database']['write'][]['table_prefix'] = 'mybb_';
+$config['database']['write'][]['hostname'] = 'localhost_write_address';
+$config['database']['write'][]['username'] = 'root';
+$config['database']['write'][]['password'] = '******';
+
+$config['database']['write'][]['database'] = 'mybb';
+$config['database']['write'][]['table_prefix'] = 'mybb_';
+$config['database']['write'][]['hostname'] = 'localhost_write_address2';
+$config['database']['write'][]['username'] = 'root';
+$config['database']['write'][]['password'] = '******';
+</pre>
+<p>Now, in the event that you do have multiple read / write servers setup in the config, MyBB would connect to all the write servers so it can update all of them, and select 1 read server at random. I wish we could easily detect the load of the read servers and pick the lowest one, but unfortunately that’s not very practical yet.
+</p><p>If you are going to have multiple read and write servers, you should put your read servers on a load balancer rather than in MyBB’s config file. The only difference is you would point the read array towards your load balancer.
+</p>
+
+<p>GZip compression, browser cache and more.
+</p><p>See <a href="http://mybb.github.com/MyBB-Resources/Admin_CP_Board_Settings.html#Server_Optimization_Options" title="Admin CP Board Settings">ACP -&gt; Board Settings -&gt; Server Optimization Options</a>
+</p><p>Another performance optimization idea is <a rel="nofollow" class="external text" href="http://community.mybb.com/thread-83640.html">making better use of spriting to reduce http requests</a>
+</p><p><br />
+</p>
+
+<ul><li> If your problem is table-locking then you might be interested in <a rel="nofollow" class="external text" href="http://community.mybb.com/thread-63048.html">Huge Performance Increase</a>
+</li><li> <a rel="nofollow" class="external text" href="http://community.mybb.com/thread-85957.html">Performance Suggestion</a>
+</li></ul>
+
+<p>If you're own a big board you would like to join this group (requires a board with at least 100K posts).
+To join, please visit <a rel="nofollow" class="external text" href="http://community.mybb.com/usercp.php?action=usergroups">Group Memberships</a> at the community forums.
+</p>
+
+<p><a rel="nofollow" class="external text" href="http://dev.mybb.com/search/index/mybb?issues=1&amp;q=performance">Performance related issues</a>
+</p>
+
+<ul><li> <a rel="nofollow" class="external free" href="http://www.mybb.com/features/performance">http://www.mybb.com/features/performance</a>
+</li><li> <a rel="nofollow" class="external free" href="http://www.mybb.com/features/db-support">http://www.mybb.com/features/db-support</a>
+</li><li> <a rel="nofollow" class="external free" href="http://blog.mybb.com/2008/03/18/mybb-14-admin-cp-the-complete-overview-part-3">http://blog.mybb.com/2008/03/18/mybb-14-admin-cp-the-complete-overview-part-3</a>
+</li></ul>
+<div style="border: 1px solid #ddd; background-color: #f5f5f5; padding: 5px; margin: 5px;">
+<div style="text-align: center; font-size: 18px; margin-bottom: 5px;"><b><a href="http://mybb.github.com/MyBB-Resources/Features.html" title="Features">MyBB Features</a></b></div>
+<table cellpadding="3" cellspacing="3" style="font-size: 95%; line-spacing:1; border: 1px solid #ddd; width: 100%; margin-bottom: 5px; background: #fff;">
+<tr>
+<td><a href="Lite_(Archive)_Mode" title="Lite (Archive) Mode">Archive Mode</a> - <a href="http://mybb.github.com/MyBB-Resources/Attachments.html" title="Attachments">Attachments</a> - <a href="http://mybb.github.com/MyBB-Resources/Multiquote.html" title="Multiquote">Multiquote</a> - <a href="http://mybb.github.com/MyBB-Resources/MyCode.html" title="MyCode">MyCode</a> - <a href="http://mybb.github.com/MyBB-Resources/Polls.html" title="Polls">Polls</a> - <a href="http://mybb.github.com/MyBB-Resources/Private_Messages.html" title="Private Messages">Private Messages</a> - <a href="http://mybb.github.com/MyBB-Resources/Reputation.html" title="Reputation">Reputation</a> - <a href="http://mybb.github.com/MyBB-Resources/RSS_Syndication.html" title="RSS Syndication">RSS Syndication</a> - <a href="http://mybb.github.com/MyBB-Resources/SEF_URLS.html" title="SEF URLS">Search Engine Friendly URLs</a> - <a href="http://mybb.github.com/MyBB-Resources/Smilies.html" title="Smilies">Smilies</a> - <a href="http://mybb.github.com/MyBB-Resources/Subscriptions.html" title="Subscriptions">Subscriptions</a> - <a href="http://mybb.github.com/MyBB-Resources/User_Groups.html" title="User Groups">User Groups</a> - <a href="http://mybb.github.com/MyBB-Resources/Referrers.html" title="Referrers">User Referrals</a> - <a href="http://mybb.github.com/MyBB-Resources/Warning_System.html" title="Warning System">Warning System</a>
+</td></tr></table>
+<div style="text-align: center;"><i>This is obviously not the complete feature list.  See <a href="http://mybb.github.com/MyBB-Resources/Features.html" title="Features">Features</a>.</i></div>
+</div>
+
+
+
+
+
+					
+					Last updated on: 2012-06-02 00:00:00 -0700.
+				</div>
+			</div>
+		</div>
+		
+		<div id="footer">
+				<script type="text/javascript" src="http://mybb.com/footer_credit.js"></script>
+				<p>Copyright &copy; 2010 MyBB Group. All rights reserved.</p>
+				<p><a href="/contact">Contact</a> MyBB Group &mdash; <em>for support with MyBB, visit <a href="/support">support</a></em></p><br />
+			</div>
+		</div>  
+	</div>
+	
+	<div id="shadow_footer"></div>
+
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-11443733-2']);
+	  _gaq.push(['_setDomainName', 'none']);
+	  _gaq.push(['_setAllowLinker', true]);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+</body>
+</html>
+

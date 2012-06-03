@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<title>MyBB Documentation - Translations</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta name="author" content="MyBB Group" />
+	<meta name="copyright" content="Copyright MyBB Group." />
+	<meta name="description" content="The official documentation for MyBB, a free PHP and MySQL based discussion system." />
+	<link rel="stylesheet" type="text/css" href="http://mybb.com/assets/screen.css?xmas" />
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="http://mybb.com/assets/screen_ie.css?zz" />
+	<![endif]-->
+
+	<script type="text/javascript" src="http://mybb.com/jscripts/prototype.lite.js"></script>
+	<script type="text/javascript" src="http://mybb.com/jscripts/general.js"></script>
+	<script type="text/javascript" src="http://mybb.com/jscripts/moo.ajax.js"></script>
+	<script type="text/javascript" src="http://mybb.com/jscripts/lightbox.js"></script>
+	<!--[if lt IE 7]>
+	<script defer type="text/javascript" src="http://mybb.com/assets/pngfix.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div id="shadow">
+		<div id="container">
+			<!--search:no_index-->
+			<h1><span class="invisible">MyBB</span></h1>
+			<div id="header">
+			<a class="link" href="/"></a>
+				<div id="search">
+					<form action="/search" method="get"><fieldset><label for="search_box"><span id="search_left">&nbsp;</span></label><input type="text" name="query" id="search_box" title="Enter your search keywords" /><input type="submit" value="Search" name="submit-search" id="search_button" /></fieldset></form>
+				</div>
+				<div id="menu">
+				<ul>
+					<li class="default"><a href="/">Home</a></li>
+					<li class="default"><a href="/about">About</a></li>
+					<li class="default"><a href="/features">Features</a></li>
+					<li class="default"><a href="/downloads">Downloads</a></li>
+					<li class="default"><a href="http://community.mybb.com/">Community Forum</a></li>
+					<li class="default"><a href="/get-involved">Get Involved</a></li>
+					<li class="default"><a href="http://ideas.mybb.com/">Ideas</a></li>
+					<li class="default"><a href="http://mods.mybb.com/">Mods</a></li>
+					<li class="active"><a href="http://wiki.mybb.com/">Wiki</a></li>
+					<li class="default"><a href="http://blog.mybb.com/">Blog</a></li>
+
+				</ul>
+				</div>
+			</div>
+			
+			
+			<!--/search:no_index-->
+			<div id="content">
+				<div id="sidebar">
+					<div class="item">
+					<div class="sidebar_top"><div class="right"></div></div>
+						<h3>Categories</h3>
+						<ul>
+						
+														
+						</ul>
+					<div class="sidebar_bottom"><div class="right"></div></div>
+					</div>
+				</div>
+				
+				<div id="page">
+					<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Introduction"><span class="tocnumber">1</span> <span class="toctext">Introduction</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Finding_Translations"><span class="tocnumber">2</span> <span class="toctext">Finding Translations</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Installing_Translations"><span class="tocnumber">3</span> <span class="toctext">Installing Translations</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Uploading_the_language_files"><span class="tocnumber">3.1</span> <span class="toctext">Uploading the language files</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Uploading_the_image_files"><span class="tocnumber">3.2</span> <span class="toctext">Uploading the image files</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Finishing_touches"><span class="tocnumber">3.3</span> <span class="toctext">Finishing touches</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+
+<p><b>Translations</b>, also known as "<b>language packs</b>" or "<b>languages</b>" are available to translate the MyBB interface into another language.  All of the text that MyBB generates (besides user-inputted messages), are translatable.  The ability to do this lies in the various .lang.php files found in the inc/languages/&lt;language name&gt;/ folders.
+</p><p>Each MyBB file has its own .lang.php file.  For example, the language phrases used in member.php would be stored in inc/languages/&lt;language name&gt;/member.lang.php.  
+</p><p>There are also some "global" language files that are used in all of MyBB.  These include global.lang.php and messages.lang.php.
+</p><p>Each board comes with the English language pack by default.  It is recommended that you do <b>NOT</b> delete this language pack.
+</p>
+
+<p>The complete translations that have been submitted to the MyBB Group are listed on the <a rel="nofollow" class="external text" href="http://community.mybb.com/thread-114917.html">MyBB translations page</a>.
+</p><p>More discussions about translations (in development, or other), may be found in the <a rel="nofollow" class="external text" href="http://community.mybb.com/forum-21.html">Internationalization</a> forum.
+</p>
+
+<p>There are usually two main components of installing a language.  Firstly, the language files need to be uploaded.  Secondly, the translated image files (should they exist) need to be uploaded.
+</p>
+<h3><span class="editsection">[<a href="http://localhost/mediawiki/index.php?title=Translations&amp;action=edit&amp;section=4" title="Edit section: Uploading the language files">edit</a>]</span> <span class="mw-headline" id="Uploading_the_language_files"> Uploading the language files </span></h3>
+<p>The language files should be uploaded to the inc/languages/&lt;language name&gt;/ folder.  The translation author should give you instructions via his or her readme on details including what the &lt;language name&gt; folder name should be.
+</p><p>One file remains in the main inc/language folder, and that is the "meta" language file that contains information about the language.
+</p>
+<h3><span class="editsection">[<a href="http://localhost/mediawiki/index.php?title=Translations&amp;action=edit&amp;section=5" title="Edit section: Uploading the image files">edit</a>]</span> <span class="mw-headline" id="Uploading_the_image_files"> Uploading the image files </span></h3>
+<p>If these exist, they should be uploaded to images/&lt;language name&gt;/ and groupimages/&lt;language name&gt;/.  Again, the translation author should have given you more detailed instructions in his or her readme file.
+</p>
+<h3><span class="editsection">[<a href="http://localhost/mediawiki/index.php?title=Translations&amp;action=edit&amp;section=6" title="Edit section: Finishing touches">edit</a>]</span> <span class="mw-headline" id="Finishing_touches"> Finishing touches </span></h3>
+<p>Open up your <a href="http://mybb.github.com/MyBB-Resources/User_CP.html#Edit_Options" title="User CP">User CP Edit Options</a> page and you should see the translation in the "Other Option" menu.  Try out the new translation and make sure that everything works.
+</p><p><br />
+</p>
+<div style="border: 1px solid #ddd; background-color: #f5f5f5; padding: 5px; margin: 5px;">
+<div style="text-align: center; font-size: 18px; margin-bottom: 5px;"><b><a href="http://mybb.github.com/MyBB-Resources/Customization.html" title="Customization">MyBB Customization</a></b></div>
+<table cellpadding="3" cellspacing="3" style="font-size: 95%; line-spacing:1; border: 1px solid #ddd; width: 100%; margin-bottom: 5px; background: #fff;">
+<tr>
+<td style="vertical-align: middle; font-size: 14px;"><b><a href="http://mybb.github.com/MyBB-Resources/Templates_and_Themes.html" title="Templates and Themes">Templates/Themes</a></b>
+</td>
+<td style="vertical-align: middle; width: 75%;"><a href="http://mybb.github.com/MyBB-Resources/Authoring_Templates_and_Themes.html" title="Authoring Templates and Themes">Authoring</a> - <a href="http://mybb.github.com/MyBB-Resources/Admin_CP_Templates.html" title="Admin CP Templates">Template Management</a> - <a href="http://mybb.github.com/MyBB-Resources/Admin_CP_Themes.html" title="Admin CP Themes">Theme Management</a> - <a rel="nofollow" class="external text" href="http://mods.mybb.com/themes">User-created</a>
+</td></tr></table>
+<table cellpadding="3" cellspacing="3" style="font-size: 95%; line-spacing:1; border: 1px solid #ddd; width: 100%; margin-bottom: 5px; background: #fff;">
+<tr>
+<td style="vertical-align: middle; font-size: 14px;"><b><a href="http://mybb.github.com/MyBB-Resources/Plugins.html" title="Plugins">Plugins</a></b>
+</td>
+<td style="vertical-align: middle; width: 75%;"><a href="http://mybb.github.com/MyBB-Resources/Authoring_Plugins.html" title="Authoring Plugins">Authoring</a> - <a href="http://mybb.github.com/MyBB-Resources/MyBB_Plugin_Hooks.html" title="MyBB Plugin Hooks">Plugin Hooks</a> - <a href="http://mybb.github.com/MyBB-Resources/Admin_CP_Config_Plugins.html" title="Admin CP Config Plugins">Plugin Management</a> - <a rel="nofollow" class="external text" href="http://mods.mybb.com/mods">User-created</a>
+</td></tr></table>
+<table cellpadding="3" cellspacing="3" style="font-size: 95%; line-spacing:1; border: 1px solid #ddd; width: 100%; margin-bottom: 5px; background: #fff;">
+<tr>
+<td style="vertical-align: middle; font-size: 14px;"><b><strong class="selflink">Translations</strong></b>
+</td>
+<td style="vertical-align: middle; width: 75%;"><a href="http://mybb.github.com/MyBB-Resources/Admin_CP_Config_Languages.html" title="Admin CP Config Languages">Language Management</a> - <a rel="nofollow" class="external text" href="http://community.mybb.com/thread-114917.html">Download</a>
+</td></tr></table>
+<table cellpadding="3" cellspacing="3" style="font-size: 95%; line-spacing:1; border: 1px solid #ddd; width: 100%; margin-bottom: 5px; background: #fff;">
+<tr>
+<td style="vertical-align: middle; font-size: 14px;"><b>Links</b>
+</td>
+<td style="vertical-align: middle; width: 75%;"><a rel="nofollow" class="external text" href="http://mods.mybb.com/">MyBB Mods</a>
+</td></tr></table>
+</div>
+
+
+
+
+
+					
+					Last updated on: 2012-06-02 00:00:00 -0700.
+				</div>
+			</div>
+		</div>
+		
+		<div id="footer">
+				<script type="text/javascript" src="http://mybb.com/footer_credit.js"></script>
+				<p>Copyright &copy; 2010 MyBB Group. All rights reserved.</p>
+				<p><a href="/contact">Contact</a> MyBB Group &mdash; <em>for support with MyBB, visit <a href="/support">support</a></em></p><br />
+			</div>
+		</div>  
+	</div>
+	
+	<div id="shadow_footer"></div>
+
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-11443733-2']);
+	  _gaq.push(['_setDomainName', 'none']);
+	  _gaq.push(['_setAllowLinker', true]);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+</body>
+</html>
+
