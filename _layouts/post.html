@@ -8,14 +8,13 @@
 	<meta name="copyright" content="Copyright MyBB Group." />
 	<meta name="description" content="The official documentation for MyBB, a free PHP and MySQL based discussion system." />
 	<link rel="stylesheet" type="text/css" href="http://mybb.com/assets/screen.css?xmas" />
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
 	<!--[if lt IE 8]>
 	<link rel="stylesheet" type="text/css" href="http://mybb.com/assets/screen_ie.css?zz" />
 	<![endif]-->
 
-	<script type="text/javascript" src="http://mybb.com/jscripts/prototype.lite.js"></script>
-	<script type="text/javascript" src="http://mybb.com/jscripts/general.js"></script>
-	<script type="text/javascript" src="http://mybb.com/jscripts/moo.ajax.js"></script>
-	<script type="text/javascript" src="http://mybb.com/jscripts/lightbox.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/docs.js"></script>
 	<!--[if lt IE 7]>
 	<script defer type="text/javascript" src="http://mybb.com/assets/pngfix.js"></script>
 	<![endif]-->
@@ -38,7 +37,6 @@
 					<li class="default"><a href="/downloads">Downloads</a></li>
 					<li class="default"><a href="http://community.mybb.com/">Community Forum</a></li>
 					<li class="default"><a href="/get-involved">Get Involved</a></li>
-					<li class="default"><a href="http://ideas.mybb.com/">Ideas</a></li>
 					<li class="default"><a href="http://mods.mybb.com/">Mods</a></li>
 					<li class="active"><a href="http://wiki.mybb.com/">Wiki</a></li>
 					<li class="default"><a href="http://blog.mybb.com/">Blog</a></li>
@@ -54,17 +52,18 @@
 					<div class="item">
 					<div class="sidebar_top"><div class="right"></div></div>
 						<h3>Categories</h3>
-						<ul>
-						
-							{% for category in site.sorted_categories %}
-							here is a category name - {{ category | first }}
-							here is the number of posts in this category - {{ category | last | size }}
-							{% for post in category.last %}
-							posts in this category - {{ post.url }} {{ post.date | date_to_string }}
-							{% endfor %}
-							{% endfor %}							{% for category in site.sorted_categories %}
-								<li><a href="{{ post.url }}">{{ category | first }}</a></li>
-							{% endfor %}
+						<ul class="docs_categories">
+						 {% for category in site.categories %} 
+						  <li><a name="{{ category | first }}">{{ category | first }}</a> 
+							<ul class="docs_subcat"> 
+							{% for posts in category %} 
+							  {% for post in posts %} 
+								<li><a href="{{ post.url }}">{{ post.title }}</a></li> 
+							  {% endfor %} 
+							{% endfor %} 
+							</ul> 
+						  </li> 
+						{% endfor %} 
 						</ul>
 					<div class="sidebar_bottom"><div class="right"></div></div>
 					</div>
