@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.6.1" />
+
+	<title>Class Text_Diff_Renderer</title>
+
+	<script type="text/javascript" src="resources/combined.js?144019575"></script>
+	<script type="text/javascript" src="elementlist.js?322722881"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1532301413" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Packages</h3>
+			<ul>
+				<li><a href="package-None.html">None</a>
+						</li>
+				<li class="active"><a href="package-Text.html">Text<span></span></a>
+						<ul>
+				<li class="active"><a href="package-Text.Diff.html">Diff</a>
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Text_Diff.html">Text_Diff</a></li>
+				<li><a href="class-Text_Diff3.html">Text_Diff3</a></li>
+				<li><a href="class-Text_Diff3_BlockBuilder.html">Text_Diff3_BlockBuilder</a></li>
+				<li><a href="class-Text_Diff3_Op.html">Text_Diff3_Op</a></li>
+				<li><a href="class-Text_Diff3_Op_copy.html">Text_Diff3_Op_copy</a></li>
+				<li><a href="class-Text_Diff_Engine_native.html">Text_Diff_Engine_native</a></li>
+				<li><a href="class-Text_Diff_Engine_shell.html">Text_Diff_Engine_shell</a></li>
+				<li><a href="class-Text_Diff_Engine_string.html">Text_Diff_Engine_string</a></li>
+				<li><a href="class-Text_Diff_Engine_xdiff.html">Text_Diff_Engine_xdiff</a></li>
+				<li><a href="class-Text_Diff_Mapped.html">Text_Diff_Mapped</a></li>
+				<li><a href="class-Text_Diff_Op.html">Text_Diff_Op</a></li>
+				<li><a href="class-Text_Diff_Op_add.html">Text_Diff_Op_add</a></li>
+				<li><a href="class-Text_Diff_Op_change.html">Text_Diff_Op_change</a></li>
+				<li><a href="class-Text_Diff_Op_copy.html">Text_Diff_Op_copy</a></li>
+				<li><a href="class-Text_Diff_Op_delete.html">Text_Diff_Op_delete</a></li>
+				<li class="active"><a href="class-Text_Diff_Renderer.html">Text_Diff_Renderer</a></li>
+				<li><a href="class-Text_Diff_Renderer_inline.html">Text_Diff_Renderer_inline</a></li>
+				<li><a href="class-Text_Diff_Renderer_unified.html">Text_Diff_Renderer_unified</a></li>
+				<li><a href="class-Text_Diff_ThreeWay.html">Text_Diff_ThreeWay</a></li>
+				<li><a href="class-Text_Diff_ThreeWay_BlockBuilder.html">Text_Diff_ThreeWay_BlockBuilder</a></li>
+				<li><a href="class-Text_Diff_ThreeWay_Op.html">Text_Diff_ThreeWay_Op</a></li>
+				<li><a href="class-Text_Diff_ThreeWay_Op_copy.html">Text_Diff_ThreeWay_Op_copy</a></li>
+				<li><a href="class-Text_MappedDiff.html">Text_MappedDiff</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="package-Text.Diff.html" title="Summary of Text\Diff"><span>Package</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Text_Diff_Renderer</h1>
+
+
+	<div class="description">
+	
+<p>A class to render Diffs in different formats.</p>
+
+<p>This class renders the diff in classic diff format. It is intended that this
+class be customized via inheritance, to obtain fancier outputs.</p>
+
+<p>$Horde: framework/Text_Diff/Diff/Renderer.php,v 1.5.10.10 2008/01/04 10:37:27
+jan Exp $</p>
+
+<p>Copyright 2004-2008 The Horde Project (<a
+href="http://www.horde.org/">http://www.horde.org/</a>)</p>
+
+<p>See the enclosed file COPYING for license information (LGPL). If you did not
+receive this file, see <a
+href="http://opensource.org/licenses/lgpl-license.php">http://opensource.org/licenses/lgpl-license.php</a>.</p>
+
+	</div>
+
+
+
+	<div>
+		<h4>Direct known subclasses</h4>
+			<a href="class-Text_Diff_Renderer_inline.html">Text_Diff_Renderer_inline</a>, 
+			<a href="class-Text_Diff_Renderer_unified.html">Text_Diff_Renderer_unified</a>
+	</div>
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+		<b>Package:</b> <a href="package-Text.html">Text</a>\<a href="package-Text.Diff.html">Diff</a><br />
+
+		<b>Located at</b> <a href="source-class-Text_Diff_Renderer.html#2" title="Go to source code">inc/3rdparty/diff/Diff/Renderer.php</a><br />
+	</div>
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="Text_Diff_Renderer" id="_Text_Diff_Renderer">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_Text_Diff_Renderer">#</a>
+		<code><a href="source-class-Text_Diff_Renderer.html#35" title="Go to source code">Text_Diff_Renderer</a>( <span> <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Constructor.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Constructor.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getParams" id="_getParams">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getParams">#</a>
+		<code><a href="source-class-Text_Diff_Renderer.html#48" title="Go to source code">getParams</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get any renderer parameters.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get any renderer parameters.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>All parameters of this renderer object.<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="render" id="_render">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_render">#</a>
+		<code><a href="source-class-Text_Diff_Renderer.html#65" title="Go to source code">render</a>( <span><code><a href="class-Text_Diff.html">Text_Diff</a></code> <var>$diff</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Renders a diff.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Renders a diff.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$diff</var></dt>
+					<dd><code><code><a href="class-Text_Diff.html">Text_Diff</a></code></code><br> A Text_Diff object.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>The formatted output.<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="_block" id="__block">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#__block">#</a>
+		<code><a href="source-class-Text_Diff_Renderer.html#146" title="Go to source code">_block</a>( <span> <var>$xbeg</var></span>, <span> <var>$xlen</var></span>, <span> <var>$ybeg</var></span>, <span> <var>$ylen</var></span>, <span> <var>&amp; $edits</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="_startDiff" id="__startDiff">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#__startDiff">#</a>
+		<code><a href="source-class-Text_Diff_Renderer.html#173" title="Go to source code">_startDiff</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="_endDiff" id="__endDiff">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#__endDiff">#</a>
+		<code><a href="source-class-Text_Diff_Renderer.html#178" title="Go to source code">_endDiff</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="_blockHeader" id="__blockHeader">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#__blockHeader">#</a>
+		<code><a href="source-class-Text_Diff_Renderer.html#183" title="Go to source code">_blockHeader</a>( <span> <var>$xbeg</var></span>, <span> <var>$xlen</var></span>, <span> <var>$ybeg</var></span>, <span> <var>$ylen</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="_startBlock" id="__startBlock">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#__startBlock">#</a>
+		<code><a href="source-class-Text_Diff_Renderer.html#202" title="Go to source code">_startBlock</a>( <span> <var>$header</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="_endBlock" id="__endBlock">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#__endBlock">#</a>
+		<code><a href="source-class-Text_Diff_Renderer.html#207" title="Go to source code">_endBlock</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="_lines" id="__lines">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#__lines">#</a>
+		<code><a href="source-class-Text_Diff_Renderer.html#212" title="Go to source code">_lines</a>( <span> <var>$lines</var></span>, <span> <var>$prefix</var> = <span class="php-quote">' '</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="_context" id="__context">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#__context">#</a>
+		<code><a href="source-class-Text_Diff_Renderer.html#217" title="Go to source code">_context</a>( <span> <var>$lines</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="_added" id="__added">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#__added">#</a>
+		<code><a href="source-class-Text_Diff_Renderer.html#222" title="Go to source code">_added</a>( <span> <var>$lines</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="_deleted" id="__deleted">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#__deleted">#</a>
+		<code><a href="source-class-Text_Diff_Renderer.html#227" title="Go to source code">_deleted</a>( <span> <var>$lines</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="_changed" id="__changed">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#__changed">#</a>
+		<code><a href="source-class-Text_Diff_Renderer.html#232" title="Go to source code">_changed</a>( <span> <var>$orig</var></span>, <span> <var>$final</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="_leading_context_lines" id="$_leading_context_lines">
+
+		<td class="attributes"><code>
+			public 
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Text_Diff_Renderer.html#19" title="Go to source code"><var>$_leading_context_lines</var></a>
+		</td>
+		<td class="value"><code><span class="php-num">0</span></code></td>
+		<td class="description"><div>
+			<a href="#$_leading_context_lines" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Number of leading context "lines" to preserve.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Number of leading context "lines" to preserve.</p>
+
+<p>This should be left at zero for this class, but subclasses may want to set
+this to other values.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="_trailing_context_lines" id="$_trailing_context_lines">
+
+		<td class="attributes"><code>
+			public 
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Text_Diff_Renderer.html#27" title="Go to source code"><var>$_trailing_context_lines</var></a>
+		</td>
+		<td class="value"><code><span class="php-num">0</span></code></td>
+		<td class="description"><div>
+			<a href="#$_trailing_context_lines" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Number of trailing context "lines" to preserve.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Number of trailing context "lines" to preserve.</p>
+
+<p>This should be left at zero for this class, but subclasses may want to set
+this to other values.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen 2.6.1</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

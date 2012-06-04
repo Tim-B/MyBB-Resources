@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.6.1" />
+
+	<title>Class Text_Diff_Engine_shell</title>
+
+	<script type="text/javascript" src="resources/combined.js?144019575"></script>
+	<script type="text/javascript" src="elementlist.js?322722881"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1532301413" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Packages</h3>
+			<ul>
+				<li><a href="package-None.html">None</a>
+						</li>
+				<li class="active"><a href="package-Text.html">Text<span></span></a>
+						<ul>
+				<li class="active"><a href="package-Text.Diff.html">Diff</a>
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Text_Diff.html">Text_Diff</a></li>
+				<li><a href="class-Text_Diff3.html">Text_Diff3</a></li>
+				<li><a href="class-Text_Diff3_BlockBuilder.html">Text_Diff3_BlockBuilder</a></li>
+				<li><a href="class-Text_Diff3_Op.html">Text_Diff3_Op</a></li>
+				<li><a href="class-Text_Diff3_Op_copy.html">Text_Diff3_Op_copy</a></li>
+				<li><a href="class-Text_Diff_Engine_native.html">Text_Diff_Engine_native</a></li>
+				<li class="active"><a href="class-Text_Diff_Engine_shell.html">Text_Diff_Engine_shell</a></li>
+				<li><a href="class-Text_Diff_Engine_string.html">Text_Diff_Engine_string</a></li>
+				<li><a href="class-Text_Diff_Engine_xdiff.html">Text_Diff_Engine_xdiff</a></li>
+				<li><a href="class-Text_Diff_Mapped.html">Text_Diff_Mapped</a></li>
+				<li><a href="class-Text_Diff_Op.html">Text_Diff_Op</a></li>
+				<li><a href="class-Text_Diff_Op_add.html">Text_Diff_Op_add</a></li>
+				<li><a href="class-Text_Diff_Op_change.html">Text_Diff_Op_change</a></li>
+				<li><a href="class-Text_Diff_Op_copy.html">Text_Diff_Op_copy</a></li>
+				<li><a href="class-Text_Diff_Op_delete.html">Text_Diff_Op_delete</a></li>
+				<li><a href="class-Text_Diff_Renderer.html">Text_Diff_Renderer</a></li>
+				<li><a href="class-Text_Diff_Renderer_inline.html">Text_Diff_Renderer_inline</a></li>
+				<li><a href="class-Text_Diff_Renderer_unified.html">Text_Diff_Renderer_unified</a></li>
+				<li><a href="class-Text_Diff_ThreeWay.html">Text_Diff_ThreeWay</a></li>
+				<li><a href="class-Text_Diff_ThreeWay_BlockBuilder.html">Text_Diff_ThreeWay_BlockBuilder</a></li>
+				<li><a href="class-Text_Diff_ThreeWay_Op.html">Text_Diff_ThreeWay_Op</a></li>
+				<li><a href="class-Text_Diff_ThreeWay_Op_copy.html">Text_Diff_ThreeWay_Op_copy</a></li>
+				<li><a href="class-Text_MappedDiff.html">Text_MappedDiff</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="package-Text.Diff.html" title="Summary of Text\Diff"><span>Package</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Text_Diff_Engine_shell</h1>
+
+
+	<div class="description">
+	
+<p>Class used internally by Diff to actually compute the diffs.</p>
+
+<p>This class uses the Unix <code>diff</code> program via shell_exec to compute
+the differences between the two input arrays.</p>
+
+<p>$Horde: framework/Text_Diff/Diff/Engine/shell.php,v 1.6.2.3 2008/01/04
+10:37:27 jan Exp $</p>
+
+<p>Copyright 2007-2008 The Horde Project (<a
+href="http://www.horde.org/">http://www.horde.org/</a>)</p>
+
+<p>See the enclosed file COPYING for license information (LGPL). If you did not
+receive this file, see <a
+href="http://opensource.org/licenses/lgpl-license.php">http://opensource.org/licenses/lgpl-license.php</a>.</p>
+
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+		<b>Package:</b> <a href="package-Text.html">Text</a>\<a href="package-Text.Diff.html">Diff</a><br />
+
+				<b>Author:</b>
+				Milian Wolff &lt;<a
+href="mailto:mail&#64;milianw.de">mail&#64;<!---->milianw.de</a>&gt;<br />
+				<b>Since:</b>
+				0.3.0<br />
+		<b>Located at</b> <a href="source-class-Text_Diff_Engine_shell.html#2" title="Go to source code">inc/3rdparty/diff/Diff/Engine/shell.php</a><br />
+	</div>
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="diff" id="_diff">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_diff">#</a>
+		<code><a href="source-class-Text_Diff_Engine_shell.html#28" title="Go to source code">diff</a>( <span>array <var>$from_lines</var></span>, <span>array <var>$to_lines</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Returns the array of differences.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the array of differences.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$from_lines</var></dt>
+					<dd><code>array</code><br> lines of text from old file</dd>
+					<dt><var>$to_lines</var></dt>
+					<dd><code>array</code><br> lines of text from new file</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>all changes made (array with Text_Diff_Op_* objects)<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="_getLines" id="__getLines">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#__getLines">#</a>
+		<code><a href="source-class-Text_Diff_Engine_shell.html#135" title="Go to source code">_getLines</a>( <span>array <var>&amp; $text_lines</var></span>, <span>integer <var>&amp; $line_no</var></span>, <span>integer <var>$end</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Get lines from either the old or new text</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get lines from either the old or new text</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$text_lines</var></dt>
+					<dd><code>array</code><br>&amp;$text_lines Either $from_lines or $to_lines</dd>
+					<dt><var>$line_no</var></dt>
+					<dd><code>integer</code><br>&amp;$line_no Current line number</dd>
+					<dt><var>$end</var></dt>
+					<dd><code>integer</code><br> Optional end line, when we want to chop more than one line.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>The chopped lines<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="_diffCommand" id="$_diffCommand">
+
+		<td class="attributes"><code>
+			public 
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Text_Diff_Engine_shell.html#21" title="Go to source code"><var>$_diffCommand</var></a>
+		</td>
+		<td class="value"><code><span class="php-quote">'diff'</span></code></td>
+		<td class="description"><div>
+			<a href="#$_diffCommand" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Path to the diff executable</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Path to the diff executable</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen 2.6.1</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

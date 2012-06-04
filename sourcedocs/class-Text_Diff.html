@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.6.1" />
+
+	<title>Class Text_Diff</title>
+
+	<script type="text/javascript" src="resources/combined.js?144019575"></script>
+	<script type="text/javascript" src="elementlist.js?322722881"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1532301413" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Packages</h3>
+			<ul>
+				<li><a href="package-None.html">None</a>
+						</li>
+				<li class="active"><a href="package-Text.html">Text<span></span></a>
+						<ul>
+				<li class="active"><a href="package-Text.Diff.html">Diff</a>
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-Text_Diff.html">Text_Diff</a></li>
+				<li><a href="class-Text_Diff3.html">Text_Diff3</a></li>
+				<li><a href="class-Text_Diff3_BlockBuilder.html">Text_Diff3_BlockBuilder</a></li>
+				<li><a href="class-Text_Diff3_Op.html">Text_Diff3_Op</a></li>
+				<li><a href="class-Text_Diff3_Op_copy.html">Text_Diff3_Op_copy</a></li>
+				<li><a href="class-Text_Diff_Engine_native.html">Text_Diff_Engine_native</a></li>
+				<li><a href="class-Text_Diff_Engine_shell.html">Text_Diff_Engine_shell</a></li>
+				<li><a href="class-Text_Diff_Engine_string.html">Text_Diff_Engine_string</a></li>
+				<li><a href="class-Text_Diff_Engine_xdiff.html">Text_Diff_Engine_xdiff</a></li>
+				<li><a href="class-Text_Diff_Mapped.html">Text_Diff_Mapped</a></li>
+				<li><a href="class-Text_Diff_Op.html">Text_Diff_Op</a></li>
+				<li><a href="class-Text_Diff_Op_add.html">Text_Diff_Op_add</a></li>
+				<li><a href="class-Text_Diff_Op_change.html">Text_Diff_Op_change</a></li>
+				<li><a href="class-Text_Diff_Op_copy.html">Text_Diff_Op_copy</a></li>
+				<li><a href="class-Text_Diff_Op_delete.html">Text_Diff_Op_delete</a></li>
+				<li><a href="class-Text_Diff_Renderer.html">Text_Diff_Renderer</a></li>
+				<li><a href="class-Text_Diff_Renderer_inline.html">Text_Diff_Renderer_inline</a></li>
+				<li><a href="class-Text_Diff_Renderer_unified.html">Text_Diff_Renderer_unified</a></li>
+				<li><a href="class-Text_Diff_ThreeWay.html">Text_Diff_ThreeWay</a></li>
+				<li><a href="class-Text_Diff_ThreeWay_BlockBuilder.html">Text_Diff_ThreeWay_BlockBuilder</a></li>
+				<li><a href="class-Text_Diff_ThreeWay_Op.html">Text_Diff_ThreeWay_Op</a></li>
+				<li><a href="class-Text_Diff_ThreeWay_Op_copy.html">Text_Diff_ThreeWay_Op_copy</a></li>
+				<li><a href="class-Text_MappedDiff.html">Text_MappedDiff</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="package-Text.Diff.html" title="Summary of Text\Diff"><span>Package</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Text_Diff</h1>
+
+
+	<div class="description">
+	
+<p>General API for generating and formatting diffs - the differences between two
+sequences of strings.</p>
+
+<p>The original PHP version of this code was written by Geoffrey T. Dairiki
+&lt;<a
+href="mailto:dairiki&#64;dairiki.org">dairiki&#64;<!---->dairiki.org</a>&gt;,
+and is used/adapted with his permission.</p>
+
+<p>$Horde: framework/Text_Diff/Diff.php,v 1.11.2.11 2008/02/24 10:57:46 jan Exp
+$</p>
+
+<p>Copyright 2004 Geoffrey T. Dairiki &lt;<a
+href="mailto:dairiki&#64;dairiki.org">dairiki&#64;<!---->dairiki.org</a>&gt;
+Copyright 2004-2008 The Horde Project (<a
+href="http://www.horde.org/">http://www.horde.org/</a>)</p>
+
+<p>See the enclosed file COPYING for license information (LGPL). If you did not
+receive this file, see <a
+href="http://opensource.org/licenses/lgpl-license.php">http://opensource.org/licenses/lgpl-license.php</a>.</p>
+
+	</div>
+
+
+
+	<div>
+		<h4>Direct known subclasses</h4>
+			<a href="class-Text_Diff3.html">Text_Diff3</a>, 
+			<a href="class-Text_Diff_Mapped.html">Text_Diff_Mapped</a>, 
+			<a href="class-Text_Diff_ThreeWay.html">Text_Diff_ThreeWay</a>, 
+			<a href="class-Text_MappedDiff.html">Text_MappedDiff</a>
+	</div>
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+		<b>Package:</b> <a href="package-Text.html">Text</a>\<a href="package-Text.Diff.html">Diff</a><br />
+
+				<b>Author:</b>
+				Geoffrey T. Dairiki &lt;<a
+href="mailto:dairiki&#64;dairiki.org">dairiki&#64;<!---->dairiki.org</a>&gt;<br />
+		<b>Located at</b> <a href="source-class-Text_Diff.html#8" title="Go to source code">inc/3rdparty/diff/Diff.php</a><br />
+	</div>
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="Text_Diff" id="_Text_Diff">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_Text_Diff">#</a>
+		<code><a href="source-class-Text_Diff.html#35" title="Go to source code">Text_Diff</a>( <span>string <var>$engine</var></span>, <span>array <var>$params</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Computes diffs between sequences of strings.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Computes diffs between sequences of strings.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$engine</var></dt>
+					<dd><code>string</code><br> Name of the diffing engine to use. 'auto' will automatically select the best.</dd>
+					<dt><var>$params</var></dt>
+					<dd><code>array</code><br> Parameters to pass to the diffing engine. Normally an array of two arrays, each
+containing the lines from a file.</dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDiff" id="_getDiff">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDiff">#</a>
+		<code><a href="source-class-Text_Diff.html#65" title="Go to source code">getDiff</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the array of differences.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the array of differences.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="countAddedLines" id="_countAddedLines">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_countAddedLines">#</a>
+		<code><a href="source-class-Text_Diff.html#73" title="Go to source code">countAddedLines</a>( )</code>
+
+		<div class="description short">
+			
+<p>returns the number of new (added) lines in a given diff.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>returns the number of new (added) lines in a given diff.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br>The number of new lines<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						Text_Diff 1.1.0<br />
+						Horde 3.2<br />
+				</div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="countDeletedLines" id="_countDeletedLines">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_countDeletedLines">#</a>
+		<code><a href="source-class-Text_Diff.html#93" title="Go to source code">countDeletedLines</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the number of deleted (removed) lines in a given diff.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the number of deleted (removed) lines in a given diff.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br>The number of deleted lines<br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						Text_Diff 1.1.0<br />
+						Horde 3.2<br />
+				</div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="reverse" id="_reverse">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Text_Diff.html">Text_Diff</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_reverse">#</a>
+		<code><a href="source-class-Text_Diff.html#113" title="Go to source code">reverse</a>( )</code>
+
+		<div class="description short">
+			
+<p>Computes a reversed diff.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Computes a reversed diff.</p>
+
+<p>Example:</p>
+
+<pre>
+<span class="php-var">$diff</span> = <span
+class="php-keyword1">new</span> Text_Diff(<span
+class="php-var">$lines1</span>, <span class="php-var">$lines2</span>);
+<span
+class="php-var">$rev</span> = <span
+class="php-var">$diff</span>-&gt;reverse();
+</pre>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Text_Diff.html">Text_Diff</a></code></code><br>A Diff object representing the inverse of the original diff. Note that we
+purposely don't return a reference here, since this essentially is a clone()
+method.<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isEmpty" id="_isEmpty">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isEmpty">#</a>
+		<code><a href="source-class-Text_Diff.html#141" title="Go to source code">isEmpty</a>( )</code>
+
+		<div class="description short">
+			
+<p>Checks for an empty diff.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Checks for an empty diff.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>True if two sequences were identical.<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="lcs" id="_lcs">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_lcs">#</a>
+		<code><a href="source-class-Text_Diff.html#156" title="Go to source code">lcs</a>( )</code>
+
+		<div class="description short">
+			
+<p>Computes the length of the Longest Common Subsequence (LCS).</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Computes the length of the Longest Common Subsequence (LCS).</p>
+
+<p>This is mostly for diagnostic purposes.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br>The length of the LCS.<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getOriginal" id="_getOriginal">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getOriginal">#</a>
+		<code><a href="source-class-Text_Diff.html#174" title="Go to source code">getOriginal</a>( )</code>
+
+		<div class="description short">
+			
+<p>Gets the original set of lines.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Gets the original set of lines.</p>
+
+<p>This reconstructs the $from_lines parameter passed to the constructor.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>The original sequence of strings.<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getFinal" id="_getFinal">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getFinal">#</a>
+		<code><a href="source-class-Text_Diff.html#192" title="Go to source code">getFinal</a>( )</code>
+
+		<div class="description short">
+			
+<p>Gets the final set of lines.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Gets the final set of lines.</p>
+
+<p>This reconstructs the $to_lines parameter passed to the constructor.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>The sequence of strings.<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="trimNewlines" id="_trimNewlines">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_trimNewlines">#</a>
+		<code><a href="source-class-Text_Diff.html#210" title="Go to source code">trimNewlines</a>( <span>string <var>&amp; $line</var></span>, <span>integer <var>$key</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Removes trailing newlines from a line of text. This is meant to be used with
+array_walk().</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Removes trailing newlines from a line of text. This is meant to be used with
+array_walk().</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$line</var></dt>
+					<dd><code>string</code><br> The line to trim.</dd>
+					<dt><var>$key</var></dt>
+					<dd><code>integer</code><br> The index of the line in the array. Not used.</dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="_getTempDir" id="__getTempDir">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#__getTempDir">#</a>
+		<code><a href="source-class-Text_Diff.html#222" title="Go to source code">_getTempDir</a>( )</code>
+
+		<div class="description short">
+			
+<p>Determines the location of the system temporary directory.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Determines the location of the system temporary directory.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>A directory name which can be used for temp files. Returns false if one could
+not be found.<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="_check" id="__check">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#__check">#</a>
+		<code><a href="source-class-Text_Diff.html#259" title="Go to source code">_check</a>( <span> <var>$from_lines</var></span>, <span> <var>$to_lines</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Checks a diff for validity.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Checks a diff for validity.</p>
+
+<p>This is here only for debugging purposes.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="_edits" id="$_edits">
+
+		<td class="attributes"><code>
+			public 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Text_Diff.html#28" title="Go to source code"><var>$_edits</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$_edits" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Array of changes.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Array of changes.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen 2.6.1</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

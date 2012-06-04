@@ -1,0 +1,3200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.6.1" />
+
+	<title>Class DB_PgSQL</title>
+
+	<script type="text/javascript" src="resources/combined.js?144019575"></script>
+	<script type="text/javascript" src="elementlist.js?322722881"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1532301413" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Packages</h3>
+			<ul>
+				<li class="active"><a href="package-None.html">None</a>
+						</li>
+				<li><a href="package-Text.html">Text<span></span></a>
+						<ul>
+				<li><a href="package-Text.Diff.html">Diff</a>
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Akismet.html">Akismet</a></li>
+				<li><a href="class-bitwise.html">bitwise</a></li>
+				<li><a href="class-captcha.html">captcha</a></li>
+				<li><a href="class-CustomModeration.html">CustomModeration</a></li>
+				<li><a href="class-datacache.html">datacache</a></li>
+				<li><a href="class-DataHandler.html">DataHandler</a></li>
+				<li><a href="class-DB_MySQL.html">DB_MySQL</a></li>
+				<li><a href="class-DB_MySQLi.html">DB_MySQLi</a></li>
+				<li class="active"><a href="class-DB_PgSQL.html">DB_PgSQL</a></li>
+				<li><a href="class-DB_SQLite.html">DB_SQLite</a></li>
+				<li><a href="class-dbpdoEngine.html">dbpdoEngine</a></li>
+				<li><a href="class-DefaultForm.html">DefaultForm</a></li>
+				<li><a href="class-DefaultFormContainer.html">DefaultFormContainer</a></li>
+				<li><a href="class-DefaultPage.html">DefaultPage</a></li>
+				<li><a href="class-DefaultPopupMenu.html">DefaultPopupMenu</a></li>
+				<li><a href="class-DefaultSidebarItem.html">DefaultSidebarItem</a></li>
+				<li><a href="class-DefaultTable.html">DefaultTable</a></li>
+				<li><a href="class-diskCacheHandler.html">diskCacheHandler</a></li>
+				<li><a href="class-eacceleratorCacheHandler.html">eacceleratorCacheHandler</a></li>
+				<li><a href="class-errorHandler.html">errorHandler</a></li>
+				<li><a href="class-EventDataHandler.html">EventDataHandler</a></li>
+				<li><a href="class-FeedGenerator.html">FeedGenerator</a></li>
+				<li><a href="class-FeedParser.html">FeedParser</a></li>
+				<li><a href="class-Form.html" class="invalid">Form</a></li>
+				<li><a href="class-FormContainer.html" class="invalid">FormContainer</a></li>
+				<li><a href="class-Graph.html">Graph</a></li>
+				<li><a href="class-installerOutput.html">installerOutput</a></li>
+				<li><a href="class-MailHandler.html">MailHandler</a></li>
+				<li><a href="class-memcacheCacheHandler.html">memcacheCacheHandler</a></li>
+				<li><a href="class-Moderation.html">Moderation</a></li>
+				<li><a href="class-MyBB.html">MyBB</a></li>
+				<li><a href="class-MyLanguage.html">MyLanguage</a></li>
+				<li><a href="class-Page.html" class="invalid">Page</a></li>
+				<li><a href="class-PhpMail.html">PhpMail</a></li>
+				<li><a href="class-pluginSystem.html">pluginSystem</a></li>
+				<li><a href="class-PMDataHandler.html">PMDataHandler</a></li>
+				<li><a href="class-PopupMenu.html" class="invalid">PopupMenu</a></li>
+				<li><a href="class-PostDataHandler.html">PostDataHandler</a></li>
+				<li><a href="class-postParser.html">postParser</a></li>
+				<li><a href="class-session.html">session</a></li>
+				<li><a href="class-SidebarItem.html" class="invalid">SidebarItem</a></li>
+				<li><a href="class-SmtpMail.html">SmtpMail</a></li>
+				<li><a href="class-Table.html" class="invalid">Table</a></li>
+				<li><a href="class-templates.html">templates</a></li>
+				<li><a href="class-timer.html">timer</a></li>
+				<li><a href="class-UserDataHandler.html">UserDataHandler</a></li>
+				<li><a href="class-xcacheCacheHandler.html">xcacheCacheHandler</a></li>
+				<li><a href="class-XMLParser.html">XMLParser</a></li>
+			</ul>
+
+
+
+
+
+			<h3>Functions</h3>
+			<ul>
+				<li><a href="function-_adodb_getdate.html">_adodb_getdate</a></li>
+				<li><a href="function-_adodb_is_leap_year.html">_adodb_is_leap_year</a></li>
+				<li><a href="function-acp_rebuild_attachment_thumbnails.html">acp_rebuild_attachment_thumbnails</a></li>
+				<li><a href="function-acp_rebuild_forum_counters.html">acp_rebuild_forum_counters</a></li>
+				<li><a href="function-acp_rebuild_thread_counters.html">acp_rebuild_thread_counters</a></li>
+				<li><a href="function-acp_recount_user_posts.html">acp_recount_user_posts</a></li>
+				<li><a href="function-add_breadcrumb.html">add_breadcrumb</a></li>
+				<li><a href="function-add_shutdown.html">add_shutdown</a></li>
+				<li><a href="function-add_subscribed_forum.html">add_subscribed_forum</a></li>
+				<li><a href="function-add_subscribed_thread.html">add_subscribed_thread</a></li>
+				<li><a href="function-add_task_log.html">add_task_log</a></li>
+				<li><a href="function-admin_redirect.html">admin_redirect</a></li>
+				<li><a href="function-adodb_date.html">adodb_date</a></li>
+				<li><a href="function-adodb_date2.html">adodb_date2</a></li>
+				<li><a href="function-adodb_dow.html">adodb_dow</a></li>
+				<li><a href="function-adodb_get_gmt_diff.html">adodb_get_gmt_diff</a></li>
+				<li><a href="function-adodb_get_gmt_diff_ts.html">adodb_get_gmt_diff_ts</a></li>
+				<li><a href="function-adodb_getdate.html">adodb_getdate</a></li>
+				<li><a href="function-adodb_gmdate.html">adodb_gmdate</a></li>
+				<li><a href="function-adodb_gmmktime.html">adodb_gmmktime</a></li>
+				<li><a href="function-adodb_gmstrftime.html">adodb_gmstrftime</a></li>
+				<li><a href="function-adodb_is_leap_year.html">adodb_is_leap_year</a></li>
+				<li><a href="function-adodb_mktime.html">adodb_mktime</a></li>
+				<li><a href="function-adodb_strftime.html">adodb_strftime</a></li>
+				<li><a href="function-adodb_tz_offset.html">adodb_tz_offset</a></li>
+				<li><a href="function-adodb_year_digit_check.html">adodb_year_digit_check</a></li>
+				<li><a href="function-akismet_action_handler.html">akismet_action_handler</a></li>
+				<li><a href="function-akismet_activate.html">akismet_activate</a></li>
+				<li><a href="function-akismet_admin.html">akismet_admin</a></li>
+				<li><a href="function-akismet_admin_nav.html">akismet_admin_nav</a></li>
+				<li><a href="function-akismet_admin_permissions.html">akismet_admin_permissions</a></li>
+				<li><a href="function-akismet_deactivate.html">akismet_deactivate</a></li>
+				<li><a href="function-akismet_fake_draft.html">akismet_fake_draft</a></li>
+				<li><a href="function-akismet_info.html">akismet_info</a></li>
+				<li><a href="function-akismet_install.html">akismet_install</a></li>
+				<li><a href="function-akismet_is_installed.html">akismet_is_installed</a></li>
+				<li><a href="function-akismet_key.html">akismet_key</a></li>
+				<li><a href="function-akismet_moderation_start.html">akismet_moderation_start</a></li>
+				<li><a href="function-akismet_postbit.html">akismet_postbit</a></li>
+				<li><a href="function-akismet_redirect_forum.html">akismet_redirect_forum</a></li>
+				<li><a href="function-akismet_redirect_thread.html">akismet_redirect_thread</a></li>
+				<li><a href="function-akismet_show_confirm_page.html">akismet_show_confirm_page</a></li>
+				<li><a href="function-akismet_uninstall.html">akismet_uninstall</a></li>
+				<li><a href="function-akismet_verify.html">akismet_verify</a></li>
+				<li><a href="function-alt_trow.html">alt_trow</a></li>
+				<li><a href="function-archive_error.html">archive_error</a></li>
+				<li><a href="function-archive_error_no_permission.html">archive_error_no_permission</a></li>
+				<li><a href="function-archive_footer.html">archive_footer</a></li>
+				<li><a href="function-archive_header.html">archive_header</a></li>
+				<li><a href="function-archive_multipage.html">archive_multipage</a></li>
+				<li><a href="function-archive_navigation.html">archive_navigation</a></li>
+				<li><a href="function-ban_date2timestamp.html">ban_date2timestamp</a></li>
+				<li><a href="function-build_archive_link.html">build_archive_link</a></li>
+				<li><a href="function-build_breadcrumb.html">build_breadcrumb</a></li>
+				<li><a href="function-build_calendar_jump.html">build_calendar_jump</a></li>
+				<li><a href="function-build_clickable_smilies.html">build_clickable_smilies</a></li>
+				<li><a href="function-build_forum_breadcrumb.html">build_forum_breadcrumb</a></li>
+				<li><a href="function-build_forum_jump.html">build_forum_jump</a></li>
+				<li><a href="function-build_forumbits.html">build_forumbits</a></li>
+				<li><a href="function-build_friendly_wol_location.html">build_friendly_wol_location</a></li>
+				<li><a href="function-build_highlight_array.html">build_highlight_array</a></li>
+				<li><a href="function-build_mass_mail_query.html">build_mass_mail_query</a></li>
+				<li><a href="function-build_mini_calendar.html">build_mini_calendar</a></li>
+				<li><a href="function-build_mycode_inserter.html">build_mycode_inserter</a></li>
+				<li><a href="function-build_new_theme.html">build_new_theme</a></li>
+				<li><a href="function-build_next_run_bit.html">build_next_run_bit</a></li>
+				<li><a href="function-build_parent_list.html">build_parent_list</a></li>
+				<li><a href="function-build_postbit.html">build_postbit</a></li>
+				<li><a href="function-build_prefix_select.html">build_prefix_select</a></li>
+				<li><a href="function-build_prefixes.html">build_prefixes</a></li>
+				<li><a href="function-build_profile_link.html">build_profile_link</a></li>
+				<li><a href="function-build_server_stats.html">build_server_stats</a></li>
+				<li><a href="function-build_theme_array.html">build_theme_array</a></li>
+				<li><a href="function-build_theme_list.html">build_theme_list</a></li>
+				<li><a href="function-build_theme_select.html">build_theme_select</a></li>
+				<li><a href="function-build_timezone_select.html">build_timezone_select</a></li>
+				<li><a href="function-build_wol_row.html">build_wol_row</a></li>
+				<li><a href="function-cache_calendars.html">cache_calendars</a></li>
+				<li><a href="function-cache_forums.html">cache_forums</a></li>
+				<li><a href="function-cache_stylesheet.html">cache_stylesheet</a></li>
+				<li><a href="function-cache_themes.html">cache_themes</a></li>
+				<li><a href="function-change_admin_permission.html">change_admin_permission</a></li>
+				<li><a href="function-check_admin_permissions.html">check_admin_permissions</a></li>
+				<li><a href="function-check_forum_password.html">check_forum_password</a></li>
+				<li><a href="function-check_forum_password_archive.html">check_forum_password_archive</a></li>
+				<li><a href="function-check_proceed.html">check_proceed</a></li>
+				<li><a href="function-check_template.html">check_template</a></li>
+				<li><a href="function-check_thumbnail_memory.html">check_thumbnail_memory</a></li>
+				<li><a href="function-check_time_values.html">check_time_values</a></li>
+				<li><a href="function-clean_keywords.html">clean_keywords</a></li>
+				<li><a href="function-clean_keywords_ft.html">clean_keywords_ft</a></li>
+				<li><a href="function-clear_overflow.html" class="invalid">clear_overflow</a></li>
+				<li><a href="function-config_action_handler.html">config_action_handler</a></li>
+				<li><a href="function-config_admin_permissions.html">config_admin_permissions</a></li>
+				<li><a href="function-config_meta.html">config_meta</a></li>
+				<li><a href="function-configure.html">configure</a></li>
+				<li><a href="function-convert_through_utf8.html">convert_through_utf8</a></li>
+				<li><a href="function-copy_stylesheet_to_theme.html">copy_stylesheet_to_theme</a></li>
+				<li><a href="function-create_admin_user.html">create_admin_user</a></li>
+				<li><a href="function-create_tables.html">create_tables</a></li>
+				<li><a href="function-create_text_message.html">create_text_message</a></li>
+				<li><a href="function-css_selectors_sort_cmp.html">css_selectors_sort_cmp</a></li>
+				<li><a href="function-css_to_array.html">css_to_array</a></li>
+				<li><a href="function-database_info.html">database_info</a></li>
+				<li><a href="function-db_connection.html">db_connection</a></li>
+				<li><a href="function-debug_page.html">debug_page</a></li>
+				<li><a href="function-dec_to_utf8.html">dec_to_utf8</a></li>
+				<li><a href="function-delete_post.html">delete_post</a></li>
+				<li><a href="function-delete_thread.html">delete_thread</a></li>
+				<li><a href="function-delete_user_posts.html">delete_user_posts</a></li>
+				<li><a href="function-draw_admin_pagination.html">draw_admin_pagination</a></li>
+				<li><a href="function-draw_circles.html">draw_circles</a></li>
+				<li><a href="function-draw_dots.html">draw_dots</a></li>
+				<li><a href="function-draw_lines.html">draw_lines</a></li>
+				<li><a href="function-draw_squares.html">draw_squares</a></li>
+				<li><a href="function-draw_string.html">draw_string</a></li>
+				<li><a href="function-email_already_in_use.html">email_already_in_use</a></li>
+				<li><a href="function-error.html">error</a></li>
+				<li><a href="function-error_list.html">error_list</a></li>
+				<li><a href="function-error_no_permission.html">error_no_permission</a></li>
+				<li><a href="function-escaped_explode.html">escaped_explode</a></li>
+				<li><a href="function-expire_warnings.html">expire_warnings</a></li>
+				<li><a href="function-fetch_ban_times.html">fetch_ban_times</a></li>
+				<li><a href="function-fetch_calendar_permissions.html">fetch_calendar_permissions</a></li>
+				<li><a href="function-fetch_default_view.html">fetch_default_view</a></li>
+				<li><a href="function-fetch_first_run_time.html">fetch_first_run_time</a></li>
+				<li><a href="function-fetch_forum_announcements.html">fetch_forum_announcements</a></li>
+				<li><a href="function-fetch_forum_permissions.html">fetch_forum_permissions</a></li>
+				<li><a href="function-fetch_friendly_expiration.html">fetch_friendly_expiration</a></li>
+				<li><a href="function-fetch_friendly_repetition.html">fetch_friendly_repetition</a></li>
+				<li><a href="function-fetch_iconv_encoding.html">fetch_iconv_encoding</a></li>
+				<li><a href="function-fetch_longipv4_range.html">fetch_longipv4_range</a></li>
+				<li><a href="function-fetch_next_occurance.html">fetch_next_occurance</a></li>
+				<li><a href="function-fetch_next_run.html">fetch_next_run</a></li>
+				<li><a href="function-fetch_page_url.html">fetch_page_url</a></li>
+				<li><a href="function-fetch_remote_file.html">fetch_remote_file</a></li>
+				<li><a href="function-fetch_time_length.html">fetch_time_length</a></li>
+				<li><a href="function-fetch_unread_count.html">fetch_unread_count</a></li>
+				<li><a href="function-fetch_weekday_monthly_repetition.html">fetch_weekday_monthly_repetition</a></li>
+				<li><a href="function-fetch_weekday_name.html">fetch_weekday_name</a></li>
+				<li><a href="function-fetch_weekday_structure.html">fetch_weekday_structure</a></li>
+				<li><a href="function-fetch_wol_activity.html">fetch_wol_activity</a></li>
+				<li><a href="function-find_replace_templatesets.html">find_replace_templatesets</a></li>
+				<li><a href="function-fix_css_urls.html">fix_css_urls</a></li>
+				<li><a href="function-fix_mktime.html">fix_mktime</a></li>
+				<li><a href="function-flash_message.html">flash_message</a></li>
+				<li><a href="function-format_bdays.html">format_bdays</a></li>
+				<li><a href="function-format_name.html">format_name</a></li>
+				<li><a href="function-forum_action_handler.html">forum_action_handler</a></li>
+				<li><a href="function-forum_admin_permissions.html">forum_admin_permissions</a></li>
+				<li><a href="function-forum_meta.html">forum_meta</a></li>
+				<li><a href="function-forum_permissions.html">forum_permissions</a></li>
+				<li><a href="function-gd_version.html">gd_version</a></li>
+				<li><a href="function-generate_loginkey.html">generate_loginkey</a></li>
+				<li><a href="function-generate_post_check.html">generate_post_check</a></li>
+				<li><a href="function-generate_salt.html">generate_salt</a></li>
+				<li><a href="function-generate_thumbnail.html">generate_thumbnail</a></li>
+				<li><a href="function-get_admin_permissions.html">get_admin_permissions</a></li>
+				<li><a href="function-get_age.html">get_age</a></li>
+				<li><a href="function-get_announcement_link.html">get_announcement_link</a></li>
+				<li><a href="function-get_attachment_icon.html">get_attachment_icon</a></li>
+				<li><a href="function-get_bdays.html">get_bdays</a></li>
+				<li><a href="function-get_birthdays.html">get_birthdays</a></li>
+				<li><a href="function-get_calendar_link.html">get_calendar_link</a></li>
+				<li><a href="function-get_calendar_permissions.html">get_calendar_permissions</a></li>
+				<li><a href="function-get_calendar_week_link.html">get_calendar_week_link</a></li>
+				<li><a href="function-get_child_list.html">get_child_list</a></li>
+				<li><a href="function-get_colored_warning_level.html">get_colored_warning_level</a></li>
+				<li><a href="function-get_css_properties.html">get_css_properties</a></li>
+				<li><a href="function-get_current_location.html">get_current_location</a></li>
+				<li><a href="function-get_event_date.html">get_event_date</a></li>
+				<li><a href="function-get_event_link.html">get_event_link</a></li>
+				<li><a href="function-get_event_poster.html">get_event_poster</a></li>
+				<li><a href="function-get_events.html">get_events</a></li>
+				<li><a href="function-get_extension.html">get_extension</a></li>
+				<li><a href="function-get_forum.html">get_forum</a></li>
+				<li><a href="function-get_forum_lightbulb.html">get_forum_lightbulb</a></li>
+				<li><a href="function-get_forum_link.html">get_forum_link</a></li>
+				<li><a href="function-get_forum_unapproved.html">get_forum_unapproved</a></li>
+				<li><a href="function-get_friendly_size.html">get_friendly_size</a></li>
+				<li><a href="function-get_inactive_forums.html">get_inactive_forums</a></li>
+				<li><a href="function-get_ip.html">get_ip</a></li>
+				<li><a href="function-get_moderator_permissions.html">get_moderator_permissions</a></li>
+				<li><a href="function-get_next_month.html">get_next_month</a></li>
+				<li><a href="function-get_parent_list.html">get_parent_list</a></li>
+				<li><a href="function-get_password_protected_forums.html">get_password_protected_forums</a></li>
+				<li><a href="function-get_pm_folder_name.html">get_pm_folder_name</a></li>
+				<li><a href="function-get_post.html">get_post</a></li>
+				<li><a href="function-get_post_attachments.html">get_post_attachments</a></li>
+				<li><a href="function-get_post_icons.html">get_post_icons</a></li>
+				<li><a href="function-get_post_link.html">get_post_link</a></li>
+				<li><a href="function-get_prev_month.html">get_prev_month</a></li>
+				<li><a href="function-get_profile_link.html">get_profile_link</a></li>
+				<li><a href="function-get_reputation.html">get_reputation</a></li>
+				<li><a href="function-get_selectors_as_options.html">get_selectors_as_options</a></li>
+				<li><a href="function-get_server_load.html">get_server_load</a></li>
+				<li><a href="function-get_thread.html">get_thread</a></li>
+				<li><a href="function-get_thread_link.html">get_thread_link</a></li>
+				<li><a href="function-get_unsearchable_forums.html">get_unsearchable_forums</a></li>
+				<li><a href="function-get_unviewable_forums.html">get_unviewable_forums</a></li>
+				<li><a href="function-get_user.html">get_user</a></li>
+				<li><a href="function-get_usertitle.html">get_usertitle</a></li>
+				<li><a href="function-get_weekday.html">get_weekday</a></li>
+				<li><a href="function-gzip_encode.html">gzip_encode</a></li>
+				<li><a href="function-hello_info.html">hello_info</a></li>
+				<li><a href="function-hello_world.html">hello_world</a></li>
+				<li><a href="function-hello_world_postbit.html">hello_world_postbit</a></li>
+				<li><a href="function-home_action_handler.html">home_action_handler</a></li>
+				<li><a href="function-home_meta.html">home_meta</a></li>
+				<li><a href="function-htmlspecialchars_uni.html">htmlspecialchars_uni</a></li>
+				<li><a href="function-import_theme_xml.html">import_theme_xml</a></li>
+				<li><a href="function-inline_error.html">inline_error</a></li>
+				<li><a href="function-insert_into_css.html">insert_into_css</a></li>
+				<li><a href="function-insert_templates.html">insert_templates</a></li>
+				<li><a href="function-install_done.html">install_done</a></li>
+				<li><a href="function-intro.html">intro</a></li>
+				<li><a href="function-is_banned_email.html">is_banned_email</a></li>
+				<li><a href="function-is_banned_ip.html">is_banned_ip</a></li>
+				<li><a href="function-is_banned_username.html">is_banned_username</a></li>
+				<li><a href="function-is_moderator.html">is_moderator</a></li>
+				<li><a href="function-is_super_admin.html">is_super_admin</a></li>
+				<li><a href="function-join_usergroup.html">join_usergroup</a></li>
+				<li><a href="function-kill_tags.html">kill_tags</a></li>
+				<li><a href="function-leave_usergroup.html">leave_usergroup</a></li>
+				<li><a href="function-license_agreement.html">license_agreement</a></li>
+				<li><a href="function-log_admin_action.html">log_admin_action</a></li>
+				<li><a href="function-log_moderator_action.html">log_moderator_action</a></li>
+				<li><a href="function-login_attempt_check.html">login_attempt_check</a></li>
+				<li><a href="function-login_attempt_check_acp.html">login_attempt_check_acp</a></li>
+				<li><a href="function-make_child_theme_list.html">make_child_theme_list</a></li>
+				<li><a href="function-make_parent_list.html">make_parent_list</a></li>
+				<li><a href="function-make_parent_theme_list.html">make_parent_theme_list</a></li>
+				<li><a href="function-make_pretty_links.html">make_pretty_links</a></li>
+				<li><a href="function-make_searchable_forums.html">make_searchable_forums</a></li>
+				<li><a href="function-mark_all_forums_read.html">mark_all_forums_read</a></li>
+				<li><a href="function-mark_forum_read.html">mark_forum_read</a></li>
+				<li><a href="function-mark_reports.html">mark_reports</a></li>
+				<li><a href="function-mark_thread_read.html">mark_thread_read</a></li>
+				<li><a href="function-match_sequence.html">match_sequence</a></li>
+				<li><a href="function-memory_get_peak_usage.html">memory_get_peak_usage</a></li>
+				<li><a href="function-modcp_can_manage_user.html">modcp_can_manage_user</a></li>
+				<li><a href="function-multipage.html">multipage</a></li>
+				<li><a href="function-my_chmod.html">my_chmod</a></li>
+				<li><a href="function-my_date.html">my_date</a></li>
+				<li><a href="function-my_get_array_cookie.html">my_get_array_cookie</a></li>
+				<li><a href="function-my_ip2long.html">my_ip2long</a></li>
+				<li><a href="function-my_long2ip.html">my_long2ip</a></li>
+				<li><a href="function-my_mail.html">my_mail</a></li>
+				<li><a href="function-my_number_format.html">my_number_format</a></li>
+				<li><a href="function-my_rand.html">my_rand</a></li>
+				<li><a href="function-my_rmdir_recursive.html">my_rmdir_recursive</a></li>
+				<li><a href="function-my_set_array_cookie.html">my_set_array_cookie</a></li>
+				<li><a href="function-my_setcookie.html">my_setcookie</a></li>
+				<li><a href="function-my_strlen.html">my_strlen</a></li>
+				<li><a href="function-my_strpos.html">my_strpos</a></li>
+				<li><a href="function-my_strtolower.html">my_strtolower</a></li>
+				<li><a href="function-my_strtoupper.html">my_strtoupper</a></li>
+				<li><a href="function-my_substr.html">my_substr</a></li>
+				<li><a href="function-my_unserialize.html">my_unserialize</a></li>
+				<li><a href="function-my_unsetcookie.html">my_unsetcookie</a></li>
+				<li><a href="function-my_wordwrap.html">my_wordwrap</a></li>
+				<li><a href="function-nice_time.html">nice_time</a></li>
+				<li><a href="function-output_logo.html">output_logo</a></li>
+				<li><a href="function-output_page.html">output_page</a></li>
+				<li><a href="function-parse_css_properties.html">parse_css_properties</a></li>
+				<li><a href="function-parse_page.html">parse_page</a></li>
+				<li><a href="function-parse_php_info.html">parse_php_info</a></li>
+				<li><a href="function-parse_quoted_message.html">parse_quoted_message</a></li>
+				<li><a href="function-parse_theme_variables.html">parse_theme_variables</a></li>
+				<li><a href="function-perform_search_mysql.html">perform_search_mysql</a></li>
+				<li><a href="function-perform_search_mysql_ft.html">perform_search_mysql_ft</a></li>
+				<li><a href="function-populate_tables.html">populate_tables</a></li>
+				<li><a href="function-privatemessage_perform_search_mysql.html">privatemessage_perform_search_mysql</a></li>
+				<li><a href="function-random_str.html">random_str</a></li>
+				<li><a href="function-rebuild_forum_counters.html">rebuild_forum_counters</a></li>
+				<li><a href="function-rebuild_settings.html">rebuild_settings</a></li>
+				<li><a href="function-rebuild_stats.html">rebuild_stats</a></li>
+				<li><a href="function-rebuild_thread_counters.html">rebuild_thread_counters</a></li>
+				<li><a href="function-rebuildsettings.html">rebuildsettings</a></li>
+				<li><a href="function-redirect.html">redirect</a></li>
+				<li><a href="function-remove_attachment.html">remove_attachment</a></li>
+				<li><a href="function-remove_attachments.html">remove_attachments</a></li>
+				<li><a href="function-remove_avatars.html">remove_avatars</a></li>
+				<li><a href="function-remove_message_quotes.html">remove_message_quotes</a></li>
+				<li><a href="function-remove_subscribed_forum.html">remove_subscribed_forum</a></li>
+				<li><a href="function-remove_subscribed_thread.html">remove_subscribed_thread</a></li>
+				<li><a href="function-requirements_check.html">requirements_check</a></li>
+				<li><a href="function-reset_breadcrumb.html">reset_breadcrumb</a></li>
+				<li><a href="function-resync_stylesheet.html">resync_stylesheet</a></li>
+				<li><a href="function-run_shutdown.html">run_shutdown</a></li>
+				<li><a href="function-run_task.html">run_task</a></li>
+				<li><a href="function-run_time_exists.html">run_time_exists</a></li>
+				<li><a href="function-salt_password.html">salt_password</a></li>
+				<li><a href="function-save_quick_perms.html">save_quick_perms</a></li>
+				<li><a href="function-scale_image.html">scale_image</a></li>
+				<li><a href="function-secure_seed_rng.html">secure_seed_rng</a></li>
+				<li><a href="function-send_mail_queue.html">send_mail_queue</a></li>
+				<li><a href="function-send_page_headers.html">send_page_headers</a></li>
+				<li><a href="function-set_default_view.html">set_default_view</a></li>
+				<li><a href="function-signed.html">signed</a></li>
+				<li><a href="function-style_action_handler.html">style_action_handler</a></li>
+				<li><a href="function-style_admin_permissions.html">style_admin_permissions</a></li>
+				<li><a href="function-style_meta.html">style_meta</a></li>
+				<li><a href="function-subforums_count.html">subforums_count</a></li>
+				<li><a href="function-task_backupdb.html">task_backupdb</a></li>
+				<li><a href="function-task_checktables.html">task_checktables</a></li>
+				<li><a href="function-task_dailycleanup.html">task_dailycleanup</a></li>
+				<li><a href="function-task_delayedmoderation.html">task_delayedmoderation</a></li>
+				<li><a href="function-task_hourlycleanup.html">task_hourlycleanup</a></li>
+				<li><a href="function-task_logcleanup.html">task_logcleanup</a></li>
+				<li><a href="function-task_massmail.html">task_massmail</a></li>
+				<li><a href="function-task_promotions.html">task_promotions</a></li>
+				<li><a href="function-task_threadviews.html">task_threadviews</a></li>
+				<li><a href="function-task_usercleanup.html">task_usercleanup</a></li>
+				<li><a href="function-task_userpruning.html">task_userpruning</a></li>
+				<li><a href="function-tools_action_handler.html">tools_action_handler</a></li>
+				<li><a href="function-tools_admin_permissions.html">tools_admin_permissions</a></li>
+				<li><a href="function-tools_meta.html">tools_meta</a></li>
+				<li><a href="function-trim_blank_chrs.html">trim_blank_chrs</a></li>
+				<li><a href="function-unfix_css_urls.html">unfix_css_urls</a></li>
+				<li><a href="function-unhtmlentities.html">unhtmlentities</a></li>
+				<li><a href="function-unichr.html">unichr</a></li>
+				<li><a href="function-update_admin_session.html">update_admin_session</a></li>
+				<li><a href="function-update_first_post.html">update_first_post</a></li>
+				<li><a href="function-update_forum_count.html">update_forum_count</a></li>
+				<li><a href="function-update_forum_counters.html">update_forum_counters</a></li>
+				<li><a href="function-update_forum_lastpost.html">update_forum_lastpost</a></li>
+				<li><a href="function-update_loginkey.html">update_loginkey</a></li>
+				<li><a href="function-update_password.html">update_password</a></li>
+				<li><a href="function-update_pm_count.html">update_pm_count</a></li>
+				<li><a href="function-update_salt.html">update_salt</a></li>
+				<li><a href="function-update_stats.html">update_stats</a></li>
+				<li><a href="function-update_theme_stylesheet_list.html">update_theme_stylesheet_list</a></li>
+				<li><a href="function-update_thread_attachment_count.html">update_thread_attachment_count</a></li>
+				<li><a href="function-update_thread_count.html">update_thread_count</a></li>
+				<li><a href="function-update_thread_counters.html">update_thread_counters</a></li>
+				<li><a href="function-update_thread_data.html">update_thread_data</a></li>
+				<li><a href="function-upgrade10_dbchanges.html">upgrade10_dbchanges</a></li>
+				<li><a href="function-upgrade11_dbchanges.html">upgrade11_dbchanges</a></li>
+				<li><a href="function-upgrade12_dbchanges.html">upgrade12_dbchanges</a></li>
+				<li><a href="function-upgrade12_dbchanges1.html">upgrade12_dbchanges1</a></li>
+				<li><a href="function-upgrade12_dbchanges2.html">upgrade12_dbchanges2</a></li>
+				<li><a href="function-upgrade12_dbchanges3.html">upgrade12_dbchanges3</a></li>
+				<li><a href="function-upgrade12_dbchanges4.html">upgrade12_dbchanges4</a></li>
+				<li><a href="function-upgrade12_dbchanges5.html">upgrade12_dbchanges5</a></li>
+				<li><a href="function-upgrade12_dbchanges6.html">upgrade12_dbchanges6</a></li>
+				<li><a href="function-upgrade12_dbchanges7.html">upgrade12_dbchanges7</a></li>
+				<li><a href="function-upgrade12_dbchanges8.html">upgrade12_dbchanges8</a></li>
+				<li><a href="function-upgrade12_dbchanges_post1.html">upgrade12_dbchanges_post1</a></li>
+				<li><a href="function-upgrade12_dbchanges_post2.html">upgrade12_dbchanges_post2</a></li>
+				<li><a href="function-upgrade12_dbchanges_user.html">upgrade12_dbchanges_user</a></li>
+				<li><a href="function-upgrade12_redoconfig.html">upgrade12_redoconfig</a></li>
+				<li><a href="function-upgrade12_redothemes.html">upgrade12_redothemes</a></li>
+				<li><a href="function-upgrade13_dbchanges.html">upgrade13_dbchanges</a></li>
+				<li><a href="function-upgrade13_dbchanges1.html">upgrade13_dbchanges1</a></li>
+				<li><a href="function-upgrade13_dbchanges2.html">upgrade13_dbchanges2</a></li>
+				<li><a href="function-upgrade14_dbchanges.html">upgrade14_dbchanges</a></li>
+				<li><a href="function-upgrade14_dbchanges1.html">upgrade14_dbchanges1</a></li>
+				<li><a href="function-upgrade14_dbchanges2.html">upgrade14_dbchanges2</a></li>
+				<li><a href="function-upgrade15_dbchanges.html">upgrade15_dbchanges</a></li>
+				<li><a href="function-upgrade15_usernameupdate.html">upgrade15_usernameupdate</a></li>
+				<li><a href="function-upgrade15_usernameverify.html">upgrade15_usernameverify</a></li>
+				<li><a href="function-upgrade17_dbchanges.html">upgrade17_dbchanges</a></li>
+				<li><a href="function-upgrade17_dbchanges2.html">upgrade17_dbchanges2</a></li>
+				<li><a href="function-upgrade17_dbchanges3.html">upgrade17_dbchanges3</a></li>
+				<li><a href="function-upgrade17_dbchanges4.html">upgrade17_dbchanges4</a></li>
+				<li><a href="function-upgrade17_dbchanges5.html">upgrade17_dbchanges5</a></li>
+				<li><a href="function-upgrade17_dbchanges6.html">upgrade17_dbchanges6</a></li>
+				<li><a href="function-upgrade17_dbchanges7.html">upgrade17_dbchanges7</a></li>
+				<li><a href="function-upgrade17_redoconfig.html">upgrade17_redoconfig</a></li>
+				<li><a href="function-upgrade17_updatecss.html">upgrade17_updatecss</a></li>
+				<li><a href="function-upgrade18_dbchanges.html">upgrade18_dbchanges</a></li>
+				<li><a href="function-upgrade18_updatecache.html">upgrade18_updatecache</a></li>
+				<li><a href="function-upgrade1_dbchanges.html">upgrade1_dbchanges</a></li>
+				<li><a href="function-upgrade1_dbchanges2.html">upgrade1_dbchanges2</a></li>
+				<li><a href="function-upgrade1_dbchanges3.html">upgrade1_dbchanges3</a></li>
+				<li><a href="function-upgrade20_dbchanges.html">upgrade20_dbchanges</a></li>
+				<li><a href="function-upgrade21_dbchanges.html">upgrade21_dbchanges</a></li>
+				<li><a href="function-upgrade23_dbchanges.html">upgrade23_dbchanges</a></li>
+				<li><a href="function-upgrade2_dbchanges.html">upgrade2_dbchanges</a></li>
+				<li><a href="function-upgrade2_dbchanges2.html">upgrade2_dbchanges2</a></li>
+				<li><a href="function-upgrade3_convertattachments.html">upgrade3_convertattachments</a></li>
+				<li><a href="function-upgrade3_convertavatars.html">upgrade3_convertavatars</a></li>
+				<li><a href="function-upgrade3_dbchanges.html">upgrade3_dbchanges</a></li>
+				<li><a href="function-upgrade3_dbchanges2.html">upgrade3_dbchanges2</a></li>
+				<li><a href="function-upgrade3_dbchanges3.html">upgrade3_dbchanges3</a></li>
+				<li><a href="function-upgrade4_dbchanges.html">upgrade4_dbchanges</a></li>
+				<li><a href="function-upgrade5_dbchanges.html">upgrade5_dbchanges</a></li>
+				<li><a href="function-upgrade5_forumlastposts.html">upgrade5_forumlastposts</a></li>
+				<li><a href="function-upgrade5_indexes.html">upgrade5_indexes</a></li>
+				<li><a href="function-upgrade5_lastposts.html">upgrade5_lastposts</a></li>
+				<li><a href="function-upgrade5_redoconfig.html">upgrade5_redoconfig</a></li>
+				<li><a href="function-upgrade6_dbchanges.html">upgrade6_dbchanges</a></li>
+				<li><a href="function-upgrade8_dbchanges.html">upgrade8_dbchanges</a></li>
+				<li><a href="function-upgrade_css_120_to_140.html">upgrade_css_120_to_140</a></li>
+				<li><a href="function-upgrade_css_140_to_160.html">upgrade_css_140_to_160</a></li>
+				<li><a href="function-upload_attachment.html">upload_attachment</a></li>
+				<li><a href="function-upload_avatar.html">upload_avatar</a></li>
+				<li><a href="function-upload_file.html">upload_file</a></li>
+				<li><a href="function-user_action_handler.html">user_action_handler</a></li>
+				<li><a href="function-user_admin_permissions.html">user_admin_permissions</a></li>
+				<li><a href="function-user_exists.html">user_exists</a></li>
+				<li><a href="function-user_meta.html">user_meta</a></li>
+				<li><a href="function-user_permissions.html">user_permissions</a></li>
+				<li><a href="function-usercp_menu.html">usercp_menu</a></li>
+				<li><a href="function-usercp_menu_messenger.html">usercp_menu_messenger</a></li>
+				<li><a href="function-usercp_menu_misc.html">usercp_menu_misc</a></li>
+				<li><a href="function-usercp_menu_profile.html">usercp_menu_profile</a></li>
+				<li><a href="function-usergroup_displaygroup.html">usergroup_displaygroup</a></li>
+				<li><a href="function-usergroup_permissions.html">usergroup_permissions</a></li>
+				<li><a href="function-username_exists.html">username_exists</a></li>
+				<li><a href="function-validate_email_format.html">validate_email_format</a></li>
+				<li><a href="function-validate_password_from_uid.html">validate_password_from_uid</a></li>
+				<li><a href="function-validate_password_from_username.html">validate_password_from_username</a></li>
+				<li><a href="function-verify_files.html">verify_files</a></li>
+				<li><a href="function-verify_post_check.html">verify_post_check</a></li>
+				<li><a href="function-view_manager.html">view_manager</a></li>
+				<li><a href="function-write_settings.html">write_settings</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="package-None.html" title="Summary of None"><span>Package</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class DB_PgSQL</h1>
+
+
+	<div class="description">
+	
+<p>MyBB 1.6 Copyright 2010 MyBB Group, All Rights Reserved</p>
+
+<p>Website: <a href="http://www.mybboard.com">http://www.mybboard.com</a>
+License: <a
+href="http://www.mybboard.com/license.php">http://www.mybboard.com/license.php</a></p>
+
+<p>$Id: db_pgsql.php 5828 2012-05-08 16:06:16Z Tomm $</p>
+
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+		
+
+		<b>Located at</b> <a href="source-class-DB_PgSQL.html#3" title="Go to source code">inc/db_pgsql.php</a><br />
+	</div>
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="connect" id="_connect">
+
+		<td class="attributes"><code>
+			 public 
+			resource
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_connect">#</a>
+		<code><a href="source-class-DB_PgSQL.html#147" title="Go to source code">connect</a>( <span>array <var>$config</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Connect to the database server.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Connect to the database server.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$config</var></dt>
+					<dd><code>array</code><br>Array of DBMS connection details.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>resource</code><br>The DB connection resource. Returns false on failure<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="query" id="_query">
+
+		<td class="attributes"><code>
+			 public 
+			resource
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_query">#</a>
+		<code><a href="source-class-DB_PgSQL.html#273" title="Go to source code">query</a>( <span>string <var>$string</var></span>, <span>boolean <var>$hide_errors</var> = <span class="php-num">0</span></span>, <span>integer <var>$write_query</var> = <span class="php-num">0</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Query the database.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Query the database.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$string</var></dt>
+					<dd><code>string</code><br>The query SQL.</dd>
+					<dt><var>$hide_errors</var></dt>
+					<dd><code>boolean</code><br>1 if hide errors, 0 if not.</dd>
+					<dt><var>$write_query</var></dt>
+					<dd><code>integer</code><br>1 if executes on slave database, 0 if not.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>resource</code><br>The query data.<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="write_query" id="_write_query">
+
+		<td class="attributes"><code>
+			 public 
+			resource
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_write_query">#</a>
+		<code><a href="source-class-DB_PgSQL.html#332" title="Go to source code">write_query</a>( <span>string <var>$query</var></span>, <span>boolean <var>$hide_errors</var> = <span class="php-num">0</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Execute a write query on the slave database</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Execute a write query on the slave database</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$query</var></dt>
+					<dd><code>string</code><br>The query SQL.</dd>
+					<dt><var>$hide_errors</var></dt>
+					<dd><code>boolean</code><br>1 if hide errors, 0 if not.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>resource</code><br>The query data.<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="explain_query" id="_explain_query">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_explain_query">#</a>
+		<code><a href="source-class-DB_PgSQL.html#344" title="Go to source code">explain_query</a>( <span>string <var>$string</var></span>, <span>string <var>$qtime</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Explain a query on the database.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Explain a query on the database.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$string</var></dt>
+					<dd><code>string</code><br>The query SQL.</dd>
+					<dt><var>$qtime</var></dt>
+					<dd><code>string</code><br>The time it took to perform the query.</dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="fetch_array" id="_fetch_array">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_fetch_array">#</a>
+		<code><a href="source-class-DB_PgSQL.html#401" title="Go to source code">fetch_array</a>( <span>resource <var>$query</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Return a result array for a query.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return a result array for a query.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$query</var></dt>
+					<dd><code>resource</code><br>The query ID.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>The array of results.<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="fetch_field" id="_fetch_field">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_fetch_field">#</a>
+		<code><a href="source-class-DB_PgSQL.html#414" title="Go to source code">fetch_field</a>( <span>resource <var>$query</var></span>, <span>string <var>$field</var></span>, <span>integer <var>$row</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Return a specific field from a query.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return a specific field from a query.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$query</var></dt>
+					<dd><code>resource</code><br>The query ID.</dd>
+					<dt><var>$field</var></dt>
+					<dd><code>string</code><br>The name of the field to return.</dd>
+					<dt><var>$row</var></dt>
+					<dd><code>integer</code><br>The number of the row to fetch it from.</dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="data_seek" id="_data_seek">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_data_seek">#</a>
+		<code><a href="source-class-DB_PgSQL.html#434" title="Go to source code">data_seek</a>( <span>resource <var>$query</var></span>, <span>integer <var>$row</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Moves internal row pointer to the next row</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Moves internal row pointer to the next row</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$query</var></dt>
+					<dd><code>resource</code><br>The query ID.</dd>
+					<dt><var>$row</var></dt>
+					<dd><code>integer</code><br>The pointer to move the row to.</dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="num_rows" id="_num_rows">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_num_rows">#</a>
+		<code><a href="source-class-DB_PgSQL.html#445" title="Go to source code">num_rows</a>( <span>resource <var>$query</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Return the number of rows resulting from a query.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return the number of rows resulting from a query.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$query</var></dt>
+					<dd><code>resource</code><br>The query ID.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br>The number of rows in the result.<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="insert_id" id="_insert_id">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_insert_id">#</a>
+		<code><a href="source-class-DB_PgSQL.html#456" title="Go to source code">insert_id</a>( )</code>
+
+		<div class="description short">
+			
+<p>Return the last id number of inserted data.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return the last id number of inserted data.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br>The id number.<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="close" id="_close">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_close">#</a>
+		<code><a href="source-class-DB_PgSQL.html#481" title="Go to source code">close</a>( )</code>
+
+		<div class="description short">
+			
+<p>Close the connection with the DBMS.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Close the connection with the DBMS.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="error_number" id="_error_number">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_error_number">#</a>
+		<code><a href="source-class-DB_PgSQL.html#494" title="Go to source code">error_number</a>( <span> <var>$query</var> = <span class="php-quote">&quot;&quot;</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Return an error number.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return an error number.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br>The error number of the current error.<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="error_string" id="_error_string">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_error_string">#</a>
+		<code><a href="source-class-DB_PgSQL.html#509" title="Go to source code">error_string</a>( <span> <var>$query</var> = <span class="php-quote">&quot;&quot;</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Return an error string.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return an error string.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>The explanation for the current error.<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="error" id="_error">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_error">#</a>
+		<code><a href="source-class-DB_PgSQL.html#531" title="Go to source code">error</a>( <span>string <var>$string</var> = <span class="php-quote">&quot;&quot;</span></span>, <span> <var>$query</var> = <span class="php-quote">&quot;&quot;</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Output a database error.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Output a database error.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$string</var></dt>
+					<dd><code>string</code><br>The string to present as an error.</dd>
+					<dt><var>$query</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="affected_rows" id="_affected_rows">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_affected_rows">#</a>
+		<code><a href="source-class-DB_PgSQL.html#565" title="Go to source code">affected_rows</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the number of affected rows in a query.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the number of affected rows in a query.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br>The number of affected rows.<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="num_fields" id="_num_fields">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_num_fields">#</a>
+		<code><a href="source-class-DB_PgSQL.html#575" title="Go to source code">num_fields</a>( <span>resource <var>$query</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Return the number of fields.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return the number of fields.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$query</var></dt>
+					<dd><code>resource</code><br>The query ID.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br>The number of fields.<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="list_tables" id="_list_tables">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_list_tables">#</a>
+		<code><a href="source-class-DB_PgSQL.html#586" title="Go to source code">list_tables</a>( <span>string <var>$database</var></span>, <span>string <var>$prefix</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Lists all functions in the database.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Lists all functions in the database.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$database</var></dt>
+					<dd><code>string</code><br>The database name.</dd>
+					<dt><var>$prefix</var></dt>
+					<dd><code>string</code><br>Prefix of the table (optional)</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>The table list.<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="table_exists" id="_table_exists">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_table_exists">#</a>
+		<code><a href="source-class-DB_PgSQL.html#612" title="Go to source code">table_exists</a>( <span>string <var>$table</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Check if a table exists in a database.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Check if a table exists in a database.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd><code>string</code><br>The table name.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>True when exists, false if not.<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="field_exists" id="_field_exists">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_field_exists">#</a>
+		<code><a href="source-class-DB_PgSQL.html#635" title="Go to source code">field_exists</a>( <span>string <var>$field</var></span>, <span>string <var>$table</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Check if a field exists in a database.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Check if a field exists in a database.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$field</var></dt>
+					<dd><code>string</code><br>The field name.</dd>
+					<dt><var>$table</var></dt>
+					<dd><code>string</code><br>The table name.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>True when exists, false if not.<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="shutdown_query" id="_shutdown_query">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_shutdown_query">#</a>
+		<code><a href="source-class-DB_PgSQL.html#658" title="Go to source code">shutdown_query</a>( <span>resource <var>$query</var></span>, <span>string <var>$name</var> = <span class="php-num">0</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Add a shutdown query.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add a shutdown query.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$query</var></dt>
+					<dd><code>resource</code><br>The query data.</dd>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code><br>An optional name for the query.</dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="simple_select" id="_simple_select">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_simple_select">#</a>
+		<code><a href="source-class-DB_PgSQL.html#678" title="Go to source code">simple_select</a>( <span>string <var>$table</var></span>, <span>string <var>$fields</var> = <span class="php-quote">&quot;*&quot;</span></span>, <span>string <var>$conditions</var> = <span class="php-quote">&quot;&quot;</span></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Performs a simple select query.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Performs a simple select query.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd><code>string</code><br>The table name to be queried.</dd>
+					<dt><var>$fields</var></dt>
+					<dd><code>string</code><br>Comma delimetered list of fields to be selected.</dd>
+					<dt><var>$conditions</var></dt>
+					<dd><code>string</code><br>SQL formatted list of conditions to be matched.</dd>
+					<dt><var>$options</var></dt>
+					<dd><code>array</code><br>List of options, order by, order direction, limit, limit start</dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="insert_query" id="_insert_query">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_insert_query">#</a>
+		<code><a href="source-class-DB_PgSQL.html#715" title="Go to source code">insert_query</a>( <span>string <var>$table</var></span>, <span>array <var>$array</var></span>, <span>boolean <var>$insert_id</var> = <span class="php-keyword1">true</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Build an insert query from an array.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Build an insert query from an array.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd><code>string</code><br>The table name to perform the query on.</dd>
+					<dt><var>$array</var></dt>
+					<dd><code>array</code><br>An array of fields and their values.</dd>
+					<dt><var>$insert_id</var></dt>
+					<dd><code>boolean</code><br>Whether or not to return an insert id. True by default</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br>The insert ID if available<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="insert_query_multiple" id="_insert_query_multiple">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_insert_query_multiple">#</a>
+		<code><a href="source-class-DB_PgSQL.html#748" title="Go to source code">insert_query_multiple</a>( <span>string <var>$table</var></span>, <span>array <var>$array</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Build one query for multiple inserts from a multidimensional array.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Build one query for multiple inserts from a multidimensional array.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd><code>string</code><br>The table name to perform the query on.</dd>
+					<dt><var>$array</var></dt>
+					<dd><code>array</code><br>An array of inserts.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br>The insert ID if available<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="update_query" id="_update_query">
+
+		<td class="attributes"><code>
+			 public 
+			resource
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_update_query">#</a>
+		<code><a href="source-class-DB_PgSQL.html#779" title="Go to source code">update_query</a>( <span>string <var>$table</var></span>, <span>array <var>$array</var></span>, <span>string <var>$where</var> = <span class="php-quote">&quot;&quot;</span></span>, <span>string <var>$limit</var> = <span class="php-quote">&quot;&quot;</span></span>, <span>boolean <var>$no_quote</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Build an update query from an array.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Build an update query from an array.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd><code>string</code><br>The table name to perform the query on.</dd>
+					<dt><var>$array</var></dt>
+					<dd><code>array</code><br>An array of fields and their values.</dd>
+					<dt><var>$where</var></dt>
+					<dd><code>string</code><br>An optional where clause for the query.</dd>
+					<dt><var>$limit</var></dt>
+					<dd><code>string</code><br>An optional limit clause for the query.</dd>
+					<dt><var>$no_quote</var></dt>
+					<dd><code>boolean</code><br>An option to quote incoming values of the array.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>resource</code><br>The query data.<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="delete_query" id="_delete_query">
+
+		<td class="attributes"><code>
+			 public 
+			resource
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_delete_query">#</a>
+		<code><a href="source-class-DB_PgSQL.html#820" title="Go to source code">delete_query</a>( <span>string <var>$table</var></span>, <span>string <var>$where</var> = <span class="php-quote">&quot;&quot;</span></span>, <span>string <var>$limit</var> = <span class="php-quote">&quot;&quot;</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Build a delete query.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Build a delete query.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd><code>string</code><br>The table name to perform the query on.</dd>
+					<dt><var>$where</var></dt>
+					<dd><code>string</code><br>An optional where clause for the query.</dd>
+					<dt><var>$limit</var></dt>
+					<dd><code>string</code><br>An optional limit clause for the query.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>resource</code><br>The query data.<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="escape_string" id="_escape_string">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_escape_string">#</a>
+		<code><a href="source-class-DB_PgSQL.html#843" title="Go to source code">escape_string</a>( <span>string <var>$string</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Escape a string according to the pg escape format.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Escape a string according to the pg escape format.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$string</var></dt>
+					<dd><code>string</code><br>The string to be escaped.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>The escaped string.<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="free_result" id="_free_result">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_free_result">#</a>
+		<code><a href="source-class-DB_PgSQL.html#862" title="Go to source code">free_result</a>( <span>object <var>$query</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Frees the resources of a MySQLi query.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Frees the resources of a MySQLi query.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$query</var></dt>
+					<dd><code>object</code><br>The query to destroy.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>Returns true on success, false on faliure<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="escape_string_like" id="_escape_string_like">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_escape_string_like">#</a>
+		<code><a href="source-class-DB_PgSQL.html#873" title="Go to source code">escape_string_like</a>( <span>string <var>$string</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Escape a string used within a like command.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Escape a string used within a like command.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$string</var></dt>
+					<dd><code>string</code><br>The string to be escaped.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>The escaped string.<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get_version" id="_get_version">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get_version">#</a>
+		<code><a href="source-class-DB_PgSQL.html#884" title="Go to source code">get_version</a>( )</code>
+
+		<div class="description short">
+			
+<p>Gets the current version of PgSQL.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Gets the current version of PgSQL.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>Version of PgSQL.<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="optimize_table" id="_optimize_table">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_optimize_table">#</a>
+		<code><a href="source-class-DB_PgSQL.html#903" title="Go to source code">optimize_table</a>( <span>string <var>$table</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Optimizes a specific table.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Optimizes a specific table.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd><code>string</code><br>The name of the table to be optimized.</dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="analyze_table" id="_analyze_table">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_analyze_table">#</a>
+		<code><a href="source-class-DB_PgSQL.html#913" title="Go to source code">analyze_table</a>( <span>string <var>$table</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Analyzes a specific table.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Analyzes a specific table.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd><code>string</code><br>The name of the table to be analyzed.</dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="show_create_table" id="_show_create_table">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_show_create_table">#</a>
+		<code><a href="source-class-DB_PgSQL.html#923" title="Go to source code">show_create_table</a>( <span>string <var>$table</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Show the "create table" command for a specific table.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Show the "create table" command for a specific table.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd><code>string</code><br>The name of the table.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>The pg command to create the specified table.<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="show_fields_from" id="_show_fields_from">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_show_fields_from">#</a>
+		<code><a href="source-class-DB_PgSQL.html#1031" title="Go to source code">show_fields_from</a>( <span>string <var>$table</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Show the "show fields from" command for a specific table.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Show the "show fields from" command for a specific table.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd><code>string</code><br>The name of the table.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>Field info for that table<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="is_fulltext" id="_is_fulltext">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_is_fulltext">#</a>
+		<code><a href="source-class-DB_PgSQL.html#1060" title="Go to source code">is_fulltext</a>( <span>string <var>$table</var></span>, <span>string <var>$index</var> = <span class="php-quote">&quot;&quot;</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Returns whether or not the table contains a fulltext index.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns whether or not the table contains a fulltext index.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd><code>string</code><br>The name of the table.</dd>
+					<dt><var>$index</var></dt>
+					<dd><code>string</code><br>Optionally specify the name of the index.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>True or false if the table has a fulltext index or not.<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="supports_fulltext" id="_supports_fulltext">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_supports_fulltext">#</a>
+		<code><a href="source-class-DB_PgSQL.html#1073" title="Go to source code">supports_fulltext</a>( <span>string <var>$table</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Returns whether or not this database engine supports fulltext indexing.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns whether or not this database engine supports fulltext indexing.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd><code>string</code><br>The table to be checked.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>True or false if supported or not.<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="supports_fulltext_boolean" id="_supports_fulltext_boolean">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_supports_fulltext_boolean">#</a>
+		<code><a href="source-class-DB_PgSQL.html#1084" title="Go to source code">supports_fulltext_boolean</a>( <span>string <var>$table</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Returns whether or not this database engine supports boolean fulltext
+matching.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns whether or not this database engine supports boolean fulltext
+matching.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd><code>string</code><br>The table to be checked.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>True or false if supported or not.<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="create_fulltext_index" id="_create_fulltext_index">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_create_fulltext_index">#</a>
+		<code><a href="source-class-DB_PgSQL.html#1095" title="Go to source code">create_fulltext_index</a>( <span>string <var>$table</var></span>, <span>string <var>$column</var></span>, <span>string <var>$name</var> = <span class="php-quote">&quot;&quot;</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Creates a fulltext index on the specified column in the specified table with
+optional index name.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Creates a fulltext index on the specified column in the specified table with
+optional index name.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd><code>string</code><br>The name of the table.</dd>
+					<dt><var>$column</var></dt>
+					<dd><code>string</code><br>Name of the column to be indexed.</dd>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code><br>The index name, optional.</dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="drop_index" id="_drop_index">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_drop_index">#</a>
+		<code><a href="source-class-DB_PgSQL.html#1107" title="Go to source code">drop_index</a>( <span>string <var>$table</var></span>, <span>string <var>$name</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Drop an index with the specified name from the specified table</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Drop an index with the specified name from the specified table</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd><code>string</code><br>The name of the table.</dd>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code><br>The name of the index.</dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="index_exists" id="_index_exists">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_index_exists">#</a>
+		<code><a href="source-class-DB_PgSQL.html#1121" title="Go to source code">index_exists</a>( <span>string <var>$table</var></span>, <span>string <var>$index</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Checks to see if an index exists on a specified table</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Checks to see if an index exists on a specified table</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd><code>string</code><br>The name of the table.</dd>
+					<dt><var>$index</var></dt>
+					<dd><code>string</code><br>The name of the index.</dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="drop_table" id="_drop_table">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_drop_table">#</a>
+		<code><a href="source-class-DB_PgSQL.html#1147" title="Go to source code">drop_table</a>( <span>string <var>$table</var></span>, <span>boolean <var>$hard</var> = <span class="php-keyword1">false</span></span>, <span>boolean <var>$table_prefix</var> = <span class="php-keyword1">true</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Drop an table with the specified table</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Drop an table with the specified table</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd><code>string</code><br>The name of the table.</dd>
+					<dt><var>$hard</var></dt>
+					<dd><code>boolean</code><br>hard drop - no checking</dd>
+					<dt><var>$table_prefix</var></dt>
+					<dd><code>boolean</code><br>use table prefix</dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="replace_query" id="_replace_query">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_replace_query">#</a>
+		<code><a href="source-class-DB_PgSQL.html#1187" title="Go to source code">replace_query</a>( <span>string <var>$table</var></span>, <span>array <var>$replacements</var> = <span class="php-keyword1">array</span>()</span>, <span>mixed <var>$default_field</var> = <span class="php-quote">&quot;&quot;</span></span>, <span>boolean <var>$insert_id</var> = <span class="php-keyword1">true</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Replace contents of table with values</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Replace contents of table with values</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd><code>string</code><br>The table</dd>
+					<dt><var>$replacements</var></dt>
+					<dd><code>array</code><br>The replacements</dd>
+					<dt><var>$default_field</var></dt>
+					<dd><code>mixed</code><br>The default field(s)</dd>
+					<dt><var>$insert_id</var></dt>
+					<dd><code>boolean</code><br>Whether or not to return an insert id. True by default</dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="build_fields_string" id="_build_fields_string">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_build_fields_string">#</a>
+		<code><a href="source-class-DB_PgSQL.html#1255" title="Go to source code">build_fields_string</a>( <span> <var>$table</var></span>, <span> <var>$append</var> = <span class="php-quote">&quot;&quot;</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="drop_column" id="_drop_column">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_drop_column">#</a>
+		<code><a href="source-class-DB_PgSQL.html#1269" title="Go to source code">drop_column</a>( <span>string <var>$table</var></span>, <span>string <var>$column</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Drops a column</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Drops a column</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd><code>string</code><br>The table</dd>
+					<dt><var>$column</var></dt>
+					<dd><code>string</code><br>The column name</dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="add_column" id="_add_column">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_add_column">#</a>
+		<code><a href="source-class-DB_PgSQL.html#1280" title="Go to source code">add_column</a>( <span>string <var>$table</var></span>, <span>string <var>$column</var></span>, <span>string <var>$definition</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Adds a column</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Adds a column</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd><code>string</code><br>The table</dd>
+					<dt><var>$column</var></dt>
+					<dd><code>string</code><br>The column name</dd>
+					<dt><var>$definition</var></dt>
+					<dd><code>string</code><br>the new column definition</dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="modify_column" id="_modify_column">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_modify_column">#</a>
+		<code><a href="source-class-DB_PgSQL.html#1292" title="Go to source code">modify_column</a>( <span>string <var>$table</var></span>, <span>string <var>$column</var></span>, <span>string <var>$new_definition</var></span>, <span>boolean <var>$new_not_null</var> = <span class="php-keyword1">false</span></span>, <span>boolean <var>$new_default_value</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Modifies a column</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Modifies a column</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd><code>string</code><br>The table</dd>
+					<dt><var>$column</var></dt>
+					<dd><code>string</code><br>The column name</dd>
+					<dt><var>$new_definition</var></dt>
+					<dd><code>string</code><br>the new column definition</dd>
+					<dt><var>$new_not_null</var></dt>
+					<dd><code>boolean</code><br>Whether to drop or set a column</dd>
+					<dt><var>$new_default_value</var></dt>
+					<dd><code>boolean</code><br>The new default value (if one is to be set)</dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="rename_column" id="_rename_column">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_rename_column">#</a>
+		<code><a href="source-class-DB_PgSQL.html#1334" title="Go to source code">rename_column</a>( <span>string <var>$table</var></span>, <span>string <var>$old_column</var></span>, <span>string <var>$new_column</var></span>, <span>string <var>$new_definition</var></span>, <span>boolean <var>$new_not_null</var> = <span class="php-keyword1">false</span></span>, <span>boolean <var>$new_default_value</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Renames a column</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Renames a column</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd><code>string</code><br>The table</dd>
+					<dt><var>$old_column</var></dt>
+					<dd><code>string</code><br>The old column name</dd>
+					<dt><var>$new_column</var></dt>
+					<dd><code>string</code><br>the new column name</dd>
+					<dt><var>$new_definition</var></dt>
+					<dd><code>string</code><br>the new column definition</dd>
+					<dt><var>$new_not_null</var></dt>
+					<dd><code>boolean</code><br>Whether to drop or set a column</dd>
+					<dt><var>$new_default_value</var></dt>
+					<dd><code>boolean</code><br>The new default value (if one is to be set)</dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="set_table_prefix" id="_set_table_prefix">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_set_table_prefix">#</a>
+		<code><a href="source-class-DB_PgSQL.html#1351" title="Go to source code">set_table_prefix</a>( <span>string <var>$prefix</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets the table prefix used by the simple select, insert, update and delete
+functions</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets the table prefix used by the simple select, insert, update and delete
+functions</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$prefix</var></dt>
+					<dd><code>string</code><br>The new table prefix</dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="fetch_size" id="_fetch_size">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_fetch_size">#</a>
+		<code><a href="source-class-DB_PgSQL.html#1361" title="Go to source code">fetch_size</a>( <span>string <var>$table</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Fetched the total size of all mysql tables or a specific table</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Fetched the total size of all mysql tables or a specific table</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd><code>string</code><br>The table (optional)</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br>the total size of all mysql tables or a specific table<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="fetch_db_charsets" id="_fetch_db_charsets">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_fetch_db_charsets">#</a>
+		<code><a href="source-class-DB_PgSQL.html#1385" title="Go to source code">fetch_db_charsets</a>( )</code>
+
+		<div class="description short">
+			
+<p>Fetch a list of database character sets this DBMS supports</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Fetch a list of database character sets this DBMS supports</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>Array of supported character sets with array key being the name, array value
+being display name. False if unsupported<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="fetch_charset_collation" id="_fetch_charset_collation">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_fetch_charset_collation">#</a>
+		<code><a href="source-class-DB_PgSQL.html#1395" title="Go to source code">fetch_charset_collation</a>( <span>string <var>$charset</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Fetch a database collation for a particular database character set</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Fetch a database collation for a particular database character set</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$charset</var></dt>
+					<dd><code>string</code><br>The database character set</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>The matching database collation, false if unsupported<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="build_create_table_collation" id="_build_create_table_collation">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_build_create_table_collation">#</a>
+		<code><a href="source-class-DB_PgSQL.html#1406" title="Go to source code">build_create_table_collation</a>( )</code>
+
+		<div class="description short">
+			
+<p>Fetch a character set/collation string for use with CREATE TABLE statements.
+Uses current DB encoding</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Fetch a character set/collation string for use with CREATE TABLE statements.
+Uses current DB encoding</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>The built string, empty if unsupported<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get_execution_time" id="_get_execution_time">
+
+		<td class="attributes"><code>
+			 public 
+			float
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get_execution_time">#</a>
+		<code><a href="source-class-DB_PgSQL.html#1416" title="Go to source code">get_execution_time</a>( )</code>
+
+		<div class="description short">
+			
+<p>Time how long it takes for a particular piece of code to run. Place calls
+above &amp; below the block of code.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Time how long it takes for a particular piece of code to run. Place calls
+above &amp; below the block of code.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>float</code><br>The time taken<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="title" id="$title">
+
+		<td class="attributes"><code>
+			public 
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-DB_PgSQL.html#14" title="Go to source code"><var>$title</var></a>
+		</td>
+		<td class="value"><code><span class="php-quote">&quot;PostgreSQL&quot;</span></code></td>
+		<td class="description"><div>
+			<a href="#$title" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The title of this layer.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The title of this layer.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="short_title" id="$short_title">
+
+		<td class="attributes"><code>
+			public 
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-DB_PgSQL.html#21" title="Go to source code"><var>$short_title</var></a>
+		</td>
+		<td class="value"><code><span class="php-quote">&quot;PostgreSQL&quot;</span></code></td>
+		<td class="description"><div>
+			<a href="#$short_title" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The short title of this layer.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The short title of this layer.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="query_count" id="$query_count">
+
+		<td class="attributes"><code>
+			public 
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-DB_PgSQL.html#28" title="Go to source code"><var>$query_count</var></a>
+		</td>
+		<td class="value"><code><span class="php-num">0</span></code></td>
+		<td class="description"><div>
+			<a href="#$query_count" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>A count of the number of queries.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>A count of the number of queries.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="querylist" id="$querylist">
+
+		<td class="attributes"><code>
+			public 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-DB_PgSQL.html#35" title="Go to source code"><var>$querylist</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$querylist" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>A list of the performed queries.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>A list of the performed queries.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="error_reporting" id="$error_reporting">
+
+		<td class="attributes"><code>
+			public 
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-DB_PgSQL.html#42" title="Go to source code"><var>$error_reporting</var></a>
+		</td>
+		<td class="value"><code><span class="php-num">1</span></code></td>
+		<td class="description"><div>
+			<a href="#$error_reporting" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>1 if error reporting enabled, 0 if disabled.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>1 if error reporting enabled, 0 if disabled.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="read_link" id="$read_link">
+
+		<td class="attributes"><code>
+			public 
+			resource
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-DB_PgSQL.html#49" title="Go to source code"><var>$read_link</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$read_link" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The read database connection resource.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The read database connection resource.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="write_link" id="$write_link">
+
+		<td class="attributes"><code>
+			public 
+			resource
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-DB_PgSQL.html#56" title="Go to source code"><var>$write_link</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$write_link" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The write database connection resource</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The write database connection resource</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="current_link" id="$current_link">
+
+		<td class="attributes"><code>
+			public 
+			resource
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-DB_PgSQL.html#63" title="Go to source code"><var>$current_link</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$current_link" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Reference to the last database connection resource used.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Reference to the last database connection resource used.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="explain" id="$explain">
+
+		<td class="attributes"><code>
+			public 
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-DB_PgSQL.html#70" title="Go to source code"><var>$explain</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$explain" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Explanation of a query.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Explanation of a query.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="version" id="$version">
+
+		<td class="attributes"><code>
+			public 
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-DB_PgSQL.html#77" title="Go to source code"><var>$version</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$version" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The current version of PgSQL.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The current version of PgSQL.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="table_type" id="$table_type">
+
+		<td class="attributes"><code>
+			public 
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-DB_PgSQL.html#84" title="Go to source code"><var>$table_type</var></a>
+		</td>
+		<td class="value"><code><span class="php-quote">&quot;myisam&quot;</span></code></td>
+		<td class="description"><div>
+			<a href="#$table_type" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The current table type in use (myisam/innodb)</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The current table type in use (myisam/innodb)</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="table_prefix" id="$table_prefix">
+
+		<td class="attributes"><code>
+			public 
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-DB_PgSQL.html#91" title="Go to source code"><var>$table_prefix</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$table_prefix" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The table prefix used for simple select, update, insert and delete
+queries</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The table prefix used for simple select, update, insert and delete
+queries</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="connect_string" id="$connect_string">
+
+		<td class="attributes"><code>
+			public 
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-DB_PgSQL.html#98" title="Go to source code"><var>$connect_string</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$connect_string" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The temperary connection string used to store connect details</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The temperary connection string used to store connect details</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="last_query" id="$last_query">
+
+		<td class="attributes"><code>
+			public 
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-DB_PgSQL.html#105" title="Go to source code"><var>$last_query</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$last_query" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The last query run on the database</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The last query run on the database</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="pconnect" id="$pconnect">
+
+		<td class="attributes"><code>
+			public 
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-DB_PgSQL.html#112" title="Go to source code"><var>$pconnect</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$pconnect" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The current value of pconnect (0/1).</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The current value of pconnect (0/1).</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="engine" id="$engine">
+
+		<td class="attributes"><code>
+			public 
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-DB_PgSQL.html#119" title="Go to source code"><var>$engine</var></a>
+		</td>
+		<td class="value"><code><span class="php-quote">&quot;pgsql&quot;</span></code></td>
+		<td class="description"><div>
+			<a href="#$engine" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The engine used to run the SQL database</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The engine used to run the SQL database</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="can_search" id="$can_search">
+
+		<td class="attributes"><code>
+			public 
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-DB_PgSQL.html#126" title="Go to source code"><var>$can_search</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">true</span></code></td>
+		<td class="description"><div>
+			<a href="#$can_search" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Weather or not this engine can use the search functionality</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Weather or not this engine can use the search functionality</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="db_encoding" id="$db_encoding">
+
+		<td class="attributes"><code>
+			public 
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-DB_PgSQL.html#133" title="Go to source code"><var>$db_encoding</var></a>
+		</td>
+		<td class="value"><code><span class="php-quote">&quot;utf8&quot;</span></code></td>
+		<td class="description"><div>
+			<a href="#$db_encoding" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The database encoding currently in use (if supported)</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The database encoding currently in use (if supported)</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="query_time" id="$query_time">
+
+		<td class="attributes"><code>
+			public 
+			float
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-DB_PgSQL.html#140" title="Go to source code"><var>$query_time</var></a>
+		</td>
+		<td class="value"><code><span class="php-num">0</span></code></td>
+		<td class="description"><div>
+			<a href="#$query_time" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The time spent performing queries</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The time spent performing queries</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen 2.6.1</a>
+	</div>
+</div>
+</div>
+</body>
+</html>
