@@ -14,15 +14,15 @@ category: Plugins
 <li class="toclevel-1 tocsection-4"><a href="#See_Also"><span class="tocnumber">4</span> <span class="toctext">See Also</span></a></li>
 </ul>
 </td></tr></table>
-
+<h2> <span class="mw-headline" id="What_are_plugins.3F"> What are plugins? </span></h2>
 <p>Plugins are basically custom PHP functions that are executed at a certain point in the MyBB code called a <i>hook</i>.  These hooks are located at various points throughout the script (see <a href="{{ site.url }}/MyBB_Plugin_Hooks.html" title="MyBB Plugin Hooks">MyBB Plugin Hooks</a>).
 </p>
-
+<h2> <span class="mw-headline" id="How_do_plugins_work.3F"> How do plugins work? </span></h2>
 <p>When you activate a plugin, its codename (the first part of its filename before .php) is cached in the <a href="{{ site.url }}/Admin_CP_Maintenance.html#plugins" title="Admin CP Maintenance" class="mw-redirect">plugins cache</a>.
 </p><p>All the active plugins are 'included' at the start of each page.  (Thus, if you have many plugins installed, the speed of your forum may decrease slightly, depending on the nature of your plugins).  The hooks that each plugin uses is stored in memory.
 </p><p>When a hook is 'run' when a page is being executed, the array mentioned earlier is searched to see if there are functions from the plugins loaded earlier associated with this hook.  If there are, each function is executed.
 </p>
-
+<h2> <span class="mw-headline" id="Installing_Plugins"> Installing Plugins </span></h2>
 <p>Here is how to install and activate a plugin.  Please note that different plugins may need you to do additional modifications or procedures.  Check the plugin's documentation for those specific information.
 </p>
 <ol><li> Upload the plugin file (which should be in the format: pluginname.php) to the folder: inc/plugins/.  It is imperative that you do not change the filename from the one that was distributed by the plugin author.
@@ -30,7 +30,7 @@ category: Plugins
 </li><li> Find the plugin that you uploaded, and click "Activate"
 </li><li> If all goes well, you should be redirected back to the plugin manager and the button will now say "Deactivate"
 </li></ol>
-
+<h2> <span class="mw-headline" id="See_Also"> See Also </span></h2>
 <ul><li> Visit <a href="{{ site.url }}/User_Created_Plugins.html" title="User Created Plugins">User Created Plugins</a> for a list of plugins available for download.
 </li></ul>
 <p><br />
