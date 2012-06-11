@@ -26,15 +26,15 @@ category: Templates
 <li class="toclevel-1 tocsection-9"><a href="#Guidelines"><span class="tocnumber">8</span> <span class="toctext">Guidelines</span></a></li>
 </ul>
 </td></tr></table>
-
+<h2> <span class="mw-headline" id="Introduction"> Introduction </span></h2>
 <p>Authoring Templates and Themes is similar to creating website layouts, with the addition of MyBB Internal Variables. This will require knowledge of (X)HTML and CSS. Variables are used with the following syntax:  <code>{$variable}</code>.
 </p>
-
+<h2> <span class="mw-headline" id="Templates"> Templates </span></h2>
 <p>In order to change how MyBB looks you must edit the templates. To access the templates go to your Admin CP &gt; Templates &amp; Style&gt; Templates&gt; [Your theme].
 </p><p>Once there click "Expand" to view the various template groups.
 </p><p>To edit a template, click its name. Templates you have edited will appear in a different color. You can restore the original version of a template by clicking "Revert To Original".
 </p>
-
+<h2> <span class="mw-headline" id="Structure">Structure</span></h2>
 <p>Unfortunately, the MyBB template system doesn't have a simple hierarchical structure; template can't include other templates. This makes following the structure of a page somewhat difficult. For example, if you start from the index page (the <code>index</code> template), you'll see that it uses a few variables:
 </p>
 <pre>
@@ -54,7 +54,7 @@ eval(&quot;\$forums = \&quot;&quot;.$templates-&gt;get(&quot;forumdisplay&quot;)
 </pre>
 <p><br />
 </p>
-
+<h2> <span class="mw-headline" id="Variables"> Variables </span></h2>
 <p>Variables are used to define MyBB-specific functions inside the templates.
 </p><p>There are various variables that can be used throughout the templates but most of them are template specific.
 </p><p>To determine which variable to use for which template just view the template you're trying to edit and uses of it are guaranteed to be there.
@@ -68,10 +68,10 @@ eval(&quot;\$forums = \&quot;&quot;.$templates-&gt;get(&quot;forumdisplay&quot;)
 <p>There are many more variables but it would be a huge long list.  Also, not all variables work on all templates.
 </p><p>If you plan on making and releasing template modifications be sure to use <code>$theme</code> variables instead of regular HTML because of the differences in different administrators themes.
 </p>
-
+<h2> <span class="mw-headline" id="XHTML"> XHTML </span></h2>
 <p>MyBB uses XHTML 1.0 Transitional as the coding standard. It is important to code in this standard so that all browsers will view the same way.
 </p>
-
+<h2> <span class="mw-headline" id="CSS"> CSS </span></h2>
 <p>MyBB also uses CSS (Cascading Style Sheets) to define most of its theme attributes. You can change these by going to your MyBB's Admin CP &gt; Themes &gt; Modify / Delete. Once there select "Edit Theme Style" and hit go.
 </p><p>Here you will view various different attributes related to the theme you are editing.
 </p><p>You can change various things like:
@@ -86,7 +86,7 @@ eval(&quot;\$forums = \&quot;&quot;.$templates-&gt;get(&quot;forumdisplay&quot;)
 </li></ul>
 <p>The Theme Editor also includes an Additional CSS field, where you can add your own custom CSS.
 </p>
-
+<h3> <span class="mw-headline" id="Table_Classes"> Table Classes </span></h3>
 <p>Tables are used extensively in MyBB (MyBB was designed back in the day, before CSS-based layouts became the norm).  There are many CSS classes that are used to style different parts of these tables.
 </p>
 <ul><li> <b>thead</b> - This is used for <a href="{{ site.url }}/Admin_CP_Themes.html#Table_Headers" title="Admin CP Themes">Table Headers</a>, to display them properly using CSS.
@@ -114,10 +114,10 @@ eval(&quot;\$forums = \&quot;&quot;.$templates-&gt;get(&quot;forumdisplay&quot;)
 </pre>
 <p>See this thread for a visual diagram of CSS classes and ids for the main MyBB pages - <a rel="nofollow" class="external text" href="http://community.mybb.com/thread-33809.html">MyBB 1.4 CSS Guide</a>
 </p>
-
+<h2> <span class="mw-headline" id="Themes"> Themes </span></h2>
 <p>Using MyBB Templates and Themes you can create various different styles. You can completely alter the way MyBB looks and feels through various HTML changes in the templates.
 </p>
-
+<h2> <span class="mw-headline" id="Guidelines"> Guidelines </span></h2>
 <p>Here are several hints so you can get started making your own themes.
 </p>
 <ol><li> Use lighter colors over darker. This puts less strain on your viewer's eyes, and also looks more professional.

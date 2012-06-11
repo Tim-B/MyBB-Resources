@@ -13,7 +13,7 @@ category: Other topics
 <li class="toclevel-1 tocsection-5"><a href="#Help_and_Support"><span class="tocnumber">5</span> <span class="toctext">Help and Support</span></a></li>
 </ul>
 </td></tr></table>
-
+<h2> <span class="mw-headline" id="The_Upgrade_Process"> The Upgrade Process </span></h2>
 <p>As with any software, there are various different types of upgrades. They vary in size, difficulty and the type of changes being made.
 </p><p>With MyBB, we follow a sequenced-based version scheme to describe the changes we've made.
 </p>
@@ -23,14 +23,14 @@ category: Other topics
 </dd></dl>
 <dl><dd><b>Maintenance Point Upgrades</b><br />The maintenance upgrade makes small changes, mostly bug fixes, to the minor point versions. These can also be security upgrades. As an example, going from version 1.6.2 to 1.6.3 or 1.6.1 to 1.6.4 is a maintenance point upgrade. These changes are meant to make the new version more stable than the last. It is very unlikely that any changes to plugins are needed, but language packs or themes may need to be updated.
 </dd></dl>
-
+<h2> <span class="mw-headline" id="Preparing_for_your_Upgrade"> Preparing for your Upgrade </span></h2>
 <p>Before you upgrade, you should always read the announcement blog post properly before starting. The new version's changes will clearly be explained and provide an insight into how difficult the upgrade will be.
 </p>
 <ol><li> First, you may want to shut down your forum. Doing this means that no one will interrupt the upgrade process accidentally. Please remember that switching the forum by using the "Board Online/Offline" setting <b>IS NOT</b> recommended. The best method is to use a .htaccess restriction on your forum's root folder so that no one can access the front end. There are various tutorials on search engines that help you do this and some hosts (especially ones that give you cPanel) provide simple tools to do this.<br /><br />
 </li><li> Secondly, you should be back up your files and database and store them in a safe place. Just in case something goes wrong, you can restore the backup and start again. You can back up the database using the <a href="{{ site.url }}/Database_Backup.html" title="Database Backup">MyBB Admin CP or your database management software</a>.<br /><br />
 </li><li> If you are upgrading to a major or minor point, you must deactivate (or disable) all of your plugins. This is because it is likely they will need to be updated to work on the new version and can cause problems if they are left active. You may also want to deactivate or disable all of your plugins for maintenance upgrades too, but it is not usually required.
 </li></ol>
-
+<h2> <span class="mw-headline" id="Downloading_the_correct_upgrade_package"> Downloading the correct upgrade package </span></h2>
 <p>There are two different methods of upgrading your forum, full upgrades and a changed files upgrade.
 </p>
 <dl><dd><b>Full Upgrade</b><br />If your current version is more than one point below the newest version, you need to make a full upgrade. For example, if you're using 1.6.1 and the newest version is 1.6.4, then you need a full upgrade. The same applies if you're using 1.4.x and you're upgrading to 1.6. You need use the latest version of the software.<br /><br />
@@ -39,7 +39,7 @@ category: Other topics
 </dd></dl>
 <dl><dd><b>Changed Files Upgrade</b><br />If you're just one point behind the newest version - for example, you're using 1.6.3 and the newest version is 1.6.4 - then you can use the changed files package. This is available in the blog post announcement. If a changed files package is not available then the latest version of the software should be used.
 </dd></dl>
-
+<h2> <span class="mw-headline" id="Beginning_the_Upgrade"> Beginning the Upgrade </span></h2>
 <p>Once you've downloaded the correct upgrade package for you, it's time to do the upgrade. Please follow these steps carefully.
 </p>
 <ol><li> Upload ALL of the files and folders inside the package (from inside the "Upload" folder if using the latest version/full package), including the ./install/ folder (if it exists), overwriting the existing copies of the files in your file system.<br /><br />
@@ -60,7 +60,7 @@ category: Other topics
 </li></ol>
 </li><li> The upgrade process should now be complete! You may want to re-open your forum by removing the .htaccess block or turning your forum on again. Before you do this, ensure that your forum functions correct and it looks the way it's supposed to look! Take your time don't rush it.
 </li></ol>
-
+<h2> <span class="mw-headline" id="Help_and_Support"> Help and Support </span></h2>
 <p>If you run into any problems at any point of the upgrade process, visit the <a rel="nofollow" class="external text" href="http://community.mybb.com">Community Forum</a> and post a thread in the relevant area. Our Support Team will try their best to provide help as fast as they can, but please note they are extremely busy when there is a new release. Remember to take screenshots if you can and include them in your new thread, and be as detailed as possible when writing your post.
 </p><p>Otherwise, congratulations! You've just upgraded your forum!
 </p><p><br />

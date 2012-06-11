@@ -17,17 +17,17 @@ category: Plugins
 <li class="toclevel-1 tocsection-6"><a href="#The_Hook_System"><span class="tocnumber">4</span> <span class="toctext">The Hook System</span></a></li>
 </ul>
 </td></tr></table>
-
+<h2> <span class="mw-headline" id="Introduction"> Introduction </span></h2>
 <p>Making a plugin for MyBB is like any other PHP undertaking. It requires knowledge of PHP / mySQL and a fairly decent knowledge of MyBB. The latest release of MyBB includes a sample plugin - Hello World - that shows the basic structure of a typical plugin - you should use this as a guide on how to build your own plugins. If possible, you should always code your plugins in the latest release of MyBB.
 </p><p>If you get stuck making plugins, help is at hand at the <a rel="nofollow" class="external text" href="http://community.mybb.com">Community Forum</a>.
 </p>
-
+<h3> <span class="mw-headline" id="Upgrading_Plugins_to_1.6"> Upgrading Plugins to 1.6 </span></h3>
 <p>If you're upgrading to 1.6 from a previous version of MyBB, check out the <a rel="nofollow" class="external text" href="http://community.mybb.com/thread-75646.html">Plugin Upgrade Guide</a>
 </p>
-
+<h3> <span class="mw-headline" id="Upgrading_Plugins_to_1.4"> Upgrading Plugins to 1.4 </span></h3>
 <p>If you're upgrading to 1.4 from a previous version of MyBB, check out the <a rel="nofollow" class="external text" href="http://blog.mybb.com/2008/07/11/plugin-upgrade-guide-for-plugin-authors/">Plugin Upgrade Guide</a> and <a rel="nofollow" class="external text" href="http://blog.mybb.com/2008/07/11/preparing-your-plugins-for-14/">Preparing your Plugins for 1.4</a> from the <a rel="nofollow" class="external text" href="http://blog.mybb.com">MyBB Blog</a>. There is also this thread: <a rel="nofollow" class="external free" href="http://community.mybb.com/thread-24122.html">http://community.mybb.com/thread-24122.html</a>
 </p>
-
+<h2> <span class="mw-headline" id="Requirements"> Requirements </span></h2>
 <p>As of 1.4, the names of activation, deactivation and information functions must be in the name of your plugin file (minus the .php extension).
 </p><p>For example if your plugin file was called foo.php, your functions would be called foo_activate, foo_deactivate etc.
 </p><p>Although it's not required, it's a good idea to prefix all your functions with your plugin name; foo_run(), foo_bar(), and so on. This is to avoid conflicts with other plugins.
@@ -54,7 +54,7 @@ category: Plugins
 </p><p>The compatibility field tells MyBB which versions it will work on. This adds the ability to stop users from installing or running plugins that won't work with their versions of MyBB. This is in CSV format - for example "141,142,143" (MyBB 1.4.1, 1.4.2 and 1.4.3), "14*" (all versions of MyBB 1.4). Wildcards are supported.
 </p><p>For targeting specific versions of 1.6, the compatibility value needs to be in this format: "1604,1605" (MyBB 1.6.4 and 1.6.5).
 </p>
-
+<h2> <span class="mw-headline" id="Activate.2C_Deactivate.2C_Install_and_Uninstall_Functions">Activate, Deactivate, Install and Uninstall Functions</span></h2>
 <p>MyBB provides 4 set functions to perform certain actions. The _install function should really modify the database (if your plugin does this) to insert things like settings and new fields in tables. If no install function is included, it is assumed that these modifications are done in the _activate function.
 </p>
 <pre>
@@ -103,7 +103,7 @@ category: Plugins
 		// ... should be reserved for altering the database!...
 	}
 </pre>
-
+<h2> <span class="mw-headline" id="The_Hook_System">The Hook System</span></h2>
 <p>For your plugin to actually work, you need to "hook" your code into MyBB. This can be done in many places throughout MyBB code.
 </p><p>You can see all the hooks available in MyBB at the <a href="{{ site.url }}/MyBB_Plugin_Hooks.html" title="MyBB Plugin Hooks">MyBB Plugin Hooks</a> page.
 </p><p>For an explaination of the hooks, and how they work, check out <a href="Plugins:The_Hook_System" title="Plugins:The Hook System">The Hook System</a>. 
