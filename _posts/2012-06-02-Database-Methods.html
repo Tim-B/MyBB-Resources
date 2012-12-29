@@ -60,16 +60,23 @@ category: Database
 </td></tr></table>
 
 
+<a name="Available_Methods"></a><h2><span class="tocnumber">1</span> <span class="toctext">Available Methods</span></h2>
+<br />
+<a name="Commonly_Used"></a><h3><span class="tocnumber">1.1</span> <span class="toctext">Commonly Used</span></h3>
 
+<a name=".24db-.3Equery"></a><h4><span class="tocnumber">1.1.1</span> <span class="toctext">$db-&gt;query</span></h4>
 <p>Executes an SQL query with your database. Notice that the write_query method is now preferred.
 </p>
 
+<a name=".24db-.3Ewrite_query"></a><h4><span class="tocnumber">1.1.2</span> <span class="toctext">$db-&gt;write_query</span></h4>
 <p>Similar to the query method, except write_query executes the query on the slave database in case you happen to have a multi-database server setup. Write_query is now preferred over query. For more information, see the following post from Pirata Nervo: <a rel="nofollow" class="external free" href="http://community.mybb.com/post-559029.html#pid559029">http://community.mybb.com/post-559029.html#pid559029</a>
 </p>
 
+<a name=".24db-.3Esimple_select"></a><h4><span class="tocnumber">1.1.3</span> <span class="toctext">$db-&gt;simple_select</span></h4>
 <p>See <a href="{{ site.url }}/Simple_Select.html" title="Simple Select">Simple Select</a>.
 </p>
 
+<a name=".24db-.3Efetch_array"></a><h4><span class="tocnumber">1.1.4</span> <span class="toctext">$db-&gt;fetch_array</span></h4>
 <p>Returns an array of values for the first row (can be iterated through with a while statement)
 </p><p>Example:<br />
 <br />
@@ -82,15 +89,18 @@ while($result=$db-&gt;fetch_array($query))<br />
 }<br />
 </p>
 
+<a name=".24db-.3Efetch_field"></a><h4><span class="tocnumber">1.1.5</span> <span class="toctext">$db-&gt;fetch_field</span></h4>
 <p>See <a href="{{ site.url }}/Fetch_Field.html" title="Fetch Field">Fetch_Field</a>.
 </p>
 
+<a name=".24db-.3Enum_rows"></a><h4><span class="tocnumber">1.1.6</span> <span class="toctext">$db-&gt;num_rows</span></h4>
 <p>Returns the number of rows in the query
 </p>
 
-<p>Returns the insert id (The id of the primary key) of the insert query just run
+<a name=".24db-.3Einsert_id"></a><h4><span class="tocnumber">1.1.7</span> <span class="toctext">$db-&gt;insert_id</span></h4><p>Returns the insert id (The id of the primary key) of the insert query just run
 </p>
 
+<a name=".24db-.3Einsert_query"></a><h4><span class="tocnumber">1.1.8</span> <span class="toctext">$db-&gt;insert_query</span></h4>
 <p>Runs an insert query on a table in a database.
 Receive two parameters:
 </p>
@@ -100,91 +110,120 @@ Receive two parameters:
 <p>Build an insert query from the array and executes the query using <a rel="nofollow" class="external text" href="http://wiki.mybb.com/index.php/Database_Methods#.24db-.3Equery">$db-&gt;query</a>
 </p>
 
+<a name=".24db-.3Eupdate_query"></a><h4><span class="tocnumber">1.1.9</span> <span class="toctext">$db-&gt;update_query</span></h4>
 <p>Runs an update query on a table in a database. <br />
 parameters: ('table name', 'update array', 'conditional')
 </p>
 
+<a name=".24db-.3Edelete_query"></a><h4><span class="tocnumber">1.1.10</span> <span class="toctext">$db-&gt;delete_query</span></h4>
 <p>Used to perform a delete query on a table in a database
 </p>
 
+<a name=".24db-.3Eescape_string"></a><h4><span class="tocnumber">1.1.11</span> <span class="toctext">$db-&gt;escape_string</span></h4>
 <p>Replaces addslashes, escapes data before being used in a query
 </p>
 
-
+<br />
+<a name="Others"></a><h3><span class="tocnumber">1.2</span> <span class="toctext">Others</span></h3>
+<a name=".24db-.3Econnect"></a><h4><span class="tocnumber">1.2.1</span> <span class="toctext">$db-&gt;connect</span></h4>
 <p>Connects a new database.
 </p>
 
+<a name=".24db-.3Eselect_db"></a><h4><span class="tocnumber">1.2.2</span> <span class="toctext">$db-&gt;select_db</span></h4>
 <p>Selects the database for the current MySQL Session
 </p>
 
+<a name=".24db-.3Eexplain_query"></a><h4><span class="tocnumber">1.2.3</span> <span class="toctext">$db-&gt;explain_query</span></h4>
 <p>Helps to explain queries run from on database from the current session for debugging purposes.
 </p>
 
+<a name=".24db-.3Edata_seek"></a><h4><span class="tocnumber">1.2.4</span> <span class="toctext">$db-&gt;data_seek</span></h4>
 <p>Moves the internal pointer to the specified column
 </p>
 
+<a name=".24db-.3Eclose"></a><h4><span class="tocnumber">1.2.5</span> <span class="toctext">$db-&gt;close</span></h4>
 <p>Closes the connection to the currently open database
 </p>
 
+<a name=".24db-.3Eerrno"></a><h4><span class="tocnumber">1.2.6</span> <span class="toctext">$db-&gt;errno</span></h4>
 <p>Returns the error number (if any) of the specified query resource
 </p>
 
+<a name=".24db-.3Eerror"></a><h4><span class="tocnumber">1.2.7</span> <span class="toctext">$db-&gt;error</span></h4>
 <p>Returns the error string (if any) of the specified query resource
 </p>
 
+<a name=".24db-.3Edberror"></a><h4><span class="tocnumber">1.2.8</span> <span class="toctext">$db-&gt;dberror</span></h4>
 <p>Outputs an error message (if any) of the specified query resource
 </p>
 
+<a name=".24db-.3Eaffected_rows"></a><h4><span class="tocnumber">1.2.9</span> <span class="toctext">$db-&gt;affected_rows</span></h4>
 <p>Returns the amount of affected rows from a "write" query
 </p>
 
+<a name=".24db-.3Enum_fields"></a><h4><span class="tocnumber">1.2.10</span> <span class="toctext">$db-&gt;num_fields</span></h4>
 <p>Returns the number of fields of the specified query resource
 </p>
 
+<a name=".24db-.3Elist_tables"></a><h4><span class="tocnumber">1.2.11</span> <span class="toctext">$db-&gt;list_tables</span></h4>
 <p>Returns the tables in the current open database
 </p>
 
+<a name=".24db-.3Etable_exists"></a><h4><span class="tocnumber">1.2.12</span> <span class="toctext">$db-&gt;table_exists</span></h4>
 <p>Returns true if the specified table exists
 </p>
 
+<a name=".24db-.3Efield_exists"></a><h4><span class="tocnumber">1.2.13</span> <span class="toctext">$db-&gt;field_exists</span></h4>
 <p>Returns true if the specified field exists
 </p>
 
+<a name=".24db-.3Eshutdown_query"></a><h4><span class="tocnumber">1.2.14</span> <span class="toctext">$db-&gt;shutdown_query</span></h4>
 <p>Runs a query thats performed when php is done parsing the file
 </p>
 
+<a name=".24db-.3Eselect_query"></a><h4><span class="tocnumber">1.2.15</span> <span class="toctext">$db-&gt;select_query</span></h4>
 <p>Runs a complex query (join queries). (Note: Depreciated in MyBB 1.4)
 </p>
 
+<a name=".24db-.3Eget_version"></a><h4><span class="tocnumber">1.2.16</span> <span class="toctext">$db-&gt;get_version</span></h4>
 <p>Returns the version number of the database server being used
 </p>
 
+<a name=".24db-.3Eoptimize_table"></a><h4><span class="tocnumber">1.2.17</span> <span class="toctext">$db-&gt;optimize_table</span></h4>
 <p>Runs an optimize query on a table
 </p>
 
+<a name=".24db-.3Eanalyze_table"></a><h4><span class="tocnumber">1.2.18</span> <span class="toctext">$db-&gt;analyze_table</span></h4>
 <p>Runs an analyze query on a table
 </p>
 
+<a name=".24db-.3Eshow_create_table"></a><h4><span class="tocnumber">1.2.19</span> <span class="toctext">$db-&gt;show_create_table</span></h4>
 <p>Return the "create table" command for a specific table.
 </p>
 
+<a name=".24db-.3Eshow_fields_from"></a><h4><span class="tocnumber">1.2.20</span> <span class="toctext">$db-&gt;show_fields_from</span></h4>
 <p>Show the "show fields from" command for a specific table.
 </p>
 
+<a name=".24db-.3Eis_fulltext"></a><h4><span class="tocnumber">1.2.21</span> <span class="toctext">$db-&gt;is_fulltext</span></h4>
 <p>Returns whether or not the table contains a fulltext index.
 </p>
 
+<a name=".24db-.3Esupports_fulltext"></a><h4><span class="tocnumber">1.2.22</span> <span class="toctext">$db-&gt;supports_fulltext<h4>
 <p>Returns whether or not this database engine supports fulltext indexing.
 </p>
 
+<a name=".24db-.3Esupports_fulltext_boolean"></a><h4><span class="tocnumber">1.2.23</span> <span class="toctext">$db-&gt;supports_fulltext_boolean</span></h4>
 <p>Returns whether or not this database engine supports boolean fulltext matching.
 </p>
 
+<a name=".24db-.3Ecreate_fulltext_index"></a><h4><span class="tocnumber">1.2.24</span> <span class="toctext">$db-&gt;create_fulltext_index</span></h4>
 <p>Creates a fulltext index on the specified column in the specified table with optional index name.
 </p>
 
+<a name=".24db-.3Edrop_index"></a><h4><span class="tocnumber">1.2.25</span> <span class="toctext">$db-&gt;drop_index</span></h4>
 <p>Drop an index with the specified name from the specified table
-</p><p><br />
+</p><p><br /><br />
 </p>
 <div style="clear:both;border: 1px solid #ddd; background-color: #f5f5f5; padding: 5px; margin: 5px;">
 <div style="text-align: center; font-size: 18px; margin-bottom: 5px;"><b><a href="{{ site.url }}/Documentation.html" title="Documentation">MyBB Documentation</a></b></div>
