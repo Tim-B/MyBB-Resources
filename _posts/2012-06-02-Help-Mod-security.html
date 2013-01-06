@@ -4,7 +4,8 @@ title: Mod security
 permalink: Help-Mod_security.html
 category: General Help
 ---
-<blockquote>
+
+<blockquote>
 <strong>If you're running MyBB 1.6.x, these errors should not happen on your forum, as the links were changed to prevent 403's. If you are still getting 403 errors after upgrading to 1.6, then you have problematic plugins that are using the old style link layout. Contact the plugin author for assistance</strong>
 </blockquote>
 <p>Recently, there have been many reports on this forum regarding problems with mod_security, one of the modules loaded into Apache.  If you are having problems with 403 Forbidden or other problems that happen once in a while for quite mysterious reasons, read on and see if mod_security is your problem.
@@ -20,7 +21,7 @@ category: General Help
 <li class="toclevel-1 tocsection-6"><a href="#The_Solution_-_Contact_your_host"><span class="tocnumber">6</span> <span class="toctext">The Solution - Contact your host</span></a></li>
 </ul>
 </td></tr></table>
-
+<h2> <span class="mw-headline" id="Introductory_Details"> Introductory Details </span></h2>
 <p>The apparent error that is generated is  normally a page saying:
 </p>
 <ul><li> 500 Internal Server Error
@@ -32,7 +33,7 @@ category: General Help
 <blockquote>
 [Sat Oct 8 16:33:45 2005] [error] [client 123.456.789.123] mod_security: Access denied with code 403. Pattern match "rcp " at THE_REQUEST. [hostname "www.example.com"] [uri "/forum/admin/templates.php?expand=1&amp;group=usercp"]
 </blockquote>
-
+<h2> <span class="mw-headline" id="Known_problematic_pages"> Known problematic pages </span></h2>
 <p>Here are a list of known symptoms
 </p>
 <ul><li> [1.4] - any ACP page
@@ -41,10 +42,10 @@ category: General Help
 </li><li> Front end - Posting/Editing posts - Message with content similar to harmful commands (example: uname -a)
 </li><li> The above errors occur when specific data is being requested from the server (example: all the other template-groups work except for usercp templates, and other messages are able to be posted)
 </li></ul>
-
+<h2> <span class="mw-headline" id="Confirm_that_mod_security_is_installed_on_your_server"> Confirm that mod_security is installed on your server </span></h2>
 <p>To confirm that the mod_security module is installed on your server, open your PHP Info page (there is one in your forum's Admin CP).  Scroll down and find the heading "Loaded Modules" and see if "mod_security" is in the list.
 </p>
-
+<h2> <span class="mw-headline" id="The_Solution_-_MyBB_1.4.x_and_newer"> The Solution - MyBB 1.4.x and newer </span></h2>
 <p>The htaccess.txt that comes with the MyBB package disables mod_security by default.  If you haven't already, rename the htaccess.txt file to ".htaccess" (without the quotation marks, note the leading dot in the filename).
 </p><p>The relevant code is shown below:
 </p>
@@ -64,7 +65,7 @@ category: General Help
 </pre>
 <p><br />
 </p>
-
+<h2> <span class="mw-headline" id="The_Solution_-_MyBB_1.2.x_and_older"> The Solution - MyBB 1.2.x and older </span></h2>
 <p>Place this code in a .htaccess file in your MyBB folder on the server.
 </p>
 <pre>SecFilterEngine Off
@@ -72,7 +73,7 @@ category: General Help
 <p>Note, this will disable the security function of the mod_security module for the files inside the MyBB folder.  This solution is a tradeoff: security vs usability.  Use this solution at your own risk.
 </p><p>If this does not work, then feel free to create a new support thread and we'll try to help you further.
 </p>
-
+<h2> <span class="mw-headline" id="The_Solution_-_Contact_your_host"> The Solution - Contact your host </span></h2>
 <p>If none of the above solutions work and you have confirmed that mod_security is enabled on your server, you can try to ask your webhost to "whitelist" your domain to bypass mod_security.
 </p><p><br />
 </p><p>Original thread: <a rel="nofollow" class="external free" href="http://community.mybb.com/showthread.php?tid=7592">http://community.mybb.com/showthread.php?tid=7592</a>
