@@ -33,7 +33,7 @@ category: Development
 <h3> <span class="mw-headline" id="Forking">Forking MyBB</span></h3>
 <p>Once you are setup with GitHub, visit the <a href="http://github.com/mybb" title="MyBB Project on GitHub">MyBB Project</a> on GitHub. MyBB 1.x is located within the <em>mybb</em> repository. Fork the repository; this creates your own copy for you to work on.</p>
 
-<pre>$ git clone git://github.com/mybb/mybb.git</pre>
+<pre>	$ git clone git://github.com/mybb/mybb.git</pre>
 
 <p>Our repository contains three main branches:</p>
 <ul>
@@ -57,16 +57,12 @@ category: Development
 	<li>
 		<strong>Username</strong>
 		<p>First, you need to tell Git your name so it can properly label the commits you make.</p>
-		<pre>
-			$ git config --global user.name "John Doe"
-		</pre>
+		<pre>	$ git config --global user.name "John Doe"</pre>
 	</li>
 	<li>
 		<strong>Email</strong>
 		<p>Git saves your email address into the commits you make. GitHub uses the email address to associate your commits with your GitHub account.</p>
-		<pre>
-			$ git config --global user.email "john@doe.com"
-		</pre>
+		<pre>	$ git config --global user.email "john@doe.com"</pre>
 	</li>
 </ul>
 
@@ -75,8 +71,7 @@ category: Development
 <h3> <span class="mw-headline" id="Windows">Working on Windows</span></h3>
 <p>If you are working on a Windows environment you must ensure you commit all files with LF line endings. Please make sure you set the following options:</p>
 
-<pre>
-	$ git config --global core.autocrlf false
+<pre>	$ git config --global core.autocrlf false
 	$ git config --global core.eol lf
 </pre>
 
