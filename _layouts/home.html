@@ -28,7 +28,14 @@
 			<div id="header">
 			<a class="link" href="/"></a>
 				<div id="search">
-					<form action="/search" method="get"><fieldset><label for="search_box"><span id="search_left">&nbsp;</span></label><input type="text" name="query" id="search_box" title="Enter your search keywords" /><input type="submit" value="Search" name="submit-search" id="search_button" /></fieldset></form>
+					<form method="get" action="http://www.google.com/search">
+						<fieldset>
+							<input type="hidden" name="as_sitesearch" id="as_sitesearch" value="docs.mybb.com">
+							<label for="search_box"><span id="search_left">&nbsp;</span></label>
+							<input type="search" name="q" id="search_box" title="Enter your search keywords" autosave="mybbdocs" />
+							<input type="submit" value="Search" name="submit-search" id="search_button" />
+						</fieldset>
+					</form>
 				</div>
 				<div id="menu">
 				<ul>
