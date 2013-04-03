@@ -150,11 +150,13 @@ acronym, abbr, span.caps {
 /* BEGIN Table of Contents */
 #toc {
 width: 100%;
+border-radius: 1em;
 }
 
 #toc h2 {
 margin: 0;
 display: inline;
+padding-left: 1.5em;
 }
 
 #toc ul {
