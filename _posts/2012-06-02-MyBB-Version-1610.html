@@ -1,0 +1,332 @@
+---
+layout: post
+title: MyBB 1.6.10
+permalink: 1610.html
+category: Versions
+---
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Release_Date"><span class="tocnumber">1</span> <span class="toctext">Release Date</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Announcement_Summary"><span class="tocnumber">2</span> <span class="toctext">Announcement Summary</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Overview"><span class="tocnumber">2.1</span> <span class="toctext">Overview</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Fixed_Issues"><span class="tocnumber">2.2</span> <span class="toctext">Fixed Issues</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Changes_to_Cookies"><span class="tocnumber">2.3</span> <span class="toctext">Changes to Cookies</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Changed_Files"><span class="tocnumber">2.4</span> <span class="toctext">Changed Files</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Language_Changes"><span class="tocnumber">2.5</span> <span class="toctext">Language Changes</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Template_Changes"><span class="tocnumber">2.6</span> <span class="toctext">Template Changes</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+
+<p>MyBB 1.6.10 will be released shortly.
+</p>
+
+
+<p>MyBB 1.6.10 is a security and maintenance release and fixes 7 vulnerabilities and over 95 reported issues reported issues.
+</p>
+
+<ul><li> <a rel="nofollow" class="external text" href="http://dev.mybb.com/versions/46">Fixed issues in 1.6.10</a>
+</li><li> <a rel="nofollow" class="external text" href="http://dev.mybb.com/projects/mybb/issues">Unfixed issues</a>
+</li></ul>
+
+<p>The following files have changed since MyBB 1.6.9.
+</p>
+<ul>
+<li>admin<ul>
+<li>inc<ul>
+<li>class_form.php</li>
+<li>class_page.php</li>
+<li>class_table.php</li>
+<li>functions_themes.php</li>
+</ul></li>
+<li>modules<ul>
+<li>config<ul>
+<li>help_documents.php</li>
+<li>languages.php</li>
+<li>mycode.php</li>
+<li>post_icons.php</li>
+<li>settings.php</li>
+</ul></li>
+<li>forum<ul>
+<li>announcements.php</li>
+<li>attachments.php</li>
+<li>management.php</li>
+</ul></li>
+<li>home<ul>
+<li>credits.php</li>
+<li>index.php</li>
+<li>module_meta.php</li>
+<li>preferences.php</li>
+<li>version_check.php</li>
+</ul></li>
+<li>style<ul>
+<li>templates.php</li>
+<li>themes.php</li>
+</ul></li>
+<li>tools<ul>
+<li>backupdb.php</li>
+<li>file_verification.php</li>
+<li>optimizedb.php</li>
+<li>system_health.php</li>
+</ul></li>
+<li>user<ul>
+<li>mass_mail.php</li>
+<li>users.php</li>
+</ul></li>
+</ul></li>
+<li>index.php</li>
+</ul></li>
+<li>archive<ul>
+<li>global.php</li>
+</ul></li>
+<li>inc<ul>
+<li>3rdparty<ul>
+<li>diff<ul>
+<li>Diff<ul>
+<li>Engine<ul>
+<li>Native.php</li>
+<li>Shell.php</li>
+<li>String.php</li>
+<li>Xdiff.php</li>
+</ul></li>
+<li>Op<ul>
+<li>Add.php</li>
+<li>Base.php</li>
+<li>Change.php</li>
+<li>Copy.php</li>
+<li>Delete.php</li>
+<li>index.html</li>
+</ul></li>
+<li>Renderer<ul>
+<li>Context.php</li>
+<li>Inline.php</li>
+<li>Unified.php</li>
+</ul></li>
+<li>ThreeWay<ul>
+<li>Op<ul>
+<li>Base.php</li>
+<li>Copy.php</li>
+<li>index.html</li>
+</ul></li>
+<li>BlockBuilder.php</li>
+<li>index.html</li>
+</ul></li>
+<li>Exception.php</li>
+<li>Mapped.php</li>
+<li>Renderer.php</li>
+<li>String.php</li>
+<li>ThreeWay.php</li>
+</ul></li>
+<li>Diff.php</li>
+</ul></li>
+</ul></li>
+<li>datahandlers<ul>
+<li>event.php</li>
+<li>pm.php</li>
+<li>post.php</li>
+<li>user.php</li>
+</ul></li>
+<li>class_captcha.php</li>
+<li>class_core.php</li>
+<li>class_error.php</li>
+<li>class_mailhandler.php</li>
+<li>class_moderation.php</li>
+<li>class_parser.php</li>
+<li>class_plugins.php</li>
+<li>class_session.php</li>
+<li>class_templates.php</li>
+<li>class_xml.php</li>
+<li>db_mysql.php</li>
+<li>db_mysqli.php</li>
+<li>db_pgsql.php</li>
+<li>db_sqlite.php</li>
+<li>functions.php</li>
+<li>functions_archive.php</li>
+<li>functions_calendar.php</li>
+<li>functions_forumlist.php</li>
+<li>functions_image.php</li>
+<li>functions_indicators.php</li>
+<li>functions_online.php</li>
+<li>functions_post.php</li>
+<li>functions_time.php</li>
+<li>functions_upload.php</li>
+<li>functions_user.php</li>
+<li>init.php</li>
+<li>languages<ul>
+<li>english<ul>
+<li>admin<ul>
+<li>config_settings.lang.php</li>
+<li>forum_announcements.lang.php</li>
+<li>tools_file_verification.lang.php</li>
+<li>tools_system_health.lang.php</li>
+<li>tools_tasks.lang.php</li>
+<li>user_users.lang.php</li>
+</ul></li>
+<li>datahandler_user.lang.php</li>
+<li>global.lang.php</li>
+<li>member.lang.php</li>
+<li>modcp.lang.php</li>
+</ul></li>
+<li>english.php</li>
+</ul></li>
+<li>mailhandlers<ul>
+<li>smtp.php</li>
+</ul></li>
+<li>plugins<ul>
+<li>akismet.php</li>
+</ul></li>
+<li>tasks<ul>
+<li>checktables.php</li>
+</ul></li>
+</ul></li>
+<li>install<ul>
+<li>resources<ul>
+<li>language.lang.php</li>
+<li>mybb_theme.xml</li>
+<li>mysql_db_inserts.php</li>
+<li>mysql_db_tables.php</li>
+<li>pgsql_db_tables.php</li>
+<li>settings.xml</li>
+<li>sqlite_db_tables.php</li>
+<li>upgrade12.php</li>
+<li>upgrade14.php</li>
+<li>upgrade15.php</li>
+<li>upgrade17.php</li>
+<li>upgrade19.php</li>
+<li>upgrade26.php</li>
+</ul></li>
+<li>index.php</li>
+<li>upgrade.php</li>
+</ul></li>
+<li>jscripts<ul>
+<li>autocomplete.js</li>
+<li>inline_edit.js</li>
+<li>prototype.js</li>
+<li>usercp.js</li>
+</ul></li>
+<li>announcements.php</li>
+<li>attachment.php</li>
+<li>calendar.php</li>
+<li>editpost.php</li>
+<li>forumdisplay.php</li>
+<li>global.php</li>
+<li>index.php</li>
+<li>managegroup.php</li>
+<li>member.php</li>
+<li>memberlist.php</li>
+<li>misc.php</li>
+<li>modcp.php</li>
+<li>moderation.php</li>
+<li>newreply.php</li>
+<li>newthread.php</li>
+<li>online.php</li>
+<li>polls.php</li>
+<li>portal.php</li>
+<li>printthread.php</li>
+<li>private.php</li>
+<li>ratethread.php</li>
+<li>report.php</li>
+<li>reputation.php</li>
+<li>search.php</li>
+<li>sendthread.php</li>
+<li>showteam.php</li>
+<li>showthread.php</li>
+<li>syndication.php</li>
+<li>usercp.php</li>
+<li>usercp2.php</li>
+<li>warnings.php</li>
+<li>xmlhttp.php</li>
+</ul>
+
+<p>There are changes to 10 language files. Changed languages files can be cross-referenced from the list above.
+</p>
+
+<p>There are changes to 25 templates.
+</p>
+<ul><li> calendar_move
+</li><li> editpost
+</li><li> forumdisplay_threadlist
+</li><li> newreply
+</li><li> newreply_options_signature
+</li><li> newreply_disablesmilies
+</li><li> newthread
+</li><li> newthread_options_signature
+</li><li> newthread_disablesmilies
+</li><li> postbit_quote
+</li><li> private_send
+</li><li> private_send_tracking
+</li><li> private_send_signature
+</li><li> member_coppa_form
+</li><li> misc_imcenter_aim
+</li><li> modcp_announcements_new
+</li><li> modcp_announcements_edit
+</li><li> showthread_quickreply
+</li><li> showthread_quickreply_options_signature
+</li><li> usercp_nav_messenger
+</li><li> usercp_nav_messenger_tracking
+</li><li> video_dailymotion_embed
+</li><li> video_yahoo_embed
+</li><li> video_vimeo_embed
+</li><li> video_youtube_embed
+</li></ul>
+
+<p><br />
+</p>
+<div style="border: 1px solid #ddd; background-color: #f5f5f5; padding: 5px; margin: 5px;">
+<div style="text-align: center; font-size: 18px; margin-bottom: 5px;"><b><a href="{{ site.url }}/Versions.html" title="Versions">MyBB Versions</a></b></div>
+<table cellpadding="3" cellspacing="3" style="font-size: 95%; line-spacing:1; border: 1px solid #ddd; width: 100%; margin-bottom: 5px; background: #fff;">
+<tr>
+<td style="vertical-align: middle; font-size: 11px;"><i><b>2.0.x</b></i>
+</td>
+<td style="vertical-align: middle; width: 90%;"><div style="float: right; font-size: 11px;"><i><b>In Planning/Early Development</b></i></div><div style="font-size: 11px;"><i><a href="2.0.0" title="2.0.0">2.0.0</a></i></div>
+</td></tr></table>
+<table cellpadding="3" cellspacing="3" style="font-size: 95%; line-spacing:1; border: 1px solid #ddd; width: 100%; margin-bottom: 5px; background: #fff;">
+<tr>
+<td style="vertical-align: middle;"><i><b>1.8.x</b></i>
+</td>
+<td style="vertical-align: middle; width: 90%;"><div style="float: right;"><i><b>In Development</b></i></div><div><i><a href="1.8.0" title="1.8.0">1.8.0</a></i></div>
+</td></tr></table>
+<table cellpadding="3" cellspacing="3" style="font-size: 95%; line-spacing:1; border: 1px solid #ddd; width: 100%; margin-bottom: 5px; background: #fff;">
+<tr>
+<td style="vertical-align: middle; font-size: 14px;"><b>1.6.x</b>
+</td>
+<td style="vertical-align: middle; width: 90%;"><div><span style="background: #FFF6BF; border: 1px solid #FFD324; padding: 3px;"><a href="{{ site.url }}/169.html" title="1.6.9">1.6.9</a></span> - <a href="1.6.8" title="1.6.8">1.6.8</a> - <a href="1.6.7" title="1.6.7">1.6.7</a> - <a href="1.6.6" title="1.6.6">1.6.6</a> - <a href="1.6.5" title="1.6.5">1.6.5</a> - <a href="1.6.4" title="1.6.4">1.6.4</a> - <a href="1.6.3" title="1.6.3">1.6.3</a> - <a href="1.6.2" title="1.6.2">1.6.2</a> - <a href="1.6.1" title="1.6.1">1.6.1</a> - <a href="1.6.0" title="1.6.0">1.6.0</a></div>
+</td></tr></table>
+<table cellpadding="3" cellspacing="3" style="font-size: 95%; line-spacing:1; border: 1px solid #ddd; width: 100%; margin-bottom: 5px; background: #fff;">
+<tr>
+<td style="vertical-align: middle; font-size: 14px;"><b>1.4.x</b>
+</td>
+<td style="vertical-align: middle; width: 90%;"><a href="1.4.16" title="1.4.16">1.4.16</a> - <a href="1.4.15" title="1.4.15">1.4.15</a> - <a href="1.4.14" title="1.4.14">1.4.14</a> - <a href="1.4.13" title="1.4.13">1.4.13</a> - <a href="1.4.12" title="1.4.12">1.4.12</a> - <a href="1.4.11" title="1.4.11">1.4.11</a> - <a href="1.4.10" title="1.4.10">1.4.10</a> - <a href="1.4.9" title="1.4.9">1.4.9</a> - <a href="1.4.8" title="1.4.8">1.4.8</a> - <a href="1.4.7" title="1.4.7">1.4.7</a> - <a href="1.4.6" title="1.4.6">1.4.6</a> - <a href="1.4.5" title="1.4.5">1.4.5</a> - <a href="1.4.4" title="1.4.4">1.4.4</a> - <a href="1.4.3" title="1.4.3">1.4.3</a> - <a href="1.4.2" title="1.4.2">1.4.2</a> - <a href="1.4.1" title="1.4.1">1.4.1</a> - <a href="1.4.0" title="1.4.0">1.4.0</a>
+</td></tr></table>
+<table cellpadding="3" cellspacing="3" style="font-size: 95%; line-spacing:1; border: 1px solid #ddd; width: 100%; margin-bottom: 5px; background: #fff;">
+<tr>
+<td style="vertical-align: middle; font-size: 14px;"><b>1.2.x</b>
+</td>
+<td style="vertical-align: middle; width: 90%;"><a href="1.2.14" title="1.2.14">1.2.14</a> - <a href="1.2.13" title="1.2.13">1.2.13</a> - <a href="1.2.12" title="1.2.12">1.2.12</a> - <a href="1.2.11" title="1.2.11">1.2.11</a> - <a href="1.2.10" title="1.2.10">1.2.10</a> - <a href="1.2.9" title="1.2.9">1.2.9</a> - <a href="1.2.8" title="1.2.8">1.2.8</a> - <a href="1.2.7" title="1.2.7">1.2.7</a> - <a href="1.2.6" title="1.2.6">1.2.6</a> - <a href="1.2.5" title="1.2.5">1.2.5</a> - <a href="1.2.4" title="1.2.4">1.2.4</a> - <a href="1.2.3" title="1.2.3">1.2.3</a> - <a href="1.2.2" title="1.2.2">1.2.2</a> - <a href="1.2.1" title="1.2.1">1.2.1</a> - <a href="1.2.0" title="1.2.0">1.2.0</a>
+</td></tr></table>
+<table cellpadding="3" cellspacing="3" style="font-size: 95%; line-spacing:1; border: 1px solid #ddd; width: 100%; margin-bottom: 5px; background: #fff;">
+<tr>
+<td style="vertical-align: middle; font-size: 14px;"><b>1.1.x / 1.0x</b>
+</td>
+<td style="vertical-align: middle; width: 90%;"><a href="1.1.8" title="1.1.8">1.1.8</a> - <a href="1.1.7" title="1.1.7">1.1.7</a> - <a href="1.1.6" title="1.1.6">1.1.6</a> - <a href="1.1.5" title="1.1.5">1.1.5</a> - <a href="1.1.4" title="1.1.4">1.1.4</a> - <a href="1.1.3" title="1.1.3">1.1.3</a> - <a href="1.1.2" title="1.1.2">1.1.2</a> - <a href="1.1.1" title="1.1.1">1.1.1</a> - <a href="1.1.0" title="1.1.0">1.1.0</a> - <a href="{{ site.url }}/104.html" title="1.04">1.04</a> - <a href="{{ site.url }}/103.html" title="1.03">1.03</a> - <a href="{{ site.url }}/102.html" title="1.02">1.02</a> - <a href="{{ site.url }}/101.html" title="1.01">1.01</a> - <a href="{{ site.url }}/100.html" title="1.00">1.00</a>
+</td></tr></table>
+<table cellpadding="3" cellspacing="3" style="font-size: 95%; line-spacing:1; border: 1px solid #ddd; width: 100%; margin-bottom: 5px; background: #fff;">
+<tr>
+<td style="vertical-align: middle; font-size: 14px;"><b>Pre-1.0</b>
+</td>
+<td style="vertical-align: middle; width: 90%;"><a href="{{ site.url }}/PR2.html" title="PR2">PR2</a> - <i><a href="{{ site.url }}/PR1.html" title="PR1">PR1</a></i> - <a href="{{ site.url }}/RC4.html" title="RC4">RC4</a> - <a href="{{ site.url }}/RC3.html" title="RC3">RC3</a> - <a href="{{ site.url }}/RC2.html" title="RC2">RC2</a> - <a href="{{ site.url }}/RC1.html" title="RC1">RC1</a> - <a href="{{ site.url }}/Beta_4.html" title="Beta 4">Beta 4</a> - <a href="{{ site.url }}/DevBB.html" title="DevBB">DevBB</a>
+</td></tr></table>
+<table cellpadding="3" cellspacing="3" style="font-size: 95%; line-spacing:1; border: 1px solid #ddd; width: 100%; margin-bottom: 5px; background: #fff;">
+<tr>
+<td style="vertical-align: middle; font-size: 14px;"><b>Legend</b>
+</td>
+<td style="vertical-align: middle; width: 90%;"><span style="margin-right: 20px; font-size: 11px;"><i>In Planning</i></span> <span style="margin-right: 20px;"><i>Development / Beta / Private</i></span> <span style="background: #FFF6BF; border: 1px solid #FFD324; padding: 3px;">Latest Public Release</span>
+</td></tr></table>
+</div>
+<p><br />
+</p>
+
+
+
