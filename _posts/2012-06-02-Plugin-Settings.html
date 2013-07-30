@@ -21,8 +21,8 @@ function myplugin_install()
 		'disporder'		=&gt; '1', // The order that the group is displayed on the settings module
 		'isdefault'		=&gt; 'no'
 	);
-	$query = $db->simple_select("settinggroups", "gid", "name = 'myplugin'", array("limit" => 1));
-	$gid = $db->fetch_field($query, "gid");
+        $db->insert_query('settinggroups', $setting_group);
+	$gid = $db->insert_id();
 
 	$myplugin_setting = array(
 		'name'			=&gt; 'myplugin_setting1',
