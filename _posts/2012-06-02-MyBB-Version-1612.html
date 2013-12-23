@@ -1,7 +1,7 @@
 ---
 layout: post
-title: MyBB 1.6.11
-permalink: 1611.html
+title: MyBB 1.6.12
+permalink: 1612.html
 category: Versions
 ---
 
@@ -20,65 +20,63 @@ category: Versions
 </ul>
 </td></tr></table>
 
-<p>MyBB 1.6.11 was released on 8 October 2013.
+<h1><span class="mw-headline" id="Release_Date">Release Date</span></h1>
+<p>MyBB 1.6.12 will be released shortly.
 </p>
 
-
-<p>MyBB 1.6.11 is a security and maintenance release and fixes 5 vulnerabilities and over 65 reported issues.
+<h1><span class="mw-headline" id="Announcement_Summary">Announcement Summary</span></h1>
+<h2><span class="mw-headline" id="Overview">Overview</span></h2>
+<p>MyBB 1.6.12 is a security and maintenance release and fixes 4 vulnerabilities and 10 reported issues.
 </p>
 
-<ul><li> <a rel="nofollow" class="external text" href="http://dev.mybb.com/versions/47">Fixed issues in 1.6.11</a>
-</li><li> <a rel="nofollow" class="external text" href="http://dev.mybb.com/projects/mybb/issues">Unfixed issues</a>
+<h2><span class="mw-headline" id="Fixed_Issues">Fixed Issues</span></h2>
+<ul><li>Vulnerabilities:<ul>
+<li>Medium Risk: A SQL vulnerability when editing smilies in ACP – reported by ChALkeR</li>
+<li>Medium Risk: A SQL vulnerability when deleting posts with Akismet in ACP – reported by ChALkeR</li>
+<li>Medium Risk: A XSS vulnerability in video MyCode – reported by ChALkeR</li>
+<li>Low Risk: A XSS vulnerability in smilie popup – reported by Spenzert</li>
+</ul>
+</li><li>Bugs fixed:<ul>
+<li>MyCode parser adds new lines since 1.6.11</li>
+<li>Some plugins throwing errors due to usage of unsupported language file calls since 1.6.11</li>
+<li>Uploading attachments may fail when safe mode is enabled</li>
+<li>Promotion task option "weeks" doesn't work properly</li>
+<li>Issue with queries not being executed in the correct order on logout</li>
+<li><a rel="nofollow" class="external text" href="http://dev.mybb.com/issues/2196">#2196 Thread Prefix altered via Tamper Data</a></li>
+<li><a rel="nofollow" class="external text" href="http://dev.mybb.com/issues/2251">#2251 Reputation doesn't carry over when merging users</a></li>
+<li><a rel="nofollow" class="external text" href="http://dev.mybb.com/issues/2267">#2267 See other's posts in a "see own post forum" through archive</a></li>
+<li><a rel="nofollow" class="external text" href="http://dev.mybb.com/issues/2275">#2275 Mod Log error when posting new thread</a></li>
+<li><strong>Adding support for 4-Byte UTF-8 Unicode Encoding in MySQL</strong><br />
+When MySQL 5.5.3 or above is used a new option to convert the tables to 4-Byte UTF-8 Unicode Encoding is available in the "UTF-8 Conversation" page in the Admin Control Panel. This allows to store unicode characters with 4 bytes. If you don't know what we are talking about you probably don't need it. PgSQL and SQLite can store such characters by default.</li>
+</ul>
 </li></ul>
 
-<p>The following files have changed since MyBB 1.6.10.
+<h2><span class="mw-headline" id="Changed_Files">Changed Files</span></h2>
+<p>The following files have changed since MyBB 1.6.11.
 </p>
 <ul>
 <li>admin<ul>
-<li>inc<ul>
-<li>class_page.php</li>
-<li>functions_themes.php</li>
-</ul></li>
 <li>modules<ul>
 <li>config<ul>
 <li>calendars.php</li>
-<li>languages.php</li>
-<li>mod_tools.php</li>
-<li>mycode.php</li>
-<li>plugins.php</li>
-<li>post_icons.php</li>
-<li>profile_fields.php</li>
-<li>settings.php</li>
+<li>smilies.php</li>
 </ul></li>
 <li>forum<ul>
 <li>announcements.php</li>
 <li>management.php</li>
 </ul></li>
-<li>home<ul>
-<li>version_check.php</li>
-</ul></li>
-<li>style<ul>
-<li>templates.php</li>
-<li>themes.php</li>
-</ul></li>
 <li>tools<ul>
-<li>adminlog.php</li>
-<li>mailerrors.php</li>
-<li>maillogs.php</li>
-<li>modlog.php</li>
 <li>system_health.php</li>
-<li>warninglog.php</li>
 </ul></li>
 <li>user<ul>
 <li>users.php</li>
 </ul></li>
 </ul></li>
+</ul></li>
+<li>archive<ul>
 <li>index.php</li>
 </ul></li>
 <li>inc<ul>
-<li>cachehandlers<ul>
-<li>memcache.php</li>
-</ul></li>
 <li>datahandlers<ul>
 <li>event.php</li>
 <li>pm.php</li>
@@ -88,90 +86,53 @@ category: Versions
 <li>languages<ul>
 <li>english<ul>
 <li>admin<ul>
-<li>global.lang.php</li>
-<li>tools_adminlog.lang.php</li>
+<li>tools_system_health.lang.php</li>
 </ul></li>
 <li>datahandler_post.lang.php</li>
-<li>member.lang.php</li>
 </ul></li>
 <li>english.php</li>
 </ul></li>
-<li>mailhandlers<ul>
-<li>smtp.php</li>
+<li>plugins<ul>
+<li>aksimet.php</li>
 </ul></li>
 <li>tasks<ul>
-<li>dailycleanup.php</li>
-<li>hourlycleanup.php</li>
+<li>promotions.php</li>
 </ul></li>
-<li>class_captcha.php</li>
 <li>class_core.php</li>
-<li>class_datacache.php</li>
-<li>class_error.php</li>
-<li>class_feedgeneration.php</li>
 <li>class_language.php</li>
-<li>class_mailhandler.php</li>
-<li>class_moderation.php</li>
 <li>class_parser.php</li>
-<li>class_session.php</li>
-<li>db_pgsql.php</li>
+<li>db_mysql.php</li>
+<li>db_mysqli.php</li>
 <li>functions.php</li>
 <li>functions_post.php</li>
-<li>functions_search.php</li>
-<li>functions_serverstats.php</li>
 <li>functions_upload.php</li>
-<li>functions_user.php</li>
-<li>init.php</li>
 </ul></li>
 <li>install<ul>
 <li>resources<ul>
 <li>language.lang.php</li>
-<li>mybb_theme.xml</li>
-<li>upgrade27.php</li>
 </ul></li>
 <li>index.php</li>
-<li>upgrade.php</li>
 </ul></li>
-<li>jscripts<ul>
-<li>editor.js</li>
-<li>thread.js</li>
-</ul></li>
-<li>attachment.php</li>
-<li>editpost.php</li>
-<li>forumdisplay.php</li>
-<li>global.php</li>
-<li>index.php</li>
 <li>member.php</li>
-<li>memberlist.php</li>
 <li>misc.php</li>
 <li>modcp.php</li>
-<li>moderation.php</li>
-<li>newreply.php</li>
 <li>newthread.php</li>
 <li>polls.php</li>
-<li>printthread.php</li>
 <li>private.php</li>
-<li>ratethread.php</li>
 <li>report.php</li>
 <li>reputation.php</li>
-<li>search.php</li>
-<li>sendthread.php</li>
 <li>showthread.php</li>
 <li>usercp.php</li>
 <li>xmlhttp.php</li>
 </ul>
 
-<p>There are changes to 4 language files. Changed languages files can be cross-referenced from the list above.
+<h2><span class="mw-headline" id="Language_Changes">Language Changes</span></h2>
+<p>There are no changes to language files.
 </p>
 
-<p>There are changes to 5 templates.
+<h2><span class="mw-headline" id="Template_Changes">Template Changes</span></h2>
+<p>There are no changes to templates.
 </p>
-<ul>
-<li>forumjump_advanced</li>
-<li>member_login</li>
-<li>modcp_finduser</li>
-<li>private_advanced_search</li>
-<li>showthread_quickreply</li>
-</ul>
 
 <p><br />
 </p>
